@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile-first Directory List Styles */
+.directory-container {
+  @apply flex flex-row gap-4 w-full max-w-7xl mx-auto px-2 sm:px-4 relative overflow-x-hidden;
+}
+
+.filterPane {
+  @apply hidden md:block w-72 bg-white p-4 rounded-lg shadow-md flex-shrink-0 h-fit sticky top-4;
+}
+
+/* Filter Pane Styles */
+.filter {
+  @apply mb-6;
+}
+
+.filterLabel {
+  @apply text-lg font-semibold mb-3 text-gray-900;
+}
+
+.keyword-input {
+  @apply relative;
+}
+
+.keyword-input input {
+  @apply w-full p-2 border border-gray-200 rounded-md text-gray-700;
+}
+
+.keyword-input button {
+  @apply absolute right-2 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-900;
+}
+
+.custom-checkbox {
+  @apply inline-flex items-center justify-center w-5 h-5 border-2 border-gray-400 rounded mr-2;
+}
+
+input:checked + label .custom-checkbox {
+  @apply bg-gray-900 border-gray-900;
+}
+
+.custom-checkbox i {
+  @apply hidden text-white text-xs;
+}
+
+input:checked + label .custom-checkbox i {
+  @apply block;
+}
+
+.resetButton {
+  @apply w-full flex justify-center items-center px-4 py-2 text-red-600 hover:text-red-700 border border-red-200 rounded-md hover:bg-red-50 transition-colors mt-6;
+}
+
+.filterPane ul {
+  @apply space-y-2;
+}
+
+.filterPane label {
+  @apply flex items-center text-gray-900 cursor-pointer hover:text-gray-700;
+}
+
+.filterPane .custom-checkbox {
+  @apply inline-flex items-center justify-center w-5 h-5 border-2 border-gray-400 rounded mr-2;
+}
+
+.filterPane input:checked + label .custom-checkbox {
+  @apply bg-blue-600 border-blue-600;
+}
+
+.filterPane input:checked + label {
+  @apply text-gray-900;
+}
+
+.filterPane .custom-checkbox i {
+  @apply hidden text-white text-xs;
+}
+
+.filterPane input:checked + label .custom-checkbox i {
+  @apply block;
+}
+
+.filterPane label span:last-child {
+  @apply text-gray-700 ml-1;
+}
+
+.filterPane .filter {
+  @apply mb-6;
+}
+
+.filterPane .resetButton {
+  @apply w-full flex justify-center items-center px-4 py-2 text-red-600 hover:text-red-700 border border-red-200 rounded-md hover:bg-red-50 transition-colors;
+}
+
+.layout-container {
+  @apply flex-1 overflow-x-hidden;
+}
+
+.settings {
+  @apply flex flex-wrap justify-between items-center mb-3 border-b border-gray-200 pb-2 text-sm;
+}
+
+.settings-label {
+  @apply text-gray-800 font-medium mr-2;
+}
+
+.settings ul {
+  @apply flex gap-2;
+}
+
+.settings button {
+  @apply px-2 py-1 rounded-md text-sm hover:bg-gray-100 transition-colors text-gray-800;
+}
+
+.settings .highlight button {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.content.list {
+  @apply space-y-2;
+}
+
+.content.list .item {
+  @apply flex gap-4 bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow;
+  min-height: 155px;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.content.list .image {
+  @apply relative flex-shrink-0;
+  width: 90px;
+  height: 90px;
+}
+
+.content.list .thumb {
+  @apply w-full h-full object-cover;
+}
+
+.content.list .info {
+  @apply flex-1 min-w-0 flex flex-col justify-center;
+  padding: 0;
+}
+
+.content.list .top-info {
+  @apply space-y-0.5;
+}
+
+.content.list h4, .content.grid-view h4 {
+  @apply text-lg font-semibold text-gray-900;
+}
+
+.content.list .title, .content.grid-view .title {
+  @apply text-gray-900 hover:text-blue-600 transition-colors;
+}
+
+.content.list .meta, .content.grid-view .meta {
+  @apply flex flex-col gap-1;
+}
+
+.content.list .rating, .content.grid-view .rating {
+  @apply flex items-center gap-1;
+}
+
+.content.list .score, .content.grid-view .score {
+  @apply text-gray-900 font-semibold;
+}
+
+.content.list .reviews, .content.grid-view .reviews {
+  @apply text-gray-700;
+}
+
+.content.list .address, .content.grid-view .address {
+  @apply text-gray-700 truncate;
+}
+
+.bottom-actions {
+  @apply mt-1;
+}
+
+.actionButton {
+  @apply text-xs px-2 py-1 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors inline-flex items-center gap-1;
+}
+
+.actionButton.website {
+  @apply bg-green-700 hover:bg-green-800;
+}
+
+.restaurant-type, .categories {
+  @apply flex flex-wrap gap-2 text-sm text-gray-900;
+}
+
+.restaurant-type {
+  @apply mb-1;
+}
+
+.type, .category {
+  @apply flex items-center gap-1;
+}
+
+.type i, .category i {
+  @apply text-gray-900 w-4;
+}
+
+.categories, .amenities {
+  @apply flex flex-wrap gap-2 text-xs text-gray-600;
+}
+
+.category, .amenity {
+  @apply flex items-center gap-1;
+}
+
+.category i, .amenity i {
+  @apply text-gray-500;
+}
+
+/* Grid View Styles */
+.content.grid-view {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .content.grid-view {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .content.grid-view {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.content.grid-view .item {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow;
+  height: auto;
+}
+
+.content.grid-view .image {
+  @apply relative w-full;
+  height: 200px;
+}
+
+.content.grid-view .thumb {
+  @apply w-full h-full object-cover;
+}
+
+.content.grid-view .info {
+  @apply p-4;
+}
+
+.content.grid-view .top-info {
+  @apply space-y-2;
+}
+
+.content.grid-view .bottom-actions {
+  @apply mt-3 border-t pt-3;
+}
+
+/* Pagination Styles */
+.pagination button:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+.pagination button:disabled {
+  @apply cursor-not-allowed;
+}
+
+/* Pagination Controls */
+@media (max-width: 640px) {
+  .pagination button {
+    @apply text-sm;
+    transform: scale(0.8);
+  }
+  
+  .pagination {
+    @apply gap-1;
+  }
+}
+
+/* Mobile Filter Toggle Button Focus */
+.filter-toggle:focus {
+  @apply outline-none ring-2 ring-gray-900 ring-offset-2;
+}
+
+/* Filter Pane Overlay */
+.filter-overlay {
+  backdrop-filter: blur(2px);
+}
+
+/* Utility Classes */
+.truncate {
+  @apply overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.website-link {
+  @apply mt-2;
+}
+
+.website-link a {
+  @apply text-blue-600 hover:text-blue-800 text-sm;
+}
+
+/* Tablet and up */
+@media (min-width: 640px) {
+  .content.list .item {
+    @apply p-3 gap-4;
+  }
+
+  .content.list .image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .content.list h4 {
+    @apply text-lg;
+  }
+
+  .content.list .meta {
+    @apply text-base;
+  }
+
+  .actionButton {
+    @apply text-sm px-4 py-2;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .content.list .image {
+    width: 160px;
+    height: 160px;
+  }
+}

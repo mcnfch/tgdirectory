@@ -1,10 +1,15 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from 'next/image';
 import { DirectoryItem } from '@/types/directory';
 import { isRestaurantOpen } from '@/utils/dateUtils';
+import dynamic from 'next/dynamic';
+
+const FilterPane = dynamic(() => import('./FilterPane'), {
+  ssr: false
+});
 
 interface DirectoryListProps {
   items: DirectoryItem[];
@@ -138,113 +143,85 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
     return pageNumbers;
   };
 
+  // Memoize the filtered items
+  const displayItems = useMemo(() => currentItems, [currentItems]);
+
   return (
-    <div className="layout-container">
-      <div className="settings">
-        <div className="view">
-          <span className="settings-label">View:</span>
-          <ul>
-            <li className={viewMode === 'grid-view' ? 'highlight' : ''}>
-              <button className="view-button" onClick={() => setViewMode('grid-view')}>
-                <i className="fa fa-th"></i> Grid
-              </button>
-            </li>
-            <li className={viewMode === 'list' ? 'highlight' : ''}>
-              <button className="view-button" onClick={() => setViewMode('list')}>
-                <i className="fa fa-list"></i> List
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div className="sort">
-          <span className="settings-label">Sort:</span>
-          <ul>
-            <li className="highlight">
-              <button>Recommended</button>
-            </li>
-            <li>
-              <button>Near Me</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className={`content ${viewMode} w-full`}>
-        {currentItems?.map((item) => {
-          const primaryType = getPrimaryType(item.categories || []);
-          const additionalCategories = getRelevantCategories(item.categories || []);
-
-          return (
-            <div key={item.id} className="item">
-              <div className="image">
-                <a href={`/listing/${item.slug}`}>
-                  <Image 
-                    src={getFirstPhotoPath(item.id)}
-                    alt={item.title}
-                    width={viewMode === 'grid-view' ? 400 : 90}
-                    height={viewMode === 'grid-view' ? 200 : 90}
-                    className="thumb"
-                  />
-                </a>
-              </div>
-              <div className="info">
-                <div className="top-info">
-                  <h4>
-                    <a href={`/listing/${item.slug}`} className="title text-gray-900 hover:text-blue-600">
-                      {item.title}
-                    </a>
-                  </h4>
-                  <div className="meta">
-                    <div className="flex items-center justify-between">
-                      {item.rating && (
-                        <div className="rating">
-                          <span className="score text-gray-900 font-semibold">{item.rating}</span>
-                          <span className="reviews text-gray-700">({item.reviewCount})</span>
-                        </div>
-                      )}
-                      {item.hours?.schedule && (
-                        <div className="flex items-center gap-1">
-                          <span className={`w-2 h-2 rounded-full ${isRestaurantOpen(item.hours.schedule) ? 'bg-green-500' : 'bg-red-500'}`}></span>
-                          <span className={`text-sm ${isRestaurantOpen(item.hours.schedule) ? 'text-green-700' : 'text-red-700'}`}>
-                            {isRestaurantOpen(item.hours.schedule) ? 'Open' : 'Closed'}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                    <div className="address text-gray-700">{item.address}</div>
-                  </div>
-                  {primaryType && (
-                    <div className="restaurant-type">
-                      <span className="type">
-                        <i className={`fas ${getCategoryIcon(primaryType)}`}></i>
-                        <span>{capitalizeWords(primaryType.replace(/_/g, ' '))}</span>
-                      </span>
-                    </div>
-                  )}
-                  {additionalCategories.length > 0 && (
-                    <div className="categories">
-                      {additionalCategories.map((category, index) => (
-                        <span key={index} className="category">
-                          <i className={`fas ${getCategoryIcon(category)}`}></i>
-                          <span>{capitalizeWords(category.replace(/_/g, ' '))}</span>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className={`grid ${viewMode === 'grid-view' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' : 'grid-cols-1 gap-4'}`}>
+        {displayItems.map((item, index) => (
+          <div key={item.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+            <div className="relative h-64 w-full">
+              <Image
+                src={getFirstPhotoPath(item.id)}
+                alt={item.title}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover rounded-t-lg"
+                priority={index === 0 && currentPage === 1}
+                loading={index === 0 && currentPage === 1 ? 'eager' : 'lazy'}
+                quality={75}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4dHRsdHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/2wBDAR4WFiMeJRwlJRwlHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+              />
+            </div>
+            <div className="info">
+              <div className="top-info">
+                <h4>
+                  <a href={`/listing/${item.slug}`} className="title text-gray-900 hover:text-blue-600">
+                    {item.title}
+                  </a>
+                </h4>
+                <div className="meta">
+                  <div className="flex items-center justify-between">
+                    {item.rating && (
+                      <div className="rating">
+                        <span className="score text-gray-900 font-semibold">{item.rating}</span>
+                        <span className="reviews text-gray-700">({item.reviewCount})</span>
+                      </div>
+                    )}
+                    {item.hours?.schedule && (
+                      <div className="flex items-center gap-1">
+                        <span className={`w-2 h-2 rounded-full ${isRestaurantOpen(item.hours.schedule) ? 'bg-green-500' : 'bg-red-500'}`}></span>
+                        <span className={`text-sm ${isRestaurantOpen(item.hours.schedule) ? 'text-green-700' : 'text-red-700'}`}>
+                          {isRestaurantOpen(item.hours.schedule) ? 'Open' : 'Closed'}
                         </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                <div className="bottom-actions">
-                  <div className="website-link">
-                    {item.website && (
-                      <a href={item.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
-                        Visit website
-                      </a>
+                      </div>
                     )}
                   </div>
+                  <div className="address text-gray-700">{item.address}</div>
+                </div>
+                {getPrimaryType(item.categories || '') && (
+                  <div className="restaurant-type">
+                    <span className="type">
+                      <i className={`fas ${getCategoryIcon(getPrimaryType(item.categories || ''))}`}></i>
+                      <span>{capitalizeWords(getPrimaryType(item.categories || '').replace(/_/g, ' '))}</span>
+                    </span>
+                  </div>
+                )}
+                {getRelevantCategories(item.categories || '').length > 0 && (
+                  <div className="categories">
+                    {getRelevantCategories(item.categories || '').map((category, index) => (
+                      <span key={index} className="category">
+                        <i className={`fas ${getCategoryIcon(category)}`}></i>
+                        <span>{capitalizeWords(category.replace(/_/g, ' '))}</span>
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className="bottom-actions">
+                <div className="website-link">
+                  {item.website && (
+                    <a href={item.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
+                      Visit website
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
       
       {totalPages > 1 && (

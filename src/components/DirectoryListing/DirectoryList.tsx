@@ -34,10 +34,12 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentItems = items.slice(startIndex, endIndex);
 
   // Filter items based on selected filters
   const filteredItems = useMemo(() => {
-    return items.filter(item => {
+    return currentItems.filter(item => {
       // Apply category filters
       if (selectedFilters.categories.size > 0) {
         const hasMatchingCategory = item.categories.some(cat => 
@@ -55,15 +57,13 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
       }
 
       // Apply price range filters
-      if (selectedFilters.priceRanges.size > 0) {
-        if (!selectedFilters.priceRanges.has(item.priceLevel.toString())) {
-          return false;
-        }
+      if (selectedFilters.priceRanges.size > 0 && !selectedFilters.priceRanges.has(item.priceLevel.toString())) {
+        return false;
       }
 
       // Apply feature filters
       if (selectedFilters.features.size > 0) {
-        const hasMatchingFeature = item.features.some(feat => 
+        const hasMatchingFeature = item.features.some(feat =>
           selectedFilters.features.has(feat)
         );
         if (!hasMatchingFeature) return false;
@@ -71,9 +71,7 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
 
       return true;
     });
-  }, [items, selectedFilters]);
-
-  const currentItems = filteredItems.slice(startIndex, startIndex + itemsPerPage);
+  }, [currentItems, selectedFilters]);
 
   const getFirstPhotoPath = (id: string) => {
     return `/media/${id}/photo_1.jpg`;
@@ -150,7 +148,7 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   };
 
-  const getPageNumbers = () => {
+  const generatePageNumbers = () => {
     const pageNumbers = [];
     
     if (totalPages <= 7) {
@@ -198,58 +196,55 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
     return `https://noogabites.com/listing/${slug}-${idSuffix}`;
   };
 
-  // Memoize the filtered items
-  const displayItems = useMemo(() => currentItems, [currentItems]);
-
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-end mb-4">
-        <div className="inline-flex rounded-lg border border-gray-200 p-1">
-          <button
-            onClick={() => setViewMode('grid-view')}
-            className={`px-3 py-1.5 text-sm font-medium rounded-md ${
-              viewMode === 'grid-view' 
-                ? 'bg-gray-100 text-gray-900' 
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            <i className="fas fa-th-large mr-2"></i>
-            Grid
-          </button>
+    <div className="w-full">
+      <div className="flex justify-between items-center mb-4">
+        <div className="text-sm text-gray-500">
+          Showing {startIndex + 1}-{Math.min(startIndex + itemsPerPage, items.length)} of {items.length} restaurants
+        </div>
+        <div className="flex gap-2">
           <button
             onClick={() => setViewMode('list')}
-            className={`px-3 py-1.5 text-sm font-medium rounded-md ${
-              viewMode === 'list' 
-                ? 'bg-gray-100 text-gray-900' 
-                : 'text-gray-500 hover:text-gray-700'
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              viewMode === 'list'
+                ? 'bg-gray-200 text-gray-800'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            <i className="fas fa-list mr-2"></i>
-            List
+            <i className="fas fa-list" />
+          </button>
+          <button
+            onClick={() => setViewMode('grid-view')}
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              viewMode === 'grid-view'
+                ? 'bg-gray-200 text-gray-800'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <i className="fas fa-th-large" />
           </button>
         </div>
       </div>
 
-      <div className={`grid ${viewMode === 'grid-view' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' : 'grid-cols-1 gap-4'}`}>
-        {displayItems.map((item, index) => (
+      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8`}>
+        {currentItems.map((item, index) => (
           <div key={item.id} 
                onClick={() => window.location.href = generateListingUrl(item.title, item.id)}
-               className={`bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer ${
-                 viewMode === 'list' ? 'flex' : ''
-               }`}
+               className={`
+                 bg-white rounded-lg shadow-md overflow-hidden cursor-pointer
+                 transition-transform duration-200 hover:scale-[1.02]
+                 ${viewMode === 'list' ? 'flex gap-4' : ''}
+               `}
           >
-            <div className={`relative ${viewMode === 'list' ? 'w-48 h-48' : 'h-64 w-full'}`}>
+            <div className={`relative ${viewMode === 'list' ? 'w-48 h-32' : 'w-full h-48'}`}>
               <Image
                 src={getFirstPhotoPath(item.id)}
                 alt={item.title}
                 fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover rounded-t-lg"
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={index === 0 && currentPage === 1}
                 loading={index === 0 && currentPage === 1 ? 'eager' : 'lazy'}
-                quality={75}
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4dHRsdHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/2wBDAR4WFiMeJRwlJRwlHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
             <div className={`info p-4 ${viewMode === 'list' ? 'flex-1' : ''}`}>
@@ -300,75 +295,74 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
       </div>
       
       {totalPages > 1 && (
-        <div className="pagination flex flex-col sm:flex-row items-center justify-center gap-2 mt-6">
-          <div className="hidden sm:block">
-            <button
-              onClick={() => handlePageChange(1)}
-              disabled={currentPage === 1}
-              className={`px-3 py-1 rounded-md border ${
-                currentPage === 1
-                  ? 'bg-gray-100 text-gray-400 border-gray-300'
-                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
-              }`}
-            >
-              First
-            </button>
-          </div>
-          <div className="order-2 sm:order-none flex gap-2 sm:gap-0">
-            <button
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className={`px-3 py-1 rounded-md border ${
-                currentPage === 1
-                  ? 'bg-gray-100 text-gray-400 border-gray-300'
-                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
-              }`}
-            >
-              Previous
-            </button>
-            <button
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className={`px-3 py-1 rounded-md border ${
-                currentPage === totalPages
-                  ? 'bg-gray-100 text-gray-400 border-gray-300'
-                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
-              }`}
-            >
-              Next
-            </button>
-          </div>
-          <div className="order-1 sm:order-none flex items-center gap-1">
-            {getPageNumbers().map((pageNum, idx) => (
-              <button
-                key={idx}
-                onClick={() => typeof pageNum === 'number' ? handlePageChange(pageNum) : null}
-                className={`px-3 py-1 ${
-                  pageNum === currentPage
-                    ? 'bg-blue-600 text-white'
-                    : pageNum === '...'
-                    ? 'text-gray-400 cursor-default'
-                    : 'text-gray-700 hover:bg-gray-100'
-                } rounded-md`}
-                disabled={pageNum === '...'}
-              >
-                {pageNum}
-              </button>
+        <div className="flex justify-center items-center space-x-2 mt-8">
+          <button
+            onClick={() => handlePageChange(1)}
+            disabled={currentPage === 1}
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              currentPage === 1
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <i className="fas fa-angle-double-left" />
+          </button>
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              currentPage === 1
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <i className="fas fa-angle-left" />
+          </button>
+
+          {/* Page Numbers */}
+          <div className="flex space-x-2">
+            {generatePageNumbers().map((pageNum, index) => (
+              <React.Fragment key={index}>
+                {typeof pageNum === 'string' ? (
+                  <span className="px-2 py-1">...</span>
+                ) : (
+                  <button
+                    onClick={() => handlePageChange(pageNum)}
+                    className={`w-8 h-8 rounded-md transition-colors duration-150 ${
+                      pageNum === currentPage
+                        ? 'bg-gray-800 text-white'
+                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                  >
+                    {pageNum}
+                  </button>
+                )}
+              </React.Fragment>
             ))}
           </div>
-          <div className="hidden sm:block">
-            <button
-              onClick={() => handlePageChange(totalPages)}
-              disabled={currentPage === totalPages}
-              className={`px-3 py-1 rounded-md border ${
-                currentPage === totalPages
-                  ? 'bg-gray-100 text-gray-400 border-gray-300'
-                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
-              }`}
-            >
-              Last
-            </button>
-          </div>
+
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              currentPage === totalPages
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <i className="fas fa-angle-right" />
+          </button>
+          <button
+            onClick={() => handlePageChange(totalPages)}
+            disabled={currentPage === totalPages}
+            className={`p-2 rounded-md transition-colors duration-150 ${
+              currentPage === totalPages
+                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            <i className="fas fa-angle-double-right" />
+          </button>
         </div>
       )}
     </div>

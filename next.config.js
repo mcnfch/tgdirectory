@@ -5,7 +5,14 @@ const nextConfig = {
     TAGLINE: process.env.TAGLINE,
   },
   images: {
-    domains: ['images.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
   typescript: {
     // !! WARN !!

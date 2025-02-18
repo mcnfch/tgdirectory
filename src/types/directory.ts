@@ -4,17 +4,15 @@ export interface DirectoryItem {
   slug: string;
   image: string;
   address: string;
-  featured?: boolean;
-  rating?: number;
-  reviewCount?: number;
-  website?: string;
+  featured: boolean;
+  rating: number;
+  reviewCount: number;
+  website: string;
   categories: string[];
-  regions: string[];
-  amenities: string[];
-  hours?: {
-    current_status: string;
-    schedule: string[];
-  };
+  districts: string[];
+  features: string[];
+  priceLevel: number;
+  hours: any;
 }
 
 export interface FilterOption {

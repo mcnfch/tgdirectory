@@ -1,0 +1,2811 @@
+{
+  "metadata": {
+    "total_restaurants": 229,
+    "processed_count": 199,
+    "districts_found": 24,
+    "restaurants_without_district": 30,
+    "last_updated": "2025-02-18T03:04:02Z"
+  },
+  "districts": {
+    "North Chattanooga": {
+      "name": "North Chattanooga",
+      "id": "dXJuOm1ieHBsYzpHazlzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.8201210034963082",
+          "name": "37405"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpHazlzN0E",
+          "name": "North Chattanooga"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpkZWFmZmZhNS1hODZmLTRmZjYtODBjNy0yMDg3ZWJkM2U1OTI",
+          "name": "26 Frazier Avenue",
+          "address_number": "26",
+          "street_name": "Frazier Avenue"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ZGVhZmZmYTUtYTg2Zi00ZmY2LTgwYzctMjA4N2ViZDNlNTky",
+          "name": "Frazier Avenue"
+        }
+      },
+      "restaurant_count": 16
+    },
+    "South Chattanooga": {
+      "name": "South Chattanooga",
+      "id": "dXJuOm1ieHBsYzpJMzRNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.4637516463322332",
+          "name": "37409"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpJMzRNN0E",
+          "name": "South Chattanooga"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpjZWQ1OGQ4OS1iMGY2LTQyNWMtOGIwZS02NzJjNGMyNTNkZTU",
+          "name": "3917 Saint Elmo Avenue",
+          "address_number": "3917",
+          "street_name": "Saint Elmo Avenue"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6Y2VkNThkODktYjBmNi00MjVjLThiMGUtNjcyYzRjMjUzZGU1",
+          "name": "Saint Elmo Avenue"
+        }
+      },
+      "restaurant_count": 6
+    },
+    "Downtown Chattanooga": {
+      "name": "Downtown Chattanooga",
+      "id": "dXJuOm1ieHBsYzpDaXpNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.400727788390352",
+          "name": "37402"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpDaXpNN0E",
+          "name": "Downtown Chattanooga"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo3MGJmYzgyMC1iMWVhLTQwYmQtYWUxYy1mNjcwZWU1MWUwMzY",
+          "name": "107 West Martin Luther King Jr Boulevard",
+          "address_number": "107",
+          "street_name": "West Martin Luther King Jr Boulevard"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6NzBiZmM4MjAtYjFlYS00MGJkLWFlMWMtZjY3MGVlNTFlMDM2",
+          "name": "West Martin Luther King Jr Boulevard"
+        }
+      },
+      "restaurant_count": 99
+    },
+    "Northgate": {
+      "name": "Northgate",
+      "id": "dXJuOm1ieHBsYzpHb1FNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.3554532137364360",
+          "name": "37415"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpHb1FNN0E",
+          "name": "Northgate"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo3YzI0NDE0OC00MWNjLTRiNzktOGVhYy1jZjU5YTI3NzkyMzI",
+          "name": "5600 Lake Resort Terrace",
+          "address_number": "5600",
+          "street_name": "Lake Resort Terrace"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6N2MyNDQxNDgtNDFjYy00Yjc5LThlYWMtY2Y1OWEyNzc5MjMy",
+          "name": "Lake Resort Terrace"
+        }
+      },
+      "restaurant_count": 3
+    },
+    "Hickory Valley": {
+      "name": "Hickory Valley",
+      "id": "dXJuOm1ieHBsYzpFUGJzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.8301333588805786",
+          "name": "37421"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpFUGJzN0E",
+          "name": "Hickory Valley"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpiNDU0ZDJlNi02OGIzLTRjOWQtODQ2NC0xNWEzZGM3Y2Y1ZmU",
+          "name": "2213 Hamilton Place Boulevard",
+          "address_number": "2213",
+          "street_name": "Hamilton Place Boulevard"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6YjQ1NGQyZTYtNjhiMy00YzlkLTg0NjQtMTVhM2RjN2NmNWZl",
+          "name": "Hamilton Place Boulevard"
+        }
+      },
+      "restaurant_count": 20
+    },
+    "Bushtown": {
+      "name": "Bushtown",
+      "id": "dXJuOm1ieHBsYzpCTS9NN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.8059286571802856",
+          "name": "37408"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpCTS9NN0E",
+          "name": "Bushtown"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjoxNDgzZjVhMC0wYzM3LTRlMTktOWMzYy0xYzE3Mzc2NTBmN2I",
+          "name": "217 East Main Street",
+          "address_number": "217",
+          "street_name": "East Main Street"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MTQ4M2Y1YTAtMGMzNy00ZTE5LTljM2MtMWMxNzM3NjUwZjdi",
+          "name": "East Main Street"
+        }
+      },
+      "restaurant_count": 17
+    },
+    "Tyner": {
+      "name": "Tyner",
+      "id": "dXJuOm1ieHBsYzpKNk1zN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.4469359307865144",
+          "name": "37421"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpKNk1zN0E",
+          "name": "Tyner"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo0ZWIxM2E4Ny03ODEwLTQ1NGEtOGViOC02ZWJlZDRmMzk2NTQ",
+          "name": "110 Jordan Drive",
+          "address_number": "110",
+          "street_name": "Jordan Drive"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6NGViMTNhODctNzgxMC00NTRhLThlYjgtNmViZWQ0ZjM5NjU0",
+          "name": "Jordan Drive"
+        }
+      },
+      "restaurant_count": 5
+    },
+    "Amnicola": {
+      "name": "Amnicola",
+      "id": "dXJuOm1ieHBsYzpsU3pz",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.5752570239834928",
+          "name": "37406"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpsU3pz",
+          "name": "Amnicola"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo5NGQ2ODVmNC0wZjIwLTQ5NzYtYjk4Ny1lMzcyNzJhN2Y5ZjE",
+          "name": "1459 Riverside Drive",
+          "address_number": "1459",
+          "street_name": "Riverside Drive"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6OTRkNjg1ZjQtMGYyMC00OTc2LWI5ODctZTM3MjcyYTdmOWYx",
+          "name": "Riverside Drive"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Brainerd": {
+      "name": "Brainerd",
+      "id": "dXJuOm1ieHBsYzpBNjBNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.4985750710691270",
+          "name": "37412"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpBNjBNN0E",
+          "name": "Brainerd"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo3NTMxYTc4My1jNDg0LTQ1YzItOGMzYS1jZjJlNmNjZTE4Mjc",
+          "name": "5084 South Terrace",
+          "address_number": "5084",
+          "street_name": "South Terrace"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6NzUzMWE3ODMtYzQ4NC00NWMyLThjM2EtY2YyZTZjY2UxODI3",
+          "name": "South Terrace"
+        }
+      },
+      "restaurant_count": 7
+    },
+    "Mountain Creek": {
+      "name": "Mountain Creek",
+      "id": "dXJuOm1ieHBsYzpHUkNzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.6196526535826648",
+          "name": "37405"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpHUkNzN0E",
+          "name": "Mountain Creek"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjoxYTA5YmVjYy05MDE5LTRlZWMtYjU4Mi1iNGZjNTAzNzZmMWM",
+          "name": "205 Manufacturers Road",
+          "address_number": "205",
+          "street_name": "Manufacturers Road"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MWEwOWJlY2MtOTAxOS00ZWVjLWI1ODItYjRmYzUwMzc2ZjFj",
+          "name": "Manufacturers Road"
+        }
+      },
+      "restaurant_count": 3
+    },
+    "Northwoods": {
+      "name": "Northwoods",
+      "id": "dXJuOm1ieHBsYzpHd29NN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.3390800718234490",
+          "name": "37343"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpDUGZvN0E",
+          "name": "Hixson"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpHd29NN0E",
+          "name": "Northwoods"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjplOGMyOGQyZC0zMjk2LTRkMTItOWFkYi0yZTUwNjEwZDVhZWM",
+          "name": "5525 Tennessee Highway 153",
+          "address_number": "5525",
+          "street_name": "Tennessee Highway 153"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ZThjMjhkMmQtMzI5Ni00ZDEyLTlhZGItMmU1MDYxMGQ1YWVj",
+          "name": "Tennessee Highway 153"
+        }
+      },
+      "restaurant_count": 2
+    },
+    "Woodmore": {
+      "name": "Woodmore",
+      "id": "dXJuOm1ieHBsYzpLOXlzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.5203521289499770",
+          "name": "37421"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpLOXlzN0E",
+          "name": "Woodmore"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpiMGU5MjI5NC0wODgxLTQyOWUtYjY2ZC1jMzYwNWQ3OTFmNDg",
+          "name": "6241 Perimeter Drive",
+          "address_number": "6241",
+          "street_name": "Perimeter Drive"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6YjBlOTIyOTQtMDg4MS00MjllLWI2NmQtYzM2MDVkNzkxZjQ4",
+          "name": "Perimeter Drive"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Rock City": {
+      "name": "Rock City",
+      "id": "dXJuOm1ieHBsYzpJSTJzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBcVRz",
+          "name": "Georgia",
+          "region_code": "GA",
+          "region_code_full": "US-GA"
+        },
+        "postcode": {
+          "id": "postcode.2496206218042152",
+          "name": "30750"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzpBV3hHN0E",
+          "name": "Walker County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpGZlVJN0E",
+          "name": "Lookout Mountain"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpJSTJzN0E",
+          "name": "Rock City"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjozNDEyYjQ0Ny1kYjg1LTQzNGMtYWI4Ni1mNmFlMDVjMzQzYTM",
+          "name": "1400 Patten Road",
+          "address_number": "1400",
+          "street_name": "Patten Road"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MzQxMmI0NDctZGI4NS00MzRjLWFiODYtZjZhZTA1YzM0M2Ez",
+          "name": "Patten Road"
+        }
+      },
+      "restaurant_count": 2
+    },
+    "University of Tennessee at Chattanooga": {
+      "name": "University of Tennessee at Chattanooga",
+      "id": "dXJuOm1ieHBsYzpKOStzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.1889850197581798",
+          "name": "37403"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpKOStzN0E",
+          "name": "University of Tennessee at Chattanooga"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpkZWI2NTFiMy05NjE3LTQ5ZDAtOGQ4MS0zNWU2NTFlMzA4ZTY",
+          "name": "430 Vine Street",
+          "address_number": "430",
+          "street_name": "Vine Street"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ZGViNjUxYjMtOTYxNy00OWQwLThkODEtMzVlNjUxZTMwOGU2",
+          "name": "Vine Street"
+        }
+      },
+      "restaurant_count": 2
+    },
+    "Ridgedale": {
+      "name": "Ridgedale",
+      "id": "dXJuOm1ieHBsYzpIK0VzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.6294217429224240",
+          "name": "37407"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpIK0VzN0E",
+          "name": "Ridgedale"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjowNmUxZDI1Ny1jMThkLTRlNzgtODRiMS0zMzcyZGMxZGZhM2E",
+          "name": "4500 Dodds Avenue",
+          "address_number": "4500",
+          "street_name": "Dodds Avenue"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MDZlMWQyNTctYzE4ZC00ZTc4LTg0YjEtMzM3MmRjMWRmYTNh",
+          "name": "Dodds Avenue"
+        }
+      },
+      "restaurant_count": 3
+    },
+    "Riverview": {
+      "name": "Riverview",
+      "id": "dXJuOm1ieHBsYzpJR2tNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.8924908814306218",
+          "name": "37405"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpJR2tNN0E",
+          "name": "Riverview"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo4OGUxMzM3ZC1hMmRiLTQ4Y2EtOWRmMy0yYTBkZGNjY2I4ZmE",
+          "name": "1220 Dartmouth Street",
+          "address_number": "1220",
+          "street_name": "Dartmouth Street"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ODhlMTMzN2QtYTJkYi00OGNhLTlkZjMtMmEwZGRjY2NiOGZh",
+          "name": "Dartmouth Street"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Lookout Valley": {
+      "name": "Lookout Valley",
+      "id": "dXJuOm1ieHBsYzpGaTFzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.5269806709917878",
+          "name": "37350"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpGZlVvN0E",
+          "name": "Lookout Mountain"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpGaTFzN0E",
+          "name": "Lookout Valley"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo0YWI0NzRhNS0xNzdjLTQ3NGItYWJjNS02ODUxYmYxNzU3NDM",
+          "name": "827 East Brow Road",
+          "address_number": "827",
+          "street_name": "East Brow Road"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6NGFiNDc0YTUtMTc3Yy00NzRiLWFiYzUtNjg1MWJmMTc1NzQz",
+          "name": "East Brow Road"
+        }
+      },
+      "restaurant_count": 3
+    },
+    "Burlington Heights": {
+      "name": "Burlington Heights",
+      "id": "dXJuOm1ieHBsYzpMTG9NN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.4983715563965570",
+          "name": "37312"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzpJSWJz",
+          "name": "Bradley County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBODZvN0E",
+          "name": "Cleveland"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpMTG9NN0E",
+          "name": "Burlington Heights"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjoyYjMwMWZiNC1jNGZiLTRhZDMtOWI5ZC1lNTZhMTg0MzIwN2M",
+          "name": "375 Paul Huff Parkway",
+          "address_number": "375",
+          "street_name": "Paul Huff Parkway"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MmIzMDFmYjQtYzRmYi00YWQzLTliOWQtZTU2YTE4NDMyMDdj",
+          "name": "Paul Huff Parkway"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Summit": {
+      "name": "Summit",
+      "id": "dXJuOm1ieHBsYzpKVk9zN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.1373946183472622",
+          "name": "37363"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpEcG1vN0E",
+          "name": "Ooltewah"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpKVk9zN0E",
+          "name": "Summit"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjozOTc5Yzc2MS1mMTI2LTRkZTEtOGI2ZS1mZGQ2YTUwYThjMjk",
+          "name": "8876 Old Lee Highway",
+          "address_number": "8876",
+          "street_name": "Old Lee Highway"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6Mzk3OWM3NjEtZjEyNi00ZGUxLThiNmUtZmRkNmE1MGE4YzI5",
+          "name": "Old Lee Highway"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Sterling Park": {
+      "name": "Sterling Park",
+      "id": "dXJuOm1ieHBsYzpKTHVzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.939173819001772",
+          "name": "37343"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpDUGZvN0E",
+          "name": "Hixson"
+        },
+        "locality": {
+          "id": "dXJuOm1ieHBsYzpGV3RxN0E",
+          "name": "Middle Valley"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpKTHVzN0E",
+          "name": "Sterling Park"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjoxNmI3OTkzOS1lNzQ4LTRmODItYTRlNi00ZjljZGFkZGZlYjI",
+          "name": "1530 West Boy Scout Road",
+          "address_number": "1530",
+          "street_name": "West Boy Scout Road"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MTZiNzk5MzktZTc0OC00ZjgyLWE0ZTYtNGY5Y2RhZGRmZWIy",
+          "name": "West Boy Scout Road"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Manchester Park": {
+      "name": "Manchester Park",
+      "id": "dXJuOm1ieHBsYzpGcnlNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.2033587001803638",
+          "name": "37415"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBMjhvN0E",
+          "name": "Chattanooga"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpGcnlNN0E",
+          "name": "Manchester Park"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjpmNTM5OWVlOS1hYzk2LTRkZmMtOTk2My03NGQzNTQ2MGI0M2M",
+          "name": "724 Ashland Terrace",
+          "address_number": "724",
+          "street_name": "Ashland Terrace"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ZjUzOTllZTktYWM5Ni00ZGZjLTk5NjMtNzRkMzU0NjBiNDNj",
+          "name": "Ashland Terrace"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Lansdell Park": {
+      "name": "Lansdell Park",
+      "id": "dXJuOm1ieHBsYzpGUFRNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.4577785492863886",
+          "name": "37412"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpCYTZJN0E",
+          "name": "East Ridge"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpGUFRNN0E",
+          "name": "Lansdell Park"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjoxMDFkYjdmNy1lZGQyLTQ1ZjYtYjY3Ny00NTc4YzIyMjRhNWM",
+          "name": "6511 Slater Street",
+          "address_number": "6511",
+          "street_name": "Slater Street"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6MTAxZGI3ZjctZWRkMi00NWY2LWI2NzctNDU3OGMyMjI0YTVj",
+          "name": "Slater Street"
+        }
+      },
+      "restaurant_count": 1
+    },
+    "Walnut Hills": {
+      "name": "Walnut Hills",
+      "id": "dXJuOm1ieHBsYzpMcHdNN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.1568912855265338",
+          "name": "37412"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzprYWJz",
+          "name": "Hamilton County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpCYTZJN0E",
+          "name": "East Ridge"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpMcHdNN0E",
+          "name": "Walnut Hills"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo5ZTIxMmVkNi04NDgyLTQyZmQtODE2Yy05MTk3MzEzZTUwOTk",
+          "name": "490 Camp Jordan Parkway",
+          "address_number": "490",
+          "street_name": "Camp Jordan Parkway"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6OWUyMTJlZDYtODQ4Mi00MmZkLTgxNmMtOTE5NzMxM2U1MDk5",
+          "name": "Camp Jordan Parkway"
+        }
+      },
+      "restaurant_count": 2
+    },
+    "Windwood": {
+      "name": "Windwood",
+      "id": "dXJuOm1ieHBsYzpLMkpzN0E",
+      "context": {
+        "country": {
+          "id": "dXJuOm1ieHBsYzpJdXc",
+          "name": "United States",
+          "country_code": "US",
+          "country_code_alpha_3": "USA"
+        },
+        "region": {
+          "id": "dXJuOm1ieHBsYzpBMFRz",
+          "name": "Tennessee",
+          "region_code": "TN",
+          "region_code_full": "US-TN"
+        },
+        "postcode": {
+          "id": "postcode.1893813195133746",
+          "name": "37312"
+        },
+        "district": {
+          "id": "dXJuOm1ieHBsYzpJSWJz",
+          "name": "Bradley County"
+        },
+        "place": {
+          "id": "dXJuOm1ieHBsYzpBODZvN0E",
+          "name": "Cleveland"
+        },
+        "neighborhood": {
+          "id": "dXJuOm1ieHBsYzpLMkpzN0E",
+          "name": "Windwood"
+        },
+        "address": {
+          "id": "dXJuOm1ieGFkcjo4OTIwODIzMi0wNzIzLTQxNTgtYWNhNy0xMjJhOGZlZDE4NTE",
+          "name": "4385 Frontage Road",
+          "address_number": "4385",
+          "street_name": "Frontage Road"
+        },
+        "street": {
+          "id": "dXJuOm1ieGFkci1zdHI6ODkyMDgyMzItMDcyMy00MTU4LWFjYTctMTIyYThmZWQxODUx",
+          "name": "Frontage Road"
+        }
+      },
+      "restaurant_count": 1
+    }
+  },
+  "restaurants": {
+    "ChIJG-alPFxeYIgRWtEQXwcvf_Q": {
+      "name": "Clumpies Ice Cream Co.",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.307715,
+        35.062415
+      ]
+    },
+    "ChIJkzscHURcYIgRuy7VhfLBMFE": {
+      "name": "Clumpies Ice Cream Co.",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.32856,
+        35.00969
+      ]
+    },
+    "ChIJBdIZE_RdYIgRLOjCMXLOd60": {
+      "name": "Milk & Honey",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.30913,
+        35.06409
+      ]
+    },
+    "ChIJP48U-ntfYIgRTS53z7vt2AE": {
+      "name": "Bridgeman's Chophouse",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311071,
+        35.04601
+      ]
+    },
+    "ChIJu0UzkXheYIgRqZvxBZdjkCo": {
+      "name": "Frothy Monkey",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30659,
+        35.037055
+      ]
+    },
+    "ChIJs50sNsVhYIgRQu-jt0qh724": {
+      "name": "Lakeshore Grille",
+      "district": "Northgate",
+      "coordinates": [
+        -85.216669,
+        35.10904
+      ]
+    },
+    "ChIJA542ZI1dYIgRoW4ulEmezx0": {
+      "name": "Calliope Restaurant & Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.303438,
+        35.043765
+      ]
+    },
+    "ChIJLa1NhHteYIgRMd54grndNiY": {
+      "name": "Matilda Midnight",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307973,
+        35.044187
+      ]
+    },
+    "ChIJj7exoElnYIgR_joAU7gJMyM": {
+      "name": "The Comedy Catch at The Choo Choo",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.3064,
+        35.03694
+      ]
+    },
+    "ChIJKXsU9lxeYIgRlgCmcPCGI5E": {
+      "name": "Totto Sushi & Grill",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.305612,
+        35.061845
+      ]
+    },
+    "ChIJT8FCGYVjYIgRzIXUlpWkUdk": {
+      "name": "Acropolis Grill",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.156115,
+        35.039748
+      ]
+    },
+    "ChIJl6I0Wn9eYIgRY0wCdAqDmL0": {
+      "name": "Feed Table and Tavern",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30947,
+        35.037195
+      ]
+    },
+    "ChIJBwDQQnteYIgRarGZ0Xakdn8": {
+      "name": "Jack Brown's Beer & Burger Joint Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307575,
+        35.046502
+      ]
+    },
+    "ChIJjY7hwdddYIgRzMi-WEysUls": {
+      "name": "Main Street Meats",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.304491,
+        35.035246
+      ]
+    },
+    "ChIJY7__EoxeYIgR1C0hC4MSNGA": {
+      "name": "Southern Belle Riverboat",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.314242,
+        35.056053
+      ]
+    },
+    "ChIJe2CoKFxeYIgRaL8mjYRy0ro": {
+      "name": "Sushi Nabe",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.308182,
+        35.061842
+      ]
+    },
+    "ChIJy6giJNZdYIgRmplAQ9AAJCI": {
+      "name": "Alleia",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.306629,
+        35.03622
+      ]
+    },
+    "ChIJ4YhcVpFjYIgR-l8ZovfMBMw": {
+      "name": "Chattanooga Billiard Club",
+      "district": "Tyner",
+      "coordinates": [
+        -85.162955,
+        35.047007
+      ]
+    },
+    "ChIJfXBbnBdeYIgRh39KOFkO1rY": {
+      "name": "Boathouse Rotisserie & Raw Bar",
+      "district": "Amnicola",
+      "coordinates": [
+        -85.283607,
+        35.055304
+      ]
+    },
+    "ChIJN5I4WVxeYIgRYl-L06eIM6A": {
+      "name": "Brewhaus",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.30614,
+        35.062028
+      ]
+    },
+    "ChIJBR-Ir-VmYIgRa1nFZQ3jONY": {
+      "name": "Chef Lin Buffet",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.222095,
+        35.00366
+      ]
+    },
+    "ChIJPaOcyoZjYIgRxPFtIPEMhmw": {
+      "name": "Firebirds Wood Fired Grill",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.155307,
+        35.033092
+      ]
+    },
+    "ChIJ__8vmtNjYIgRK6NO3PexFiI": {
+      "name": "Genesis House of Tea",
+      "district": "Tyner",
+      "coordinates": [
+        -85.183319,
+        35.07214
+      ]
+    },
+    "ChIJm34c52NeYIgR6HoKm4fg_jE": {
+      "name": "Hair of the Dog Pub",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309333,
+        35.052507
+      ]
+    },
+    "ChIJhRx4uWFeYIgRxGMkbrl5C-g": {
+      "name": "Hennen's",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31225,
+        35.05502
+      ]
+    },
+    "ChIJA7UPWH9eYIgR1q6yLj-jW6c": {
+      "name": "HiFi Clyde's Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309175,
+        35.036567
+      ]
+    },
+    "ChIJC4pydWFeYIgR2E49ecc4ZWQ": {
+      "name": "Mellow Mushroom Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311016,
+        35.054221
+      ]
+    },
+    "ChIJc0p7Y3xeYIgRNGn02H8M1gM": {
+      "name": "Pickle Barrel",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309171,
+        35.044435
+      ]
+    },
+    "ChIJeflODnxeYIgR_-WKJv1gz0s": {
+      "name": "Public House Restaurant",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308785,
+        35.042826
+      ]
+    },
+    "ChIJc-OSDQlfYIgRXSRzuhH4ASU": {
+      "name": "Scotties On The River",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.32046,
+        35.054165
+      ]
+    },
+    "ChIJK1cG7WNeYIgR5lUsKuggpsE": {
+      "name": "Sing It or Wing It",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309279,
+        35.051813
+      ]
+    },
+    "ChIJVZuhpGNeYIgRJVNrtUrAc3g": {
+      "name": "Sticky Fingers Rib House",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310386,
+        35.051506
+      ]
+    },
+    "ChIJNSaKoHheYIgR1dEN2HDblkE": {
+      "name": "STIR",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.306813,
+        35.036849
+      ]
+    },
+    "ChIJBb1X_2ReYIgR8l4prVQje8k": {
+      "name": "Universal Joint Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.306219,
+        35.050066
+      ]
+    },
+    "ChIJj-_y5rhfYIgRVUF8UKpTMOg": {
+      "name": "Zaya 1943 Korean Steakhouse",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.312124,
+        35.06376
+      ]
+    },
+    "ChIJH3wSpEZcYIgRJD5dl-UNna0": {
+      "name": "1885 Grill",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.328214,
+        35.010125
+      ]
+    },
+    "ChIJq4pzqmReYIgRP4s8jB-C-5w": {
+      "name": "Chattanooga Billiard Club Inc",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308529,
+        35.047568
+      ]
+    },
+    "ChIJK4WjFVxeYIgR04r4r5D-o7Y": {
+      "name": "Chattanooga Brewing Co.",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311318,
+        35.047275
+      ]
+    },
+    "ChIJHRjaIWFeYIgR613VAQW2BvE": {
+      "name": "Buffalo Wild Wings",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309237,
+        35.055237
+      ]
+    },
+    "ChIJkeLY8WNeYIgRwFh_1ES43yM": {
+      "name": "Chili's Grill & Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309303,
+        35.052042
+      ]
+    },
+    "ChIJD2FMonxeYIgRs9Y9izBRR5I": {
+      "name": "Community Pie",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309092,
+        35.046435
+      ]
+    },
+    "ChIJVS7PRl9eYIgRPKZFPiZSzzA": {
+      "name": "Edley's Bar-B-Que",
+      "district": "Mountain Creek",
+      "coordinates": [
+        -85.312607,
+        35.063055
+      ]
+    },
+    "ChIJb2EQmoWKYIgR-uauBpVBdtk": {
+      "name": "El Meson at Northgate",
+      "district": "Northgate",
+      "coordinates": [
+        -85.2385,
+        35.133054
+      ]
+    },
+    "ChIJY7__EoxeYIgRaX5qPCqgkXM": {
+      "name": "Overboard Bar and Grille",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.314242,
+        35.056053
+      ]
+    },
+    "ChIJ-VsutYFfYIgRhxZumNMrLtI": {
+      "name": "Paloma Bar de Tapas",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.313065,
+        35.047265
+      ]
+    },
+    "ChIJGc2tTWJeYIgRze1XZOnCtEg": {
+      "name": "Rodizio Grill Brazilian Steakhouse Chattanooga Downtown",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310954,
+        35.051042
+      ]
+    },
+    "ChIJ1a1pkZxjYIgR25r0mBdY0vE": {
+      "name": "Ruth's Chris Steak House",
+      "district": "Tyner",
+      "coordinates": [
+        -85.151815,
+        35.041745
+      ]
+    },
+    "ChIJPyLWsl5eYIgRM68Ks_peElo": {
+      "name": "Taco Mamacita Northshore",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.30965,
+        35.06394
+      ]
+    },
+    "ChIJ6UOouUZcYIgRF7nlXkm-OIM": {
+      "name": "The Tap House",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.32805,
+        35.010964
+      ]
+    },
+    "ChIJiy1s1X5eYIgRQZzsBjbfHPY": {
+      "name": "Urban Stack",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308594,
+        35.039259
+      ]
+    },
+    "ChIJHb48WhBjYIgRVl3y_RWrSxM": {
+      "name": "City Cafe Diner",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.135095,
+        35.060624
+      ]
+    },
+    "ChIJQa4CroVjYIgR2pX5Kt7Pknk": {
+      "name": "El Meson at Hamilton Place",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.156042,
+        35.038043
+      ]
+    },
+    "ChIJPYb3blleYIgR8HbHLYR6uKs": {
+      "name": "FIAMMA pizza company",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.309208,
+        35.065819
+      ]
+    },
+    "ChIJPUvp749jYIgRw1npxCqsXPg": {
+      "name": "Fuji Steak & Sushi Tennessee",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.158372,
+        35.042107
+      ]
+    },
+    "ChIJDajOQ79mYIgREJeHpoXrS7M": {
+      "name": "Hooters",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.209216,
+        35.01485
+      ]
+    },
+    "ChIJS6JlPIVjYIgRVPPeVcTBzlc": {
+      "name": "J. Alexander\u2019s Restaurant",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.156573,
+        35.040411
+      ]
+    },
+    "ChIJPdoeyWNeYIgR5utH-mbSdNs": {
+      "name": "Lupi's Pizza Pies",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310289,
+        35.051931
+      ]
+    },
+    "ChIJTcDcoGBkYIgRMl1Ww-271Z0": {
+      "name": "Lupi's Pizza Pies",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.15217,
+        35.008524
+      ]
+    },
+    "ChIJ13qs7YZjYIgRZqAIstp9TaI": {
+      "name": "Olive Garden Italian Restaurant",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.155292,
+        35.037475
+      ]
+    },
+    "ChIJVfzx6eqKYIgR4fdXkw7A-rU": {
+      "name": "Olive Garden Italian Restaurant",
+      "district": "Northwoods",
+      "coordinates": [
+        -85.24996,
+        35.1456
+      ]
+    },
+    "ChIJa-9dWmZeYIgRECcFn3P5uJQ": {
+      "name": "Rembrandt's Coffee House",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.305319,
+        35.054572
+      ]
+    },
+    "ChIJiQ2Vi4hjYIgRDF9gXyNZnVo": {
+      "name": "Rodizio Grill Chattanooga Hamilton Place",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.158806,
+        35.03487
+      ]
+    },
+    "ChIJuR34CAdkYIgR_BtKp-fTT9E": {
+      "name": "Splitz Alley",
+      "district": "Woodmore",
+      "coordinates": [
+        -85.181709,
+        35.029567
+      ]
+    },
+    "ChIJz_iS_l9nYIgRLONi9KDatRs": {
+      "name": "Sugar's Ribs",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.27194,
+        35.013419
+      ]
+    },
+    "ChIJ7QsQlWNeYIgRgUHiLsPG-3w": {
+      "name": "Taco Mac Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309802,
+        35.05154
+      ]
+    },
+    "ChIJPYqNjWNeYIgRl6lVf_MitnI": {
+      "name": "Taziki's Mediterranean Cafe",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309264,
+        35.051246
+      ]
+    },
+    "ChIJV9c8qoBjYIgREBXokitHoxo": {
+      "name": "Taziki's Mediterranean Cafe - Gunbarrel",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.151974,
+        35.033846
+      ]
+    },
+    "ChIJv6O-NXJeYIgRuf16XH34WQM": {
+      "name": "The Yellow Deli",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.296931,
+        35.044425
+      ]
+    },
+    "ChIJYdHkOYljYIgRW7j3VbFIcYw": {
+      "name": "Abuelo's Mexican Restaurant",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.15675,
+        35.032141
+      ]
+    },
+    "ChIJszDpEX1eYIgR-qHzVpjAVPs": {
+      "name": "City Cafe Diner",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311049,
+        35.050506
+      ]
+    },
+    "ChIJ13qs7YZjYIgRi8ecDeaWTsQ": {
+      "name": "Hana Steak & Sushi",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.155292,
+        35.037475
+      ]
+    },
+    "ChIJPU2z22ZeYIgRzpulSvFEwDc": {
+      "name": "The Ice Cream Show",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308031,
+        35.0554
+      ]
+    },
+    "ChIJG26bwoZjYIgRixY3DS6_P4M": {
+      "name": "Jason's Deli",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.15414,
+        35.034177
+      ]
+    },
+    "ChIJQ2SJKiNfYIgRtnllvqU5Mes": {
+      "name": "Company Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307744,
+        35.0381
+      ]
+    },
+    "ChIJiTtZU2JeYIgRozRHobwWtgM": {
+      "name": "Mayan Kitchen",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31088,
+        35.050619
+      ]
+    },
+    "ChIJ42ilm3lkYIgR40tzR1-fo7Y": {
+      "name": "Moe's Southwest Grill",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.15606,
+        35.02305
+      ]
+    },
+    "ChIJfy_Nn0ZcYIgRCyb4TAnqOPE": {
+      "name": "Mr. T's Pizza & Ice Cream",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.327853,
+        35.009719
+      ]
+    },
+    "ChIJ2xLSAeVmYIgRz-DCursQDGI": {
+      "name": "Provino's Italian Restaurant",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.222095,
+        35.00366
+      ]
+    },
+    "ChIJPYEbQ2ZeYIgR8QdV2C-oK3Q": {
+      "name": "Tony's Pasta Shop & Trattoria",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.305154,
+        35.054347
+      ]
+    },
+    "ChIJQ4TH7addYIgRIhahz1DGm1U": {
+      "name": "Rock City\u2019s Big Rock Grill",
+      "district": "Rock City",
+      "coordinates": [
+        -85.34996,
+        34.975315
+      ]
+    },
+    "ChIJXXhevHheYIgRqzfOafpej0c": {
+      "name": "Chattanooga Whiskey Experimental Distillery",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307746,
+        35.037235
+      ]
+    },
+    "ChIJOZcf9OqKYIgRPptioO_1Ryk": {
+      "name": "LongHorn Steakhouse",
+      "district": "Northwoods",
+      "coordinates": [
+        -85.249949,
+        35.146507
+      ]
+    },
+    "ChIJG9gTRF9eYIgRi5H2ptn_0ww": {
+      "name": "Mean Mug Coffeehouse Northshore",
+      "district": "Mountain Creek",
+      "coordinates": [
+        -85.312607,
+        35.063055
+      ]
+    },
+    "ChIJDxFC0ZxjYIgRu9kUz-fclr8": {
+      "name": "Mellow Mushroom Chattanooga - Hamilton Place",
+      "district": "Tyner",
+      "coordinates": [
+        -85.1507,
+        35.04162
+      ]
+    },
+    "ChIJV3C8nXBeYIgRzVBYkEOV_54": {
+      "name": "Memo's Grill",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.303181,
+        35.043623
+      ]
+    },
+    "ChIJHW_FD3xeYIgR7Ng9IXesVlY": {
+      "name": "The Social",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308785,
+        35.042826
+      ]
+    },
+    "ChIJa5MS4X5eYIgRsAECVNH907Y": {
+      "name": "Southern Star",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309963,
+        35.039508
+      ]
+    },
+    "ChIJg1c5KWNeYIgR4zQULCQHGGg": {
+      "name": "Tivoli Theatre",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31112,
+        35.047875
+      ]
+    },
+    "ChIJrT85YmVeYIgRjE7HdlwHGD8": {
+      "name": "University Pizza Deli and Mediterranean Cuisine",
+      "district": "University of Tennessee at Chattanooga",
+      "coordinates": [
+        -85.303304,
+        35.048906
+      ]
+    },
+    "ChIJr97QFHZdYIgRlBOJEHvPOno": {
+      "name": "Bea's Restaurant",
+      "district": "Ridgedale",
+      "coordinates": [
+        -85.286757,
+        34.990356
+      ]
+    },
+    "ChIJ0_QqoGFeYIgRgMuLlElAKW8": {
+      "name": "Ben & Jerry\u2019s",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311118,
+        35.054474
+      ]
+    },
+    "ChIJT45t7eBfYIgR_3PJzuyDXrg": {
+      "name": "Gate 11 Distillery",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30659,
+        35.037055
+      ]
+    },
+    "ChIJS1C7rTpnYIgRns_j4X0fHpg": {
+      "name": "Herman's Soul Food & Catering",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.241389,
+        35.022262
+      ]
+    },
+    "ChIJ4_WSXH9eYIgRS9k0gAileVg": {
+      "name": "The Hot Chocolatier",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307761,
+        35.037654
+      ]
+    },
+    "ChIJTXHqa1xeYIgRtG1vGJgl4uo": {
+      "name": "Julie Darling Donuts",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.306936,
+        35.062685
+      ]
+    },
+    "ChIJ46xbVn9eYIgR89IEBz9OiHA": {
+      "name": "Mean Mug Coffeehouse Southside",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30889,
+        35.03652
+      ]
+    },
+    "ChIJbSPROnleYIgRr4JHkVmGgFE": {
+      "name": "The Meeting Place",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.312033,
+        35.047255
+      ]
+    },
+    "ChIJab5xwdddYIgRqV_8aOIy_BY": {
+      "name": "Niedlov's Cafe & Bakery",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.304597,
+        35.03533
+      ]
+    },
+    "ChIJWRld0rhmYIgRVxAbBB7SwgI": {
+      "name": "Rib & Loin",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.20791,
+        35.01587
+      ]
+    },
+    "ChIJP7-aL1xeYIgRiFt2tMQmQR0": {
+      "name": "River Street Deli",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.307601,
+        35.0622
+      ]
+    },
+    "ChIJP-SEqF5eYIgRKN97p9HoacY": {
+      "name": "Thai Smile",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309904,
+        35.054086
+      ]
+    },
+    "ChIJUzOlpB5fYIgR0Ph1JkIvOcI": {
+      "name": "Amada Tapas & Wine",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.313287,
+        35.03901
+      ]
+    },
+    "ChIJiTdqzdddYIgR7IycWAzv1Hw": {
+      "name": "Bluegrass Grill",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.305782,
+        35.035773
+      ]
+    },
+    "ChIJE-k6qYheYIgRMByKyG24jAk": {
+      "name": "Champy's",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.302136,
+        35.043215
+      ]
+    },
+    "ChIJ23iljHhkYIgRQnOWsD9BuEE": {
+      "name": "MISSION BBQ",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.155288,
+        35.029187
+      ]
+    },
+    "ChIJd5R-O31eYIgRsuteBAPB0TQ": {
+      "name": "Peet's Coffee - Cafe",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311712,
+        35.046524
+      ]
+    },
+    "ChIJI-GTyfdeYIgRBz3QgpahmxA": {
+      "name": "Pizza Bros Northshore",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.315023,
+        35.067211
+      ]
+    },
+    "ChIJh07lBX9fYIgRFLPpTKXmRV8": {
+      "name": "The Playlist",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309183,
+        35.055554
+      ]
+    },
+    "ChIJ6-UJ6RlfYIgRmrugKH7PJUY": {
+      "name": "Sleepyhead Coffee",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310858,
+        35.047308
+      ]
+    },
+    "ChIJR1Ws4HxeYIgRsws54FMUF0Y": {
+      "name": "Starbucks",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310885,
+        35.04598
+      ]
+    },
+    "ChIJeflODnxeYIgRXla1Ds5gzB4": {
+      "name": "Tupelo Honey Southern Kitchen & Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308785,
+        35.042826
+      ]
+    },
+    "ChIJKx9gI9ZdYIgREhZfK-GOM_A": {
+      "name": "Alex's Thai Food & Noodle Bistro",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.306869,
+        35.035689
+      ]
+    },
+    "ChIJ__-Pz3heYIgR9o8__uICPL8": {
+      "name": "Clumpies Ice Cream Co.",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307721,
+        35.038335
+      ]
+    },
+    "ChIJNQ2HxpOKYIgREy9XoGSPwus": {
+      "name": "Cupcake Kitchen",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.3103,
+        35.05083
+      ]
+    },
+    "ChIJm56LbTdeYIgRh9iWAR241F4": {
+      "name": "The Daily Ration",
+      "district": "Riverview",
+      "coordinates": [
+        -85.289654,
+        35.06983
+      ]
+    },
+    "ChIJ88D0zGNeYIgRy7TJslktnVc": {
+      "name": "Five Guys",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310966,
+        35.052027
+      ]
+    },
+    "ChIJH5MV629cYIgR0RgWtJIlzGQ": {
+      "name": "Lookout Mountain",
+      "district": "Lookout Valley",
+      "coordinates": [
+        -85.34331,
+        35.005961
+      ]
+    },
+    "ChIJh2sEjHxeYIgRbXPmI-enifk": {
+      "name": "Jimmy John's",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309731,
+        35.04508
+      ]
+    },
+    "ChIJj5SMS2JeYIgRGH9QwAklx0Y": {
+      "name": "Moon\u00aePie General Store",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.3109,
+        35.05135
+      ]
+    },
+    "ChIJBYDSO59cYIgREqPk_zWZwVk": {
+      "name": "Starbucks",
+      "district": "Rock City",
+      "coordinates": [
+        -85.34996,
+        34.975315
+      ]
+    },
+    "ChIJF8VHq8FmYIgRJwneGjv0Cgw": {
+      "name": "LongHorn Steakhouse",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.158238,
+        35.024229
+      ]
+    },
+    "ChIJy8vP6mNeYIgRvP_MuhjpKKY": {
+      "name": "Panera Bread",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31002,
+        35.051618
+      ]
+    },
+    "ChIJ9db5E9ZdYIgRtOWFN9YccrI": {
+      "name": "Reagan's Retro Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.306123,
+        35.03657
+      ]
+    },
+    "ChIJW0PiMNhdYIgRlOQZJtB-mko": {
+      "name": "Adelle's Cr\u00eaperie",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.302464,
+        35.034005
+      ]
+    },
+    "ChIJO8X5eVFfYIgRWeOaD9HrLg4": {
+      "name": "The Exchange",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307744,
+        35.0381
+      ]
+    },
+    "ChIJpa8RKK4uXogRWNcSlnFupxE": {
+      "name": "Panera Bread",
+      "district": "Burlington Heights",
+      "coordinates": [
+        -84.852051,
+        35.206997
+      ]
+    },
+    "ChIJd3L38HlkYIgRMl7TafJZvJk": {
+      "name": "Panera Bread",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.157547,
+        35.025509
+      ]
+    },
+    "ChIJb-gx25qKYIgR5hdyz1Qfap4": {
+      "name": "Panera Bread",
+      "district": "Northgate",
+      "coordinates": [
+        -85.24253,
+        35.129395
+      ]
+    },
+    "ChIJOyracxRdYIgRpbOK4JVhthM": {
+      "name": "Shady's Corner",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.295407,
+        35.032374
+      ]
+    },
+    "ChIJxz3fhJ9jYIgRgusr3ZRVzrs": {
+      "name": "W XYZ Bar @Aloft Chattanooga Hamilton Place",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.160399,
+        35.03268
+      ]
+    },
+    "ChIJqevam4lfYIgREwu0emOsZgs": {
+      "name": "Old Gilman Grill",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31234,
+        35.04686
+      ]
+    },
+    "ChIJl2EKO4FfYIgRdhJuTD2B868": {
+      "name": "Whitebird",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307325,
+        35.055398
+      ]
+    },
+    "ChIJxfPvdGFeYIgRaoX1rWLWTj0": {
+      "name": "Easy Bistro & Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31176,
+        35.046962
+      ]
+    },
+    "ChIJMTI16spfYIgRGKRw5UCjxJ4": {
+      "name": "Whiskey Thief",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307325,
+        35.055398
+      ]
+    },
+    "ChIJDyosArpYYIgRIBNf4_PNm7o": {
+      "name": "River Drifters",
+      "district": "Mountain Creek",
+      "coordinates": [
+        -85.36533,
+        35.11068
+      ]
+    },
+    "ChIJw8-0jLhfYIgRLonXnD3sB9U": {
+      "name": "Hello Monty",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310628,
+        35.03719
+      ]
+    },
+    "ChIJbfdPMH1eYIgR14BBXgSK_y0": {
+      "name": "Alimentari Cucina e Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.313065,
+        35.047265
+      ]
+    },
+    "ChIJuYZHUElfYIgR5G1oBwoCkoE": {
+      "name": "Bantam & Biddy",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309114,
+        35.04772
+      ]
+    },
+    "ChIJU0XqJ9VdYIgRAl2b4iDuzgo": {
+      "name": "Mad Priest Coffee Roasters",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31291,
+        35.033898
+      ]
+    },
+    "ChIJ3eSR79ddYIgRHtjkTSEsrvw": {
+      "name": "Play Wash Pint",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30363,
+        35.03559
+      ]
+    },
+    "ChIJkwUT91xeYIgRNeuQ6W5t6Tc": {
+      "name": "Stone Cup Cafe",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.30634,
+        35.06215
+      ]
+    },
+    "ChIJ4cOD_HpeYIgRiFtPBRx80dQ": {
+      "name": "The Bitter Alibi",
+      "district": "University of Tennessee at Chattanooga",
+      "coordinates": [
+        -85.30553,
+        35.045083
+      ]
+    },
+    "ChIJHTR8KOn3YIgRrl_Xr8w6pdc": {
+      "name": "Albatross Golf Sim & Bar",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.31409,
+        35.06447
+      ]
+    },
+    "ChIJQyyakUpfYIgRk9uhwguiYc8": {
+      "name": "Alimentari Cafe and Market",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311707,
+        35.046026
+      ]
+    },
+    "ChIJObo8k3xeYIgRbKj741jTCKI": {
+      "name": "Bleu Fox Cheese Shop",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.30323,
+        35.03434
+      ]
+    },
+    "ChIJ-fn_Gq9mYIgRYjoOOa4oSOc": {
+      "name": "Bud's Sports Bar",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.21306,
+        35.012761
+      ]
+    },
+    "ChIJEUV8S0RnYIgROPM8JAQyOzM": {
+      "name": "Burlaep Print and Press",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.29713,
+        35.03952
+      ]
+    },
+    "ChIJ5V1EleJfYIgRWdGXTMVJf9g": {
+      "name": "Cherry Street Tavern",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308584,
+        35.047732
+      ]
+    },
+    "ChIJCc5G3gh9YIgROvC0SMyROTk": {
+      "name": "Creekside Bar + Grille",
+      "district": "Summit",
+      "coordinates": [
+        -85.068844,
+        35.084232
+      ]
+    },
+    "ChIJSYAA-8iLYIgRUFyc95FyHfA": {
+      "name": "Dixie BBQ",
+      "district": "Sterling Park",
+      "coordinates": [
+        -85.206922,
+        35.172856
+      ]
+    },
+    "ChIJ21IVeH9eYIgRMxEF8b6Ze3c": {
+      "name": "La Altena Taqueria",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31088,
+        35.0373
+      ]
+    },
+    "ChIJGeCLBLddYIgR61fWEWsc-ac": {
+      "name": "The Livingstone at Amani ya Juu",
+      "district": "Ridgedale",
+      "coordinates": [
+        -85.27259,
+        35.033292
+      ]
+    },
+    "ChIJzzEuPvxfYIgRQQCwq272IZw": {
+      "name": "Monkey Town Brewing & Restaurant - Chattanooga",
+      "district": "Manchester Park",
+      "coordinates": [
+        -85.276106,
+        35.116367
+      ]
+    },
+    "ChIJb4Eo7RFnYIgRqXi1hudBbOE": {
+      "name": "Chattanooga Olive Oil Company",
+      "district": "Lansdell Park",
+      "coordinates": [
+        -85.206905,
+        34.99112
+      ]
+    },
+    "ChIJ3ZfhI9dnYIgRRK6jkacbYX0": {
+      "name": "Real Roots Cafe",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309517,
+        35.048958
+      ]
+    },
+    "ChIJV3NxCG1nYIgR_J12Sda7YMg": {
+      "name": "Reignbow Baking Co.",
+      "district": "Brainerd",
+      "coordinates": [
+        -85.214401,
+        35.008158
+      ]
+    },
+    "ChIJxQakCUldYIgR5neX-QB5DFc": {
+      "name": "Together Cafe",
+      "district": "Ridgedale",
+      "coordinates": [
+        -85.27713,
+        35.031719
+      ]
+    },
+    "ChIJuSZqNLNnYIgRUDbil6fCVF0": {
+      "name": "Topgolf Chattanooga",
+      "district": "Walnut Hills",
+      "coordinates": [
+        -85.20358,
+        34.995154
+      ]
+    },
+    "ChIJ_cZ_WthdYIgRxcoct7if1gI": {
+      "name": "Velo Coffee Roasters",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.301173,
+        35.034105
+      ]
+    },
+    "ChIJFeAHPxVfYIgRvrgk8Ka_ULg": {
+      "name": "Wooden City",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.311113,
+        35.05452
+      ]
+    },
+    "ChIJF1vzqYBjYIgRnYQsvpyPomU": {
+      "name": "Five Guys",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.151974,
+        35.033846
+      ]
+    },
+    "ChIJq9DyPWFeYIgRRqk9fSF_ly8": {
+      "name": "Puckett's Restaurant",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310144,
+        35.0554
+      ]
+    },
+    "ChIJSXcnQ3teYIgRYDv83H0iYvg": {
+      "name": "Cadence Coffee Company",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308931,
+        35.04849
+      ]
+    },
+    "ChIJd9iyD5FfYIgReyn9jv8cWnI": {
+      "name": "Agave & Rye",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.31215,
+        35.05517
+      ]
+    },
+    "ChIJ7_6XiYZfYIgRfEu6xKSqc9k": {
+      "name": "Downtown Dough Chattanooga",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309183,
+        35.055554
+      ]
+    },
+    "ChIJ8-n4PTpfYIgRpq39kG8_pAc": {
+      "name": "Goodfellas Pizzeria - King St",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.306206,
+        35.040151
+      ]
+    },
+    "ChIJp9ylBJ1XIBURMYAXf2h5cQo": {
+      "name": "Maple Street Biscuit Company",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.310943,
+        35.051904
+      ]
+    },
+    "ChIJS_YIO8ZfYIgR50Txt1Hq0Zo": {
+      "name": "Ruby Sunshine",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309897,
+        35.051944
+      ]
+    },
+    "ChIJRVv9b69dYIgRjgkqe8RFhI4": {
+      "name": "Barque BBQ",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.273725,
+        35.024135
+      ]
+    },
+    "ChIJt-4uMspjYIgRUN1X9c49PMg": {
+      "name": "Community Pie Hamilton Place",
+      "district": "Hickory Valley",
+      "coordinates": [
+        -85.16451,
+        35.03328
+      ]
+    },
+    "ChIJSSNQZFlnYIgRc2ekrgtjhMw": {
+      "name": "Craft Axe Throwing",
+      "district": "Walnut Hills",
+      "coordinates": [
+        -85.200889,
+        34.993555
+      ]
+    },
+    "ChIJfY__RKhdYIgRsCL2M81FtQ8": {
+      "name": "Eggman @ Five Wits Brewing Company",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30859,
+        35.036276
+      ]
+    },
+    "ChIJB2UgLwxfYIgROEhGkiJW8Io": {
+      "name": "Elsie's Daughter",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.305164,
+        35.036765
+      ]
+    },
+    "ChIJAfVGSoNdYIgRwRiReSvPpYg": {
+      "name": "Ernest Chinese",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.304445,
+        35.035848
+      ]
+    },
+    "ChIJ2cy2TYtfYIgRYkZ6jmq7TEM": {
+      "name": "Oddstory Brewing Co: The Greenhouse",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.304268,
+        35.043981
+      ]
+    },
+    "ChIJ__MM7jJdYIgRYO3OonZQf-Y": {
+      "name": "Honey Seed",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30862,
+        35.03412
+      ]
+    },
+    "ChIJzwcAejZfYIgRb1k547MFCV8": {
+      "name": "Kai Bistro",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.298971,
+        35.033248
+      ]
+    },
+    "ChIJr1gPSM9fYIgRTAj-XpWAblc": {
+      "name": "La Antigua Fruit & Smoothie Bar",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.306792,
+        35.062261
+      ]
+    },
+    "ChIJDxm0IFddYIgR2m0B0kQX8iY": {
+      "name": "Massey's Kitchen",
+      "district": "Lookout Valley",
+      "coordinates": [
+        -85.353871,
+        34.990527
+      ]
+    },
+    "ChIJE84cduhfYIgRC9oyN5vtRco": {
+      "name": "Moxy Chattanooga Downtown",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30699,
+        35.040085
+      ]
+    },
+    "ChIJEYY37NddYIgRBorX8KkNoPg": {
+      "name": "State of Confusion",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.30406,
+        35.035229
+      ]
+    },
+    "ChIJ0U-xlX1eYIgRe6mvGl4PyG0": {
+      "name": "Table South Kitchen + Bar",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.312256,
+        35.044273
+      ]
+    },
+    "ChIJNV1LWjFfYIgRZeK9bCJ_EfI": {
+      "name": "FORGE",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309995,
+        35.040725
+      ]
+    },
+    "ChIJ9fkZ_9VdYIgR_CuZVGHNqI4": {
+      "name": "Five Wits Brewing Company",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30859,
+        35.036276
+      ]
+    },
+    "ChIJVVWJdxRcYIgRZXlIjGKeyGw": {
+      "name": "Castle Cafe",
+      "district": "Lookout Valley",
+      "coordinates": [
+        -85.33934,
+        35.019056
+      ]
+    },
+    "ChIJq3-9cN4pXogR-lS2l9mcbUw": {
+      "name": "Courtyard Cleveland TN",
+      "district": "Windwood",
+      "coordinates": [
+        -84.870467,
+        35.2159
+      ]
+    },
+    "ChIJpR2n0ShjYIgRVlqfWCdLQzI": {
+      "name": "Oaks Coffee House",
+      "district": "Tyner",
+      "coordinates": [
+        -85.137894,
+        35.061334
+      ]
+    },
+    "ChIJUVbnHdZdYIgRMhyP-2d7mno": {
+      "name": "Blue Orleans Seafood Restaurant",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.307657,
+        35.036519
+      ]
+    },
+    "ChIJs8oK7m9fYIgR7JnW-HMtW9g": {
+      "name": "Stills and Mash",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.309995,
+        35.040725
+      ]
+    },
+    "ChIJtfUUUvFfYIgRHRSrcyZuK7Q": {
+      "name": "Unknown Caller",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.30869,
+        35.04782
+      ]
+    },
+    "ChIJaZxgMdZdYIgRVM4-43wJHKw": {
+      "name": "The Local Juicery + Kitchen",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.306153,
+        35.035467
+      ]
+    },
+    "ChIJp_bQXERcYIgRQLQTn4sStLU": {
+      "name": "Mad Knight Brewing Company",
+      "district": "South Chattanooga",
+      "coordinates": [
+        -85.327708,
+        35.007576
+      ]
+    },
+    "ChIJ60-ndbdfYIgRuEzvQAKEtyo": {
+      "name": "Mezcla Cocina Y Cantina",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.30868,
+        35.062543
+      ]
+    },
+    "ChIJqcGFuaBdYIgRzTvw6Kv5gPo": {
+      "name": "Pax Breu Ruim",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.300798,
+        35.03334
+      ]
+    },
+    "ChIJ5WIX91xeYIgR_xFBdLgklbQ": {
+      "name": "Jimmy John's",
+      "district": "North Chattanooga",
+      "coordinates": [
+        -85.305612,
+        35.061845
+      ]
+    },
+    "ChIJ_7N-ZnpeYIgR70mttNPTOV4": {
+      "name": "Oddstory Brewing Co: Central",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.296699,
+        35.030405
+      ]
+    },
+    "ChIJGQ6cFTFcYIgRNiLy1gCZig0": {
+      "name": "Boccaccia Restaurant",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.32025,
+        35.02181
+      ]
+    },
+    "ChIJ8-ekyxNfYIgRhV6CT7Wpo2c": {
+      "name": "Kenny's",
+      "district": "Downtown Chattanooga",
+      "coordinates": [
+        -85.308251,
+        35.04043
+      ]
+    },
+    "ChIJe9TTiZFnYIgRniO4-W2etWE": {
+      "name": "Sleepyhead Coffee (Main+Dodds)",
+      "district": "Bushtown",
+      "coordinates": [
+        -85.269307,
+        35.021935
+      ]
+    }
+  },
+  "unmatched_restaurants": {
+    "ChIJ66FbXgFnYIgRQEcQgG5eDZo": {
+      "name": "Fernando's",
+      "address": "5308 Ringgold Rd, East Ridge, TN 37412, USA"
+    },
+    "ChIJiSTRbjdeYIgRET26QlPcPkY": {
+      "name": "Tremont Tavern",
+      "address": "1203 Hixson Pike, Chattanooga, TN 37405, USA"
+    },
+    "ChIJm16bXzdeYIgRCnfwLsnEJnU": {
+      "name": "Il Primo Northshore",
+      "address": "1100 Hixson Pike, Chattanooga, TN 37405, USA"
+    },
+    "ChIJx70wevFTYIgR181mwL38zuA": {
+      "name": "Lookout Winery & Venue",
+      "address": "11848 US-41, Guild, TN 37340, USA"
+    },
+    "ChIJD7FxCfIrXogRjFTvmZQA5Vk": {
+      "name": "Lupi's Pizza Pies",
+      "address": "2382 N Ocoee St, Cleveland, TN 37311, USA"
+    },
+    "ChIJTW8fNgA3YIgR8wXlcyzc8oo": {
+      "name": "Skyside",
+      "address": "243 Cloudland Dr, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJG1pczLp9YIgReW6CRz5mDBU": {
+      "name": "Lupi's Pizza Pies",
+      "address": "9453 Bradmore Ln #109, Collegedale, TN 37363, USA"
+    },
+    "ChIJL8mq3-FfYIgRM0QggJwgU9A": {
+      "name": "Sidetrack Restaurant",
+      "address": "3514 Hixson Pike, Chattanooga, TN 37415, USA"
+    },
+    "ChIJnyd1qJBIYIgRDeqYhjIkIfI": {
+      "name": "Canyon Grill",
+      "address": "28 Scenic Hwy, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJGWoPgjALYYgRxnhflgU73Ds": {
+      "name": "The Sewanee Inn",
+      "address": "1235 University Ave, Sewanee, TN 37375, USA"
+    },
+    "ChIJJ8SDv12KYIgRKWCnEr0M7do": {
+      "name": "Lupi's Pizza Pies",
+      "address": "5504 Hixson Pike, Hixson, TN 37343, USA"
+    },
+    "ChIJI4lHGAA3YIgR95C0kguiWZs": {
+      "name": "Croft",
+      "address": "243 Cloudland Dr, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJu_pZidY3YIgRi1JnFAOimbA": {
+      "name": "Auld Alliance",
+      "address": "243 Cloudland Dr, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJfeKrNYNoYIgR4H-BLqtOVMw": {
+      "name": "Panera Bread",
+      "address": "2620 Battlefield Pkwy, Fort Oglethorpe, GA 30742, USA"
+    },
+    "ChIJ_2eoBxQzXogRuNPwqYoa0Zk": {
+      "name": "Apricot Place Cafe",
+      "address": "283 US-64, Ocoee, TN 37361, USA"
+    },
+    "ChIJC5pJdmSvYYgRPfcfSySOoDg": {
+      "name": "Big Bad Breakfast - South Pittsburg",
+      "address": "222 3rd St, South Pittsburg, TN 37380, USA"
+    },
+    "ChIJ68IkB99vYIgRjS2yzatHNX8": {
+      "name": "Caffeine Addicts Coffee Shop & Cafe",
+      "address": "7819 Nashville St, Ringgold, GA 30736, USA"
+    },
+    "ChIJo9Ywuln1YIgRBRMkdHBLJXw": {
+      "name": "Pizzeria Cortile",
+      "address": "4400 Dayton Blvd, Red Bank, TN 37415, USA"
+    },
+    "ChIJ2SKNlaUuXogRWVNTlLCCn5w": {
+      "name": "Five Guys",
+      "address": "124 Stuart Rd NE, Cleveland, TN 37312, USA"
+    },
+    "ChIJ3egFSi0LYIgROW3WNxT1jRA": {
+      "name": "Five Guys",
+      "address": "1303 W Walnut Ave, Dalton, GA 30720, USA"
+    },
+    "ChIJsWyZVY6KYIgR4womvndh3-A": {
+      "name": "Five Guys",
+      "address": "5110 Hixson Pike, Hixson, TN 37343, USA"
+    },
+    "ChIJt2bTA7RfYIgRahUtk8vVZC8": {
+      "name": "Civil Provisions and Bar",
+      "address": "720 Mississippi Ave, Signal Mountain, TN 37377, USA"
+    },
+    "ChIJq9HGnGfPYIgRkIiUCp27EdA": {
+      "name": "The Lodge at Fall Creek Falls",
+      "address": "2536 Lakeside Drive, Spencer, TN 38585, USA"
+    },
+    "ChIJzwVoVz2PYIgRMzWGTh6-2Zk": {
+      "name": "Zois Harbor Lights Restaurant",
+      "address": "9718 Hixson Pike, Soddy-Daisy, TN 37379, USA"
+    },
+    "ChIJeWWWfLc3YIgRpdl4-L8bzn8": {
+      "name": "The Creag at McLemore Resort",
+      "address": "32 Clubhouse Lane, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJDwSFFylfYIgRi995sYJZ-Gc": {
+      "name": "Clever Alehouse",
+      "address": "2122 Dayton Blvd, Chattanooga, TN 37415, USA"
+    },
+    "ChIJjbFY-KQ3YIgRXxF8jkqDbvE": {
+      "name": "The Pocket Cafe",
+      "address": "243 Cloudland Dr, Rising Fawn, GA 30738, USA"
+    },
+    "ChIJkYR3k1ZfYIgRul6-XG-qdvs": {
+      "name": "Mayfly Coffee",
+      "address": "708 Mississippi Ave, Signal Mountain, TN 37377, USA"
+    },
+    "ChIJqVIDXhZfYIgRxC8XEz_lPMU": {
+      "name": "Be Caffeinated",
+      "address": "3601 Dayton Blvd, Red Bank, TN 37415, USA"
+    },
+    "ChIJhxzHsKp9YIgRS_b_nYZV2hY": {
+      "name": "Davis Wayne's",
+      "address": "9454 Bradmore Ln #100, Collegedale, TN 37363, USA"
+    }
+  }
+}

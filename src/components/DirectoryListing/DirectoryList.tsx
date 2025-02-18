@@ -7,15 +7,22 @@ import { DirectoryItem } from '@/types/directory';
 import { isRestaurantOpen } from '@/utils/dateUtils';
 import dynamic from 'next/dynamic';
 
-const FilterPane = dynamic(() => import('./FilterPane'), {
-  ssr: false
-});
+const FilterPane = dynamic(
+  () => import('./FilterPane').then(mod => mod.FilterPane),
+  { ssr: false }
+);
 
 interface DirectoryListProps {
   items: DirectoryItem[];
+  selectedFilters: {
+    categories: Set<string>;
+    districts: Set<string>;
+    priceRanges: Set<string>;
+    features: Set<string>;
+  };
 }
 
-export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
+export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], selectedFilters }) => {
   const [viewMode, setViewMode] = React.useState<'list' | 'grid-view'>('grid-view');
   const [currentPage, setCurrentPage] = React.useState(1);
   const itemsPerPage = 6;
@@ -27,7 +34,46 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = items.slice(startIndex, startIndex + itemsPerPage);
+
+  // Filter items based on selected filters
+  const filteredItems = useMemo(() => {
+    return items.filter(item => {
+      // Apply category filters
+      if (selectedFilters.categories.size > 0) {
+        const hasMatchingCategory = item.categories.some(cat => 
+          selectedFilters.categories.has(cat)
+        );
+        if (!hasMatchingCategory) return false;
+      }
+
+      // Apply district filters
+      if (selectedFilters.districts.size > 0) {
+        const hasMatchingDistrict = item.districts.some(dist => 
+          selectedFilters.districts.has(dist)
+        );
+        if (!hasMatchingDistrict) return false;
+      }
+
+      // Apply price range filters
+      if (selectedFilters.priceRanges.size > 0) {
+        if (!selectedFilters.priceRanges.has(item.priceLevel.toString())) {
+          return false;
+        }
+      }
+
+      // Apply feature filters
+      if (selectedFilters.features.size > 0) {
+        const hasMatchingFeature = item.features.some(feat => 
+          selectedFilters.features.has(feat)
+        );
+        if (!hasMatchingFeature) return false;
+      }
+
+      return true;
+    });
+  }, [items, selectedFilters]);
+
+  const currentItems = filteredItems.slice(startIndex, startIndex + itemsPerPage);
 
   const getFirstPhotoPath = (id: string) => {
     return `/media/${id}/photo_1.jpg`;
@@ -143,15 +189,56 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
     return pageNumbers;
   };
 
+  const generateListingUrl = (name: string, id: string) => {
+    const slug = name
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+    const idSuffix = id.slice(-6);
+    return `https://noogabites.com/listing/${slug}-${idSuffix}`;
+  };
+
   // Memoize the filtered items
   const displayItems = useMemo(() => currentItems, [currentItems]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-end mb-4">
+        <div className="inline-flex rounded-lg border border-gray-200 p-1">
+          <button
+            onClick={() => setViewMode('grid-view')}
+            className={`px-3 py-1.5 text-sm font-medium rounded-md ${
+              viewMode === 'grid-view' 
+                ? 'bg-gray-100 text-gray-900' 
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            <i className="fas fa-th-large mr-2"></i>
+            Grid
+          </button>
+          <button
+            onClick={() => setViewMode('list')}
+            className={`px-3 py-1.5 text-sm font-medium rounded-md ${
+              viewMode === 'list' 
+                ? 'bg-gray-100 text-gray-900' 
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            <i className="fas fa-list mr-2"></i>
+            List
+          </button>
+        </div>
+      </div>
+
       <div className={`grid ${viewMode === 'grid-view' ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6' : 'grid-cols-1 gap-4'}`}>
         {displayItems.map((item, index) => (
-          <div key={item.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
-            <div className="relative h-64 w-full">
+          <div key={item.id} 
+               onClick={() => window.location.href = generateListingUrl(item.title, item.id)}
+               className={`bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 cursor-pointer ${
+                 viewMode === 'list' ? 'flex' : ''
+               }`}
+          >
+            <div className={`relative ${viewMode === 'list' ? 'w-48 h-48' : 'h-64 w-full'}`}>
               <Image
                 src={getFirstPhotoPath(item.id)}
                 alt={item.title}
@@ -162,22 +249,21 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
                 loading={index === 0 && currentPage === 1 ? 'eager' : 'lazy'}
                 quality={75}
                 placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4dHRsdHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/2wBDAR4WFiMeJRwlJRwlHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4dHRsdHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/2wBDAR4WFiMeJRwlJRwlHR4dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR3/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
             </div>
-            <div className="info">
+            <div className={`info p-4 ${viewMode === 'list' ? 'flex-1' : ''}`}>
               <div className="top-info">
-                <h4>
-                  <a href={`/listing/${item.slug}`} className="title text-gray-900 hover:text-blue-600">
-                    {item.title}
-                  </a>
+                <h4 className="title text-gray-900 hover:text-blue-600 text-lg font-medium">
+                  {item.title}
                 </h4>
-                <div className="meta">
-                  <div className="flex items-center justify-between">
+                <div className="meta mt-2">
+                  <div className="flex items-center gap-4">
                     {item.rating && (
-                      <div className="rating">
+                      <div className="rating flex items-center gap-1">
+                        <i className="fas fa-star text-yellow-400"></i>
                         <span className="score text-gray-900 font-semibold">{item.rating}</span>
-                        <span className="reviews text-gray-700">({item.reviewCount})</span>
+                        <span className="reviews text-gray-500">({item.reviewCount})</span>
                       </div>
                     )}
                     {item.hours?.schedule && (
@@ -189,35 +275,24 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
                       </div>
                     )}
                   </div>
-                  <div className="address text-gray-700">{item.address}</div>
                 </div>
                 {getPrimaryType(item.categories || '') && (
-                  <div className="restaurant-type">
-                    <span className="type">
-                      <i className={`fas ${getCategoryIcon(getPrimaryType(item.categories || ''))}`}></i>
+                  <div className="restaurant-type mt-2">
+                    <span className="type flex items-center gap-2 text-gray-600">
+                      <i className={`fas ${getCategoryIcon(getPrimaryType(item.categories || ''))} text-gray-500`}></i>
                       <span>{capitalizeWords(getPrimaryType(item.categories || '').replace(/_/g, ' '))}</span>
                     </span>
+                    {getRelevantCategories(item.categories || '').length > 0 && (
+                      <div className="additional-categories mt-1 text-sm text-gray-500">
+                        {getRelevantCategories(item.categories || '').map(category => (
+                          <span key={category} className="mr-2">
+                            • {capitalizeWords(category.replace(/_/g, ' '))}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
-                {getRelevantCategories(item.categories || '').length > 0 && (
-                  <div className="categories">
-                    {getRelevantCategories(item.categories || '').map((category, index) => (
-                      <span key={index} className="category">
-                        <i className={`fas ${getCategoryIcon(category)}`}></i>
-                        <span>{capitalizeWords(category.replace(/_/g, ' '))}</span>
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <div className="bottom-actions">
-                <div className="website-link">
-                  {item.website && (
-                    <a href={item.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
-                      Visit website
-                    </a>
-                  )}
-                </div>
               </div>
             </div>
           </div>
@@ -264,15 +339,18 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
             </button>
           </div>
           <div className="order-1 sm:order-none flex items-center gap-1">
-            {getPageNumbers().map((pageNum) => (
+            {getPageNumbers().map((pageNum, idx) => (
               <button
-                key={pageNum}
-                onClick={() => handlePageChange(pageNum)}
-                className={`px-3 py-1 rounded-md border ${
-                  currentPage === pageNum
-                    ? 'bg-gray-900 text-white border-gray-900'
-                    : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
-                }`}
+                key={idx}
+                onClick={() => typeof pageNum === 'number' ? handlePageChange(pageNum) : null}
+                className={`px-3 py-1 ${
+                  pageNum === currentPage
+                    ? 'bg-blue-600 text-white'
+                    : pageNum === '...'
+                    ? 'text-gray-400 cursor-default'
+                    : 'text-gray-700 hover:bg-gray-100'
+                } rounded-md`}
+                disabled={pageNum === '...'}
               >
                 {pageNum}
               </button>

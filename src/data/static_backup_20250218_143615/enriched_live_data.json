@@ -2,21 +2,9 @@
   "metadata": {
     "total_restaurants": 231,
     "processed_count": 231,
-    "last_updated": "2025-02-18T14:36:15.350538",
+    "last_updated": "2025-02-17T01:00:56Z",
     "processing_status": "completed",
-    "source_file": "visit_data_20250215_191520_full.json",
-    "data_sources": [
-      "live_data.json",
-      "extended_live.json",
-      "live_districts.json"
-    ],
-    "district_stats": {
-      "total_restaurants": 229,
-      "processed_count": 199,
-      "districts_found": 24,
-      "restaurants_without_district": 30,
-      "last_updated": "2025-02-18T03:04:02Z"
-    }
+    "source_file": "visit_data_20250215_191520_full.json"
   },
   "restaurants": {
     "ChIJG-alPFxeYIgRWtEQXwcvf_Q": {
@@ -41,13 +29,7 @@
         "website": "http://www.clumpies.com/",
         "rating": 4.6,
         "rating_count": 1341,
-        "description": "Easygoing ice-cream shop selling hand-made classic & seasonal flavors, coffee & pastries.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307715,
-          35.062415
-        ]
+        "description": "Easygoing ice-cream shop selling hand-made classic & seasonal flavors, coffee & pastries."
       },
       "location": {
         "formatted_address": "26 Frazier Ave B, Chattanooga, TN 37405, USA",
@@ -281,13 +263,7 @@
         "website": "https://clumpies.com/",
         "rating": 4.5,
         "rating_count": 575,
-        "description": "",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.32856,
-          35.00969
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "3917 St Elmo Ave, Chattanooga, TN 37409, USA",
@@ -522,13 +498,7 @@
         "website": "https://www.milkandhoneychattanooga.com/",
         "rating": 4.6,
         "rating_count": 899,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30913,
-          35.06409
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "135 N Market St, Chattanooga, TN 37405, USA",
@@ -761,13 +731,7 @@
         "website": "https://www.bridgemanschophouse.com/",
         "rating": 4.5,
         "rating_count": 581,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311071,
-          35.04601
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "107 W M.L.K. Blvd, Chattanooga, TN 37402, USA",
@@ -1235,13 +1199,7 @@
         "website": "http://www.frothymonkey.com/",
         "rating": 4.2,
         "rating_count": 2090,
-        "description": "Local coffeehouse chain serving breakfast through dinner, along with drinks, in a hip space.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30659,
-          35.037055
-        ]
+        "description": "Local coffeehouse chain serving breakfast through dinner, along with drinks, in a hip space."
       },
       "location": {
         "formatted_address": "1400 Market St, Chattanooga, TN 37402, USA",
@@ -1473,13 +1431,7 @@
         "website": "http://www.lakeshoregrille.com/",
         "rating": 4.6,
         "rating_count": 720,
-        "description": "A varied menu includes steaks, seafood, pasta & burgers at this casual restaurant with lake views.",
-        "district": "Northgate",
-        "district_description": "",
-        "coordinates": [
-          -85.216669,
-          35.10904
-        ]
+        "description": "A varied menu includes steaks, seafood, pasta & burgers at this casual restaurant with lake views."
       },
       "location": {
         "formatted_address": "5600 Lake Resort Terrace UNIT 300, Chattanooga, TN 37415, USA",
@@ -1709,13 +1661,7 @@
         "website": "http://www.eatcalliope.com/",
         "rating": 4.8,
         "rating_count": 370,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.303438,
-          35.043765
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "422 E M L King Blvd, Chattanooga, TN 37403, USA",
@@ -1944,13 +1890,7 @@
         "website": "http://www.matildamidnight.com/",
         "rating": 4.7,
         "rating_count": 199,
-        "description": "Craft cocktails & bar bites served in a fashionable, cozy bar with retro styling at The Dwell Hotel.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307973,
-          35.044187
-        ]
+        "description": "Craft cocktails & bar bites served in a fashionable, cozy bar with retro styling at The Dwell Hotel."
       },
       "location": {
         "formatted_address": "120 E 10th St, Chattanooga, TN 37402, USA",
@@ -2184,13 +2124,7 @@
         "website": "http://www.thecomedycatch.com/",
         "rating": 4.6,
         "rating_count": 1315,
-        "description": "Longtime comedy venue for local & national acts with an on-site American bar & grill.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.3064,
-          35.03694
-        ]
+        "description": "Longtime comedy venue for local & national acts with an on-site American bar & grill."
       },
       "location": {
         "formatted_address": "29 Station St, Chattanooga, TN 37408, USA",
@@ -2426,13 +2360,7 @@
         "website": "https://www.tottonooga.com/",
         "rating": 4.5,
         "rating_count": 1683,
-        "description": "Contemporary Japanese restaurant serving sushi & sashimi rolls, plus a roster of grilled classics.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.305612,
-          35.061845
-        ]
+        "description": "Contemporary Japanese restaurant serving sushi & sashimi rolls, plus a roster of grilled classics."
       },
       "location": {
         "formatted_address": "330 Frazier Ave Suite 124, Chattanooga, TN 37405, USA",
@@ -2671,13 +2599,7 @@
         "website": "http://acropolisgrill.com/",
         "rating": 4.6,
         "rating_count": 2437,
-        "description": "Low-key Mediterranean eatery serving classic Greek dishes plus Italian & American options.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.156115,
-          35.039748
-        ]
+        "description": "Low-key Mediterranean eatery serving classic Greek dishes plus Italian & American options."
       },
       "location": {
         "formatted_address": "2213 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -2911,13 +2833,7 @@
         "website": "https://www.feedtableandtavern.com/",
         "rating": 4.6,
         "rating_count": 3909,
-        "description": "Industrial-style haunt with elevated comfort grub such as grass-fed sloppy joes, plus a lively bar.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30947,
-          35.037195
-        ]
+        "description": "Industrial-style haunt with elevated comfort grub such as grass-fed sloppy joes, plus a lively bar."
       },
       "location": {
         "formatted_address": "201 W Main St, Chattanooga, TN 37402, USA",
@@ -3150,13 +3066,7 @@
         "website": "https://www.jackbrownsjoint.com/locations/chattanooga/",
         "rating": 4.6,
         "rating_count": 1549,
-        "description": "Bar chain serving creative burgers & a lengthy list of beers in a casual, funky space.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307575,
-          35.046502
-        ]
+        "description": "Bar chain serving creative burgers & a lengthy list of beers in a casual, funky space."
       },
       "location": {
         "formatted_address": "818 Georgia Ave, Chattanooga, TN 37402, USA",
@@ -3390,13 +3300,7 @@
         "website": "http://www.mainstreetmeatschatt.com/",
         "rating": 4.7,
         "rating_count": 1023,
-        "description": "Venue featuring a butcher shop & a modern, brick-walled American cafe for lunch, dinner & cocktails.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.304491,
-          35.035246
-        ]
+        "description": "Venue featuring a butcher shop & a modern, brick-walled American cafe for lunch, dinner & cocktails."
       },
       "location": {
         "formatted_address": "217 E Main St, Chattanooga, TN 37408, USA",
@@ -3631,13 +3535,7 @@
         "website": "https://chattanoogariverboat.com/?utm_source=gmb+listing&utm_medium=organic",
         "rating": 4.3,
         "rating_count": 4204,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.314242,
-          35.056053
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "151 Riverfront Pkwy, Chattanooga, TN 37402, USA",
@@ -3869,13 +3767,7 @@
         "website": "https://www.sushinaberestaurant.com/",
         "rating": 4.4,
         "rating_count": 911,
-        "description": "Creative sushi & classic Japanese eats served in a casual family-run eatery with patio seating.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308182,
-          35.061842
-        ]
+        "description": "Creative sushi & classic Japanese eats served in a casual family-run eatery with patio seating."
       },
       "location": {
         "formatted_address": "110 River St, Chattanooga, TN 37405, USA",
@@ -4107,13 +3999,7 @@
         "website": "http://alleiarestaurant.com/",
         "rating": 4.7,
         "rating_count": 1857,
-        "description": "Vintage brick storefront with arty, mod interior dispensing rustic Italian pizzas & homemade pastas.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.306629,
-          35.03622
-        ]
+        "description": "Vintage brick storefront with arty, mod interior dispensing rustic Italian pizzas & homemade pastas."
       },
       "location": {
         "formatted_address": "25 E Main St, Chattanooga, TN 37408, USA",
@@ -4345,13 +4231,7 @@
         "website": "https://www.cbceast.com/",
         "rating": 4.3,
         "rating_count": 877,
-        "description": "",
-        "district": "Tyner",
-        "district_description": "",
-        "coordinates": [
-          -85.162955,
-          35.047007
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "110 Jordan Dr, Chattanooga, TN 37421, USA",
@@ -4584,13 +4464,7 @@
         "website": "https://boathousechattanooga.com/",
         "rating": 4.5,
         "rating_count": 5655,
-        "description": "Wide variety of seafood & barbecued meats served in a casual bar & grill with an expansive deck.",
-        "district": "Amnicola",
-        "district_description": "",
-        "coordinates": [
-          -85.283607,
-          35.055304
-        ]
+        "description": "Wide variety of seafood & barbecued meats served in a casual bar & grill with an expansive deck."
       },
       "location": {
         "formatted_address": "1459 Riverside Dr #4312, Chattanooga, TN 37406, USA",
@@ -4819,13 +4693,7 @@
         "website": "http://www.brewhausbar.com/",
         "rating": 4.6,
         "rating_count": 1428,
-        "description": "Congenial gastropub offering an inventive German-American menu & old-world beers, plus tastings.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30614,
-          35.062028
-        ]
+        "description": "Congenial gastropub offering an inventive German-American menu & old-world beers, plus tastings."
       },
       "location": {
         "formatted_address": "224 Frazier Ave, Chattanooga, TN 37402, USA",
@@ -5059,13 +4927,7 @@
         "website": "http://cheflinbuffet.com/",
         "rating": 4,
         "rating_count": 2827,
-        "description": "This family-run buffet eatery offers popular Chinese dishes alongside sushi & hibachi fare.",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.222095,
-          35.00366
-        ]
+        "description": "This family-run buffet eatery offers popular Chinese dishes alongside sushi & hibachi fare."
       },
       "location": {
         "formatted_address": "5084 South Terrace, Chattanooga, TN 37412, USA",
@@ -5298,13 +5160,7 @@
         "website": "https://firebirdsrestaurants.com/chattanooga",
         "rating": 4.4,
         "rating_count": 1568,
-        "description": "Chain restaurant serving steaks, seafood & cocktails in an upscale lodgelike setting.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.155307,
-          35.033092
-        ]
+        "description": "Chain restaurant serving steaks, seafood & cocktails in an upscale lodgelike setting."
       },
       "location": {
         "formatted_address": "2107 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -5532,13 +5388,7 @@
         "website": "https://genesishouseoftea.com/",
         "rating": 4.7,
         "rating_count": 138,
-        "description": "",
-        "district": "Tyner",
-        "district_description": "",
-        "coordinates": [
-          -85.183319,
-          35.07214
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "6178 Adamson Cir, Chattanooga, TN 37416, USA",
@@ -5763,13 +5613,7 @@
         "website": null,
         "rating": 4.3,
         "rating_count": 1925,
-        "description": "Tavern with pool tables & darts plus a menu of inventive pub fare & a lengthy list of beers.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309333,
-          35.052507
-        ]
+        "description": "Tavern with pool tables & darts plus a menu of inventive pub fare & a lengthy list of beers."
       },
       "location": {
         "formatted_address": "334 Market St, Chattanooga, TN 37402, USA",
@@ -6001,13 +5845,7 @@
         "website": "http://www.hennens.net/",
         "rating": 4.5,
         "rating_count": 1821,
-        "description": "American steak & seafood restaurant with an extensive wine list set in a sleek, romantic space.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31225,
-          35.05502
-        ]
+        "description": "American steak & seafood restaurant with an extensive wine list set in a sleek, romantic space."
       },
       "location": {
         "formatted_address": "193 Chestnut St, Chattanooga, TN 37402, USA",
@@ -6239,13 +6077,7 @@
         "website": "http://www.hificlydeschattanooga.com/",
         "rating": 4.5,
         "rating_count": 2566,
-        "description": "Collegial honky-tonk with a retro vibe & BBQ bites, plus ping pong/shuffleboard tables & live music.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309175,
-          35.036567
-        ]
+        "description": "Collegial honky-tonk with a retro vibe & BBQ bites, plus ping pong/shuffleboard tables & live music."
       },
       "location": {
         "formatted_address": "122 W Main St, Chattanooga, TN 37408, USA",
@@ -6481,13 +6313,7 @@
         "website": "https://mellowmushroom.com/location/tn-chattanooga-205-broad-st-37402/?utm_source=gmb&utm_medium=organic&utm_campaign=Chattanooga-TN&utm_content=77",
         "rating": 4.5,
         "rating_count": 3566,
-        "description": "Funky, art-filled chain pizzeria featuring craft beer, calzones & creative stone-baked pizzas.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311016,
-          35.054221
-        ]
+        "description": "Funky, art-filled chain pizzeria featuring craft beer, calzones & creative stone-baked pizzas."
       },
       "location": {
         "formatted_address": "205 Broad St, Chattanooga, TN 37402, USA",
@@ -6720,13 +6546,7 @@
         "website": "http://www.picklebarreltn.com/",
         "rating": 4.3,
         "rating_count": 2618,
-        "description": "Iconic, venerable pub in a flatiron building with rotating craft beers, fried pickles & a roof deck.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309171,
-          35.044435
-        ]
+        "description": "Iconic, venerable pub in a flatiron building with rotating craft beers, fried pickles & a roof deck."
       },
       "location": {
         "formatted_address": "1012 Market St, Chattanooga, TN 37402, USA",
@@ -6959,13 +6779,7 @@
         "website": "http://publichousechattanooga.com/",
         "rating": 4.6,
         "rating_count": 1798,
-        "description": "Updated, locally sourced Southern fare & a discerning wine list in a refined, relaxed setting.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308785,
-          35.042826
-        ]
+        "description": "Updated, locally sourced Southern fare & a discerning wine list in a refined, relaxed setting."
       },
       "location": {
         "formatted_address": "1110 Market St, Chattanooga, TN 37402, USA",
@@ -7196,13 +7010,7 @@
         "website": "https://scottiesontheriver.net/",
         "rating": 4.2,
         "rating_count": 2595,
-        "description": "Airy, casual riverside outpost prepping steaks, seafood & cocktails, plus a patio with a fire pit.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.32046,
-          35.054165
-        ]
+        "description": "Airy, casual riverside outpost prepping steaks, seafood & cocktails, plus a patio with a fire pit."
       },
       "location": {
         "formatted_address": "491 Riverfront Pkwy, Chattanooga, TN 37402, USA",
@@ -7436,13 +7244,7 @@
         "website": "http://www.singitorwingitchattanooga.com/",
         "rating": 4.1,
         "rating_count": 1040,
-        "description": "Upbeat karaoke bar & restaurant known for grilled wings & pub grub named after singers & bands.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309279,
-          35.051813
-        ]
+        "description": "Upbeat karaoke bar & restaurant known for grilled wings & pub grub named after singers & bands."
       },
       "location": {
         "formatted_address": "410 Market St, Chattanooga, TN 37402, USA",
@@ -7673,13 +7475,7 @@
         "website": "https://stickyfingers.com/stickyfingerschattanooga",
         "rating": 4.3,
         "rating_count": 5132,
-        "description": "BBQ classics are pit-smoked & slathered in signature sauces at this Southern smokehouse chain.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310386,
-          35.051506
-        ]
+        "description": "BBQ classics are pit-smoked & slathered in signature sauces at this Southern smokehouse chain."
       },
       "location": {
         "formatted_address": "420 Broad St, Chattanooga, TN 37402, USA",
@@ -7911,13 +7707,7 @@
         "website": "http://www.stirchattanooga.com/",
         "rating": 4.5,
         "rating_count": 3308,
-        "description": "Sprawling, industrial-chic space offering modern American eats, craft cocktails & an oyster bar.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306813,
-          35.036849
-        ]
+        "description": "Sprawling, industrial-chic space offering modern American eats, craft cocktails & an oyster bar."
       },
       "location": {
         "formatted_address": "1444 Market St, Chattanooga, TN 37402, USA",
@@ -8381,13 +8171,7 @@
         "website": "https://www.ujointchattanooga.com/",
         "rating": 4.4,
         "rating_count": 1078,
-        "description": "Sandwiches, burgers, salads, tacos & bar snacks are served at this relaxed, diner-style restaurant.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306219,
-          35.050066
-        ]
+        "description": "Sandwiches, burgers, salads, tacos & bar snacks are served at this relaxed, diner-style restaurant."
       },
       "location": {
         "formatted_address": "532 Lookout St, Chattanooga, TN 37403, USA",
@@ -8619,13 +8403,7 @@
         "website": "http://zayakorean.com/",
         "rating": 4.8,
         "rating_count": 1078,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.312124,
-          35.06376
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "300 Cherokee Blvd. Suite 125, Chattanooga, TN 37405, USA",
@@ -8858,13 +8636,7 @@
         "website": "http://1885grill.com/",
         "rating": 4.6,
         "rating_count": 3113,
-        "description": "Southern-inspired coastal cuisine, comfort sides & cocktails in laid-back, contemporary digs.",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.328214,
-          35.010125
-        ]
+        "description": "Southern-inspired coastal cuisine, comfort sides & cocktails in laid-back, contemporary digs."
       },
       "location": {
         "formatted_address": "3914 St Elmo Ave, Chattanooga, TN 37409, USA",
@@ -9100,13 +8872,7 @@
         "website": "http://www.cbcburns.com/",
         "rating": 4.4,
         "rating_count": 1006,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308529,
-          35.047568
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "725 Cherry St, Chattanooga, TN 37402, USA",
@@ -9338,13 +9104,7 @@
         "website": "http://www.chattabrew.com/",
         "rating": 4.5,
         "rating_count": 423,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311318,
-          35.047275
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "730 Chestnut St, Chattanooga, TN 37402, USA",
@@ -9576,13 +9336,7 @@
         "website": "https://www.buffalowildwings.com/locations/us/tn/chattanooga/120-market-st/sports-bar-221?utm_source=google%20my%20business&utm_medium=organic&utm_campaign=website%20link",
         "rating": 3.8,
         "rating_count": 1645,
-        "description": "American bar & grill serving wings, burgers & sandwiches with patio seating & a kids' menu.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309237,
-          35.055237
-        ]
+        "description": "American bar & grill serving wings, burgers & sandwiches with patio seating & a kids' menu."
       },
       "location": {
         "formatted_address": "120 Market St, Chattanooga, TN 37402, USA",
@@ -9817,13 +9571,7 @@
         "website": "https://www.chilis.com/locations/us/tennessee/chattanooga/market-street?utm_source=google&utm_medium=local&utm_campaign=Chilis",
         "rating": 4.1,
         "rating_count": 1610,
-        "description": "Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style setting.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309303,
-          35.052042
-        ]
+        "description": "Family-friendly chain serving classic Tex-Mex & American fare in a Southwestern-style setting."
       },
       "location": {
         "formatted_address": "408 Market St, Chattanooga, TN 37402, USA",
@@ -10056,13 +9804,7 @@
         "website": "http://communitypie.com/",
         "rating": 4.6,
         "rating_count": 3257,
-        "description": "Hip pub with vintage decor serving Neapolitan & New York-style pizza, craft beers & homemade gelati.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309092,
-          35.046435
-        ]
+        "description": "Hip pub with vintage decor serving Neapolitan & New York-style pizza, craft beers & homemade gelati."
       },
       "location": {
         "formatted_address": "850 Market St, Chattanooga, TN 37402, USA",
@@ -10293,13 +10035,7 @@
         "website": "https://www.edleysbbq.com/locations/chattanooga?utm_source=extnet&utm_medium=yext",
         "rating": 4.6,
         "rating_count": 1893,
-        "description": "BBQ joint providing slow-smoked dishes & traditional Southern sides, plus fried chicken & catfish.",
-        "district": "Mountain Creek",
-        "district_description": "",
-        "coordinates": [
-          -85.312607,
-          35.063055
-        ]
+        "description": "BBQ joint providing slow-smoked dishes & traditional Southern sides, plus fried chicken & catfish."
       },
       "location": {
         "formatted_address": "205 Manufacturers Rd Suite 110, Chattanooga, TN 37405, USA",
@@ -10530,13 +10266,7 @@
         "website": "http://elmesonchattanooga.com/",
         "rating": 4.2,
         "rating_count": 890,
-        "description": "",
-        "district": "Northgate",
-        "district_description": "",
-        "coordinates": [
-          -85.2385,
-          35.133054
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "248 Northgate Mall Dr, Chattanooga, TN 37415, USA",
@@ -11000,13 +10730,7 @@
         "website": "https://chattanoogariverboat.com/overboard-bar-grille/",
         "rating": 4.5,
         "rating_count": 970,
-        "description": "Riverboat burger joint & bar with a patio overlooking the water, plus lounge seating & kids' games.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.314242,
-          35.056053
-        ]
+        "description": "Riverboat burger joint & bar with a patio overlooking the water, plus lounge seating & kids' games."
       },
       "location": {
         "formatted_address": "151 Riverfront Pkwy, Chattanooga, TN 37402, USA",
@@ -11237,13 +10961,7 @@
         "website": "http://palomachatt.com/",
         "rating": 4.4,
         "rating_count": 235,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.313065,
-          35.047265
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "801 Pine St, Chattanooga, TN 37402, USA",
@@ -11475,13 +11193,7 @@
         "website": "https://www.rodiziogrill.com/chattanoogadowntown/",
         "rating": 4.7,
         "rating_count": 5534,
-        "description": "Outpost of a Brazilian steakhouse chain offering skewered meats carved tableside, plus a salad bar.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310954,
-          35.051042
-        ]
+        "description": "Outpost of a Brazilian steakhouse chain offering skewered meats carved tableside, plus a salad bar."
       },
       "location": {
         "formatted_address": "439 Broad St, Chattanooga, TN 37402, USA",
@@ -11717,13 +11429,7 @@
         "website": "https://ruthschris.net/our-restaurants/chattanooga-tn/?utm_source=GMB&utm_medium=location_manager_listing&utm_campaign=yext",
         "rating": 4.6,
         "rating_count": 2381,
-        "description": "Outpost of upmarket steakhouse chain known for sizzling, butter-topped beef in an elegant setting",
-        "district": "Tyner",
-        "district_description": "",
-        "coordinates": [
-          -85.151815,
-          35.041745
-        ]
+        "description": "Outpost of upmarket steakhouse chain known for sizzling, butter-topped beef in an elegant setting"
       },
       "location": {
         "formatted_address": "Embassy Suites Hotel, 2321 Lifestyle Way, Chattanooga, TN 37421, USA",
@@ -11956,13 +11662,7 @@
         "website": "http://www.tacomamacita.com/",
         "rating": 4.4,
         "rating_count": 3582,
-        "description": "Inventive tacos, enchiladas & margaritas are the draw at this colorful Mexican taqueria & bar.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30965,
-          35.06394
-        ]
+        "description": "Inventive tacos, enchiladas & margaritas are the draw at this colorful Mexican taqueria & bar."
       },
       "location": {
         "formatted_address": "109 N Market St, Chattanooga, TN 37405, USA",
@@ -12186,13 +11886,7 @@
         "website": "http://www.taphousechatt.com/",
         "rating": 4.4,
         "rating_count": 692,
-        "description": "",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.32805,
-          35.010964
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "3800 St Elmo Ave #114, Chattanooga, TN 37409, USA",
@@ -12425,13 +12119,7 @@
         "website": "http://urbanstack.com/",
         "rating": 4.5,
         "rating_count": 4123,
-        "description": "Long menu of inventive burgers & a bustling bar scene attract visitors to this woodsy modern tavern.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308594,
-          35.039259
-        ]
+        "description": "Long menu of inventive burgers & a bustling bar scene attract visitors to this woodsy modern tavern."
       },
       "location": {
         "formatted_address": "12 W 13th St, Chattanooga, TN 37402, USA",
@@ -12665,13 +12353,7 @@
         "website": "https://citycafediner.com/",
         "rating": 4.5,
         "rating_count": 5321,
-        "description": "Old-school 24/7 diner serving hearty portions of American fare, all-day breakfast & desserts.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.135095,
-          35.060624
-        ]
+        "description": "Old-school 24/7 diner serving hearty portions of American fare, all-day breakfast & desserts."
       },
       "location": {
         "formatted_address": "7641 Lee Hwy, Chattanooga, TN 37421, USA",
@@ -12902,13 +12584,7 @@
         "website": "https://elmesonchattanooga.com/",
         "rating": 4.1,
         "rating_count": 1999,
-        "description": "",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.156042,
-          35.038043
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2204 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -13141,13 +12817,7 @@
         "website": "http://www.fiammapizzaco.com/",
         "rating": 4.5,
         "rating_count": 795,
-        "description": "Low-key stop for Neapolitan & Sicilian pies, plus gluten-free options, salads & sandwiches.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309208,
-          35.065819
-        ]
+        "description": "Low-key stop for Neapolitan & Sicilian pies, plus gluten-free options, salads & sandwiches."
       },
       "location": {
         "formatted_address": "405 N Market St, Chattanooga, TN 37405, USA",
@@ -13381,13 +13051,7 @@
         "website": "http://www.fujichattanooga.com/",
         "rating": 4.2,
         "rating_count": 2563,
-        "description": "Tableside teppanyaki cuisine along with live seafood options including lobster, scallops & more.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.158372,
-          35.042107
-        ]
+        "description": "Tableside teppanyaki cuisine along with live seafood options including lobster, scallops & more."
       },
       "location": {
         "formatted_address": "2207 Overnite Dr, Chattanooga, TN 37421, USA",
@@ -13625,13 +13289,7 @@
         "website": "https://www.hooters.com/locations/3041-chattanooga?utm_medium=organic&utm_source=google&utm_campaign=gmb-tennessee-east&utm_content=chattanooga&utm_term=website-cta",
         "rating": 3.9,
         "rating_count": 1913,
-        "description": "Sports bar & grill chain famous for chicken wings served by waitresses in short shorts.",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.209216,
-          35.01485
-        ]
+        "description": "Sports bar & grill chain famous for chicken wings served by waitresses in short shorts."
       },
       "location": {
         "formatted_address": "5912 Brainerd Rd, Chattanooga, TN 37421, USA",
@@ -13865,13 +13523,7 @@
         "website": "https://jalexanders.com/",
         "rating": 4.5,
         "rating_count": 2005,
-        "description": "Restaurant chain serving wood-fired American fare in a contemporary space with a bar.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.156573,
-          35.040411
-        ]
+        "description": "Restaurant chain serving wood-fired American fare in a contemporary space with a bar."
       },
       "location": {
         "formatted_address": "2215 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -14569,13 +14221,7 @@
         "website": "http://lupi.com/",
         "rating": 4.6,
         "rating_count": 1692,
-        "description": "Local chain serving hand-tossed pizzas, lasagna & calzones in a casual, quirky space.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310289,
-          35.051931
-        ]
+        "description": "Local chain serving hand-tossed pizzas, lasagna & calzones in a casual, quirky space."
       },
       "location": {
         "formatted_address": "406 Broad St A, Chattanooga, TN 37402, USA",
@@ -14806,13 +14452,7 @@
         "website": "http://lupi.com/",
         "rating": 4.5,
         "rating_count": 624,
-        "description": "Local chain serving hand-tossed pizzas, lasagna & calzones in a casual, quirky space.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.15217,
-          35.008524
-        ]
+        "description": "Local chain serving hand-tossed pizzas, lasagna & calzones in a casual, quirky space."
       },
       "location": {
         "formatted_address": "1414 Jenkins Rd, Chattanooga, TN 37421, USA",
@@ -15050,13 +14690,7 @@
         "website": "https://www.olivegarden.com/locations/tn/chattanooga/chattanooga-hamilton-place-mall/1104?cmpid=br:og_ag:ie_ch:loc_ca:OGGMB_sn:gmb_gt:chattanooga-tn-1104_pl:locurl_rd:1068",
         "rating": 4.3,
         "rating_count": 3463,
-        "description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.155292,
-          35.037475
-        ]
+        "description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads."
       },
       "location": {
         "formatted_address": "2200 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -15294,13 +14928,7 @@
         "website": "https://www.olivegarden.com/locations/tn/hixson/hixson/1690?cmpid=br:og_ag:ie_ch:loc_ca:OGGMB_sn:gmb_gt:hixson-tn-1690_pl:locurl_rd:1540",
         "rating": 4.4,
         "rating_count": 2569,
-        "description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads.",
-        "district": "Northwoods",
-        "district_description": "",
-        "coordinates": [
-          -85.24996,
-          35.1456
-        ]
+        "description": "Lively, family-friendly chain featuring Italian standards such as pastas & salads."
       },
       "location": {
         "formatted_address": "5525 TN-153, Hixson, TN 37343, USA",
@@ -15533,13 +15161,7 @@
         "website": "https://bluffviewartdistrictchattanooga.com/rembrandtscoffeehouse/",
         "rating": 4.5,
         "rating_count": 2182,
-        "description": "Cozy European cafe serving coffee drinks alongside fresh-baked breads, pastries & desserts.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.305319,
-          35.054572
-        ]
+        "description": "Cozy European cafe serving coffee drinks alongside fresh-baked breads, pastries & desserts."
       },
       "location": {
         "formatted_address": "204 High St, Chattanooga, TN 37403, USA",
@@ -15771,13 +15393,7 @@
         "website": "https://www.rodiziogrill.com/chattanoogahamiltonplace/",
         "rating": 4.6,
         "rating_count": 2658,
-        "description": "Outpost of a Brazilian steakhouse chain offering skewered meats carved tableside, plus a salad bar.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.158806,
-          35.03487
-        ]
+        "description": "Outpost of a Brazilian steakhouse chain offering skewered meats carved tableside, plus a salad bar."
       },
       "location": {
         "formatted_address": "2100 Hamilton Pl Blvd #201, Chattanooga, TN 37421, USA",
@@ -16232,13 +15848,7 @@
         "website": null,
         "rating": 4,
         "rating_count": 953,
-        "description": "Mod bowling alley with whimsical decor, black-lit games, bumper cars & arcade, plus a snack bar.",
-        "district": "Woodmore",
-        "district_description": "",
-        "coordinates": [
-          -85.181709,
-          35.029567
-        ]
+        "description": "Mod bowling alley with whimsical decor, black-lit games, bumper cars & arcade, plus a snack bar."
       },
       "location": {
         "formatted_address": "6241 Perimeter Dr, Chattanooga, TN 37421, USA",
@@ -16463,13 +16073,7 @@
         "website": "https://www.sugarsribs.com/",
         "rating": 4.5,
         "rating_count": 4224,
-        "description": "Barbecued meats & simple sides in a casual setting with indoor & outdoor seating.",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.27194,
-          35.013419
-        ]
+        "description": "Barbecued meats & simple sides in a casual setting with indoor & outdoor seating."
       },
       "location": {
         "formatted_address": "2450 15th Ave, Chattanooga, TN 37494, USA",
@@ -16701,13 +16305,7 @@
         "website": "https://tacomac.com/locations/423-market-street-chattanooga-tn-37402/",
         "rating": 4,
         "rating_count": 1918,
-        "description": "Branch of a sports grill chain offering buffalo wings, chili, sandwiches & lots of draft beer.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309802,
-          35.05154
-        ]
+        "description": "Branch of a sports grill chain offering buffalo wings, chili, sandwiches & lots of draft beer."
       },
       "location": {
         "formatted_address": "423 Market St, Chattanooga, TN 37402, USA",
@@ -16939,13 +16537,7 @@
         "website": "https://www.tazikis.com/location/marketst",
         "rating": 4.5,
         "rating_count": 1023,
-        "description": "Comfy chain eatery providing made-to-order gyros & other Mediterranean dishes plus beer & wine.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309264,
-          35.051246
-        ]
+        "description": "Comfy chain eatery providing made-to-order gyros & other Mediterranean dishes plus beer & wine."
       },
       "location": {
         "formatted_address": "432 Market St, Chattanooga, TN 37402, USA",
@@ -17177,13 +16769,7 @@
         "website": "https://www.tazikis.com/location/gunbarrel-road/",
         "rating": 4.5,
         "rating_count": 978,
-        "description": "Comfy chain eatery providing made-to-order gyros & other Mediterranean dishes plus beer & wine.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.151974,
-          35.033846
-        ]
+        "description": "Comfy chain eatery providing made-to-order gyros & other Mediterranean dishes plus beer & wine."
       },
       "location": {
         "formatted_address": "2020 Gunbarrel Rd Suite 120, Chattanooga, TN 37421, USA",
@@ -17419,13 +17005,7 @@
         "website": "http://www.yellowdeli.com/",
         "rating": 4.6,
         "rating_count": 1413,
-        "description": "Deli offering sandwiches, salads & breakfast, plus a juice bar mixing up smoothies & other drinks.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.296931,
-          35.044425
-        ]
+        "description": "Deli offering sandwiches, salads & breakfast, plus a juice bar mixing up smoothies & other drinks."
       },
       "location": {
         "formatted_address": "737 McCallie Ave, Chattanooga, TN 37403, USA",
@@ -17659,13 +17239,7 @@
         "website": "https://www.abuelos.com/restaurants/chattanooga/?utm_source=gmb&utm_medium=astralcom&utm_campaign=gmb-astralcom-chattanooga",
         "rating": 4.4,
         "rating_count": 1753,
-        "description": "Texas-based chain restaurant serving Mexican food & margaritas in a hacienda-style setting.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.15675,
-          35.032141
-        ]
+        "description": "Texas-based chain restaurant serving Mexican food & margaritas in a hacienda-style setting."
       },
       "location": {
         "formatted_address": "2102 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -17903,13 +17477,7 @@
         "website": "https://citycafediner.com/",
         "rating": 4.4,
         "rating_count": 6519,
-        "description": "Old-school 24/7 diner serving hearty portions of American fare, all-day breakfast & desserts.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311049,
-          35.050506
-        ]
+        "description": "Old-school 24/7 diner serving hearty portions of American fare, all-day breakfast & desserts."
       },
       "location": {
         "formatted_address": "511 Broad St, Chattanooga, TN 37402, USA",
@@ -18142,13 +17710,7 @@
         "website": "https://www.hanasteaksushitn.com/",
         "rating": 4,
         "rating_count": 1184,
-        "description": "Casual local chain serving sushi & Japanese entrees prepared on tableside hibachi grills.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.155292,
-          35.037475
-        ]
+        "description": "Casual local chain serving sushi & Japanese entrees prepared on tableside hibachi grills."
       },
       "location": {
         "formatted_address": "2200 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -18384,13 +17946,7 @@
         "website": "https://theicecreamshow.com/",
         "rating": 4.5,
         "rating_count": 1696,
-        "description": "Funky ice cream & coffee shop popular for its customizable blended ice cream or fro-yo flavors.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308031,
-          35.0554
-        ]
+        "description": "Funky ice cream & coffee shop popular for its customizable blended ice cream or fro-yo flavors."
       },
       "location": {
         "formatted_address": "105 Walnut St, Chattanooga, TN 37403, USA",
@@ -18624,13 +18180,7 @@
         "website": "https://www.jasonsdeli.com/locations/tn/chattanooga/2115-gunbarrel/",
         "rating": 4.5,
         "rating_count": 1057,
-        "description": "Deli chain featuring specialty sandwiches, salads & other health-conscious fare.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.15414,
-          35.034177
-        ]
+        "description": "Deli chain featuring specialty sandwiches, salads & other health-conscious fare."
       },
       "location": {
         "formatted_address": "2115 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -18859,13 +18409,7 @@
         "website": "https://www.companychattanooga.com/",
         "rating": 4.6,
         "rating_count": 120,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307744,
-          35.0381
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1409 Market St, Chattanooga, TN 37402, USA",
@@ -19327,13 +18871,7 @@
         "website": "http://www.mayankitchen.com/",
         "rating": 4.5,
         "rating_count": 2805,
-        "description": "Contemporary restaurant offering American & Latin-American cuisine, plus an extensive tequila bar.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31088,
-          35.050619
-        ]
+        "description": "Contemporary restaurant offering American & Latin-American cuisine, plus an extensive tequila bar."
       },
       "location": {
         "formatted_address": "507 Broad St, Chattanooga, TN 37402, USA",
@@ -19566,13 +19104,7 @@
         "website": "https://locations.moes.com/tn/chattanooga/1820-gunbarrel-rd?utm_source=google&utm_medium=organic&utm_campaign=locations_partner",
         "rating": 3.7,
         "rating_count": 534,
-        "description": "Counter-serve chain dishing up Southwestern staples from burritos to nachos in lively environs.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.15606,
-          35.02305
-        ]
+        "description": "Counter-serve chain dishing up Southwestern staples from burritos to nachos in lively environs."
       },
       "location": {
         "formatted_address": "1820 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -19811,13 +19343,7 @@
         "website": "https://www.mrtspizza.com/",
         "rating": 4.7,
         "rating_count": 2934,
-        "description": "Unassuming spot serving pizzas made with housemade dough & sauce, sundaes & cones.",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.327853,
-          35.009719
-        ]
+        "description": "Unassuming spot serving pizzas made with housemade dough & sauce, sundaes & cones."
       },
       "location": {
         "formatted_address": "3924 Tennessee Ave, Chattanooga, TN 37409, USA",
@@ -20048,13 +19574,7 @@
         "website": "http://provinos.com/",
         "rating": 4.4,
         "rating_count": 3044,
-        "description": "Homey restaurant serving classic Italian dishes including pasta plates & seafood, plus a kids' menu.",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.222095,
-          35.00366
-        ]
+        "description": "Homey restaurant serving classic Italian dishes including pasta plates & seafood, plus a kids' menu."
       },
       "location": {
         "formatted_address": "5084 South Terrace #5, Chattanooga, TN 37412, USA",
@@ -20516,13 +20036,7 @@
         "website": "https://bluffviewartdistrictchattanooga.com/tonys-pasta-shop/",
         "rating": 4.6,
         "rating_count": 3842,
-        "description": "Traditional Italian & Sicilian meals made with garden ingredients & served in a casual ambiance.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.305154,
-          35.054347
-        ]
+        "description": "Traditional Italian & Sicilian meals made with garden ingredients & served in a casual ambiance."
       },
       "location": {
         "formatted_address": "212 High St, Chattanooga, TN 37403, USA",
@@ -20752,13 +20266,7 @@
         "website": null,
         "rating": 3.8,
         "rating_count": 158,
-        "description": "",
-        "district": "Rock City",
-        "district_description": "",
-        "coordinates": [
-          -85.34996,
-          34.975315
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "4-013 001, 1400 Patten Rd, Lookout Mountain, GA 30750, USA",
@@ -21221,13 +20729,7 @@
         "website": "https://chattanoogawhiskey.com/",
         "rating": 4.9,
         "rating_count": 2248,
-        "description": "Trendy whiskey distillery offering guided tours with tasting flights & a shop.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307746,
-          35.037235
-        ]
+        "description": "Trendy whiskey distillery offering guided tours with tasting flights & a shop."
       },
       "location": {
         "formatted_address": "1439 Market St, Chattanooga, TN 37402, USA",
@@ -21463,13 +20965,7 @@
         "website": "https://www.longhornsteakhouse.com/locations/tn/hixson/hixson/5268?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:hixson-tn-5268_pl:locurl_rd:1220",
         "rating": 4.4,
         "rating_count": 2172,
-        "description": "Casual steakhouse chain known for grilled beef & other American dishes in a ranch-style space.",
-        "district": "Northwoods",
-        "district_description": "",
-        "coordinates": [
-          -85.249949,
-          35.146507
-        ]
+        "description": "Casual steakhouse chain known for grilled beef & other American dishes in a ranch-style space."
       },
       "location": {
         "formatted_address": "5583 TN-153, Hixson, TN 37343, USA",
@@ -21704,13 +21200,7 @@
         "website": "http://meanmugcoffee.com/",
         "rating": 4.5,
         "rating_count": 424,
-        "description": "Classic coffee shop menu in a modern, industrial setting with exposed brick & art-covered walls.",
-        "district": "Mountain Creek",
-        "district_description": "",
-        "coordinates": [
-          -85.312607,
-          35.063055
-        ]
+        "description": "Classic coffee shop menu in a modern, industrial setting with exposed brick & art-covered walls."
       },
       "location": {
         "formatted_address": "205 Manufacturers Rd Suite 109, Chattanooga, TN 37405, USA",
@@ -21946,13 +21436,7 @@
         "website": "https://mellowmushroom.com/location/tn-chattanooga-2318-lifestyle-way-37421/?utm_source=gmb&utm_medium=organic&utm_campaign=Chattanooga-TN&utm_content=138",
         "rating": 4.4,
         "rating_count": 2423,
-        "description": "Funky, art-filled chain pizzeria featuring craft beer, calzones & creative stone-baked pizzas.",
-        "district": "Tyner",
-        "district_description": "",
-        "coordinates": [
-          -85.1507,
-          35.04162
-        ]
+        "description": "Funky, art-filled chain pizzeria featuring craft beer, calzones & creative stone-baked pizzas."
       },
       "location": {
         "formatted_address": "2318 Lifestyle Way, Chattanooga, TN 37421, USA",
@@ -22183,13 +21667,7 @@
         "website": "https://www.facebook.com/pages/category/Barbecue-Restaurant/Memos-Grill-1567636026857315/",
         "rating": 4.4,
         "rating_count": 244,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.303181,
-          35.043623
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "430 E M L King Blvd, Chattanooga, TN 37403, USA",
@@ -22420,13 +21898,7 @@
         "website": "http://www.publichousechattanooga.com/bars-in-chattanooga",
         "rating": 4.6,
         "rating_count": 177,
-        "description": "Southern-style nibbles & craft cocktails are featured at this cozy hangout with a big-screen TV.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308785,
-          35.042826
-        ]
+        "description": "Southern-style nibbles & craft cocktails are featured at this cozy hangout with a big-screen TV."
       },
       "location": {
         "formatted_address": "1110 Market St, Chattanooga, TN 37402, USA",
@@ -22657,13 +22129,7 @@
         "website": "http://www.southernstarrestaurant.com/",
         "rating": 4.6,
         "rating_count": 873,
-        "description": "Southern-style comfort fare & daily specials dished out in a low-key setting with high ceilings.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309963,
-          35.039508
-        ]
+        "description": "Southern-style comfort fare & daily specials dished out in a low-key setting with high ceilings."
       },
       "location": {
         "formatted_address": "1300 Broad St # 300, Chattanooga, TN 37402, USA",
@@ -22894,13 +22360,7 @@
         "website": "http://tivolichattanooga.com/",
         "rating": 4.7,
         "rating_count": 1216,
-        "description": "Elegant performance venue hosts plays plus musical acts from classical & country to comedy & rock.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31112,
-          35.047875
-        ]
+        "description": "Elegant performance venue hosts plays plus musical acts from classical & country to comedy & rock."
       },
       "location": {
         "formatted_address": "709 Broad St, Chattanooga, TN 37402, USA",
@@ -23137,13 +22597,7 @@
         "website": "https://www.mediterraneandelipizza.com/",
         "rating": 4.3,
         "rating_count": 386,
-        "description": "Counter-service joint offering Mediterranean bites such as gyros & falafel, plus pizza & burgers.",
-        "district": "University of Tennessee at Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.303304,
-          35.048906
-        ]
+        "description": "Counter-service joint offering Mediterranean bites such as gyros & falafel, plus pizza & burgers."
       },
       "location": {
         "formatted_address": "430 Vine St, Chattanooga, TN 37403, USA",
@@ -23374,13 +22828,7 @@
         "website": "https://www.beas1950.com/",
         "rating": 4.5,
         "rating_count": 2938,
-        "description": "Modest eatery for all-you-can-eat Southern fare including fried chicken in family-style surrounds.",
-        "district": "Ridgedale",
-        "district_description": "",
-        "coordinates": [
-          -85.286757,
-          34.990356
-        ]
+        "description": "Modest eatery for all-you-can-eat Southern fare including fried chicken in family-style surrounds."
       },
       "location": {
         "formatted_address": "4500 Dodds Ave, Chattanooga, TN 37407, USA",
@@ -23620,13 +23068,7 @@
         "website": "https://www.benjerry.com/chattanooga",
         "rating": 4.4,
         "rating_count": 866,
-        "description": "Iconic Vermont-based ice cream parlor chain, known for its creative, cleverly named flavors.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311118,
-          35.054474
-        ]
+        "description": "Iconic Vermont-based ice cream parlor chain, known for its creative, cleverly named flavors."
       },
       "location": {
         "formatted_address": "201 Broad St, Chattanooga, TN 37402, USA",
@@ -24085,13 +23527,7 @@
         "website": "https://gate11distillery.com/",
         "rating": 4.4,
         "rating_count": 138,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30659,
-          35.037055
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "Inside the historic Chattanooga Choo Choo terminal, 1400 Market St Suite 108, Chattanooga, TN 37402, USA",
@@ -24323,13 +23759,7 @@
         "website": "http://www.hermanssoulfood.com/",
         "rating": 4.2,
         "rating_count": 1034,
-        "description": "",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.241389,
-          35.022262
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "3821 Brainerd Rd, Chattanooga, TN 37411, USA",
@@ -24564,13 +23994,7 @@
         "website": "http://www.thehotchocolatier.com/",
         "rating": 4.7,
         "rating_count": 1111,
-        "description": "Quaint spot offering artisanal chocolate truffles, hot drinking chocolate, pastries & desserts.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307761,
-          35.037654
-        ]
+        "description": "Quaint spot offering artisanal chocolate truffles, hot drinking chocolate, pastries & desserts."
       },
       "location": {
         "formatted_address": "1423 Market St, Chattanooga, TN 37402, USA",
@@ -24807,13 +24231,7 @@
         "website": "http://www.jddonuts.com/",
         "rating": 4.6,
         "rating_count": 590,
-        "description": "A creative assortment of donuts & ice cream is presented in an eclectic space with ample seating.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306936,
-          35.062685
-        ]
+        "description": "A creative assortment of donuts & ice cream is presented in an eclectic space with ample seating."
       },
       "location": {
         "formatted_address": "121 Frazier Ave, Chattanooga, TN 37405, USA",
@@ -25279,13 +24697,7 @@
         "website": "http://meanmugcoffee.com/",
         "rating": 4.5,
         "rating_count": 1052,
-        "description": "Quirky, lively coffeehouse with reclaimed wood & brick accents, a patio & light bites.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30889,
-          35.03652
-        ]
+        "description": "Quirky, lively coffeehouse with reclaimed wood & brick accents, a patio & light bites."
       },
       "location": {
         "formatted_address": "114 W Main St, Chattanooga, TN 37408, USA",
@@ -25515,13 +24927,7 @@
         "website": "http://www.stjohnsmeetingplace.com/",
         "rating": 4.7,
         "rating_count": 258,
-        "description": "A menu featuring elevated bar & bistro fare in modern space with happy hour & a bright red exterior.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.312033,
-          35.047255
-        ]
+        "description": "A menu featuring elevated bar & bistro fare in modern space with happy hour & a bright red exterior."
       },
       "location": {
         "formatted_address": "729 Chestnut St, Chattanooga, TN 37402, USA",
@@ -25757,13 +25163,7 @@
         "website": "http://niedlovs.com/",
         "rating": 4.8,
         "rating_count": 1432,
-        "description": "Industrial-chic cafe & bakery with a patio for housemade breads, sandwiches & pastries, plus coffee.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.304597,
-          35.03533
-        ]
+        "description": "Industrial-chic cafe & bakery with a patio for housemade breads, sandwiches & pastries, plus coffee."
       },
       "location": {
         "formatted_address": "215 E Main St, Chattanooga, TN 37408, USA",
@@ -25996,13 +25396,7 @@
         "website": "http://www.ribandloin.com/",
         "rating": 4.4,
         "rating_count": 1748,
-        "description": "No-frills spot for BBQ, mac 'n' cheese, fried okra & more in relaxed, family-friendly surrounds.",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.20791,
-          35.01587
-        ]
+        "description": "No-frills spot for BBQ, mac 'n' cheese, fried okra & more in relaxed, family-friendly surrounds."
       },
       "location": {
         "formatted_address": "5946 Brainerd Rd, Chattanooga, TN 37421, USA",
@@ -26237,13 +25631,7 @@
         "website": "https://www.riverstdeli.com/",
         "rating": 4.8,
         "rating_count": 894,
-        "description": "Counter-serve nook with New York–style sandwiches, sides & desserts in comfy, local-art-filled digs.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307601,
-          35.0622
-        ]
+        "description": "Counter-serve nook with New York–style sandwiches, sides & desserts in comfy, local-art-filled digs."
       },
       "location": {
         "formatted_address": "151 River St, Chattanooga, TN 37405, USA",
@@ -26475,13 +25863,7 @@
         "website": "http://thaismile-chattanooga.com/",
         "rating": 4,
         "rating_count": 811,
-        "description": "Casual, family-owned outfit with old-world flair preparing hearty Thai plates to eat in or take out.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309904,
-          35.054086
-        ]
+        "description": "Casual, family-owned outfit with old-world flair preparing hearty Thai plates to eat in or take out."
       },
       "location": {
         "formatted_address": "219 Market St, Chattanooga, TN 37402, USA",
@@ -26711,13 +26093,7 @@
         "website": "http://amadatapas.com/",
         "rating": 4.9,
         "rating_count": 139,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.313287,
-          35.03901
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1413 Chestnut St, Chattanooga, TN 37402, USA",
@@ -26947,13 +26323,7 @@
         "website": "http://bluegrassgrillchattanooga.com/",
         "rating": 4.8,
         "rating_count": 1529,
-        "description": "Hearty Southern-style breakfasts plus soup & sandwiches served in a cozy diner setting.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.305782,
-          35.035773
-        ]
+        "description": "Hearty Southern-style breakfasts plus soup & sandwiches served in a cozy diner setting."
       },
       "location": {
         "formatted_address": "55 E Main St #101, Chattanooga, TN 37408, USA",
@@ -27183,13 +26553,7 @@
         "website": "http://champyschicken.com/",
         "rating": 4.6,
         "rating_count": 3258,
-        "description": "Fried chicken is the draw at this country-hip Southern eatery with live music & a long beer list.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.302136,
-          35.043215
-        ]
+        "description": "Fried chicken is the draw at this country-hip Southern eatery with live music & a long beer list."
       },
       "location": {
         "formatted_address": "526 E M L King Blvd, Chattanooga, TN 37403, USA",
@@ -27420,13 +26784,7 @@
         "website": "http://mission-bbq.com/",
         "rating": 4.7,
         "rating_count": 1572,
-        "description": "Casual chain featuring BBQ & classic sides, plus memorabilia honoring soldiers & first responders.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.155288,
-          35.029187
-        ]
+        "description": "Casual chain featuring BBQ & classic sides, plus memorabilia honoring soldiers & first responders."
       },
       "location": {
         "formatted_address": "1926 Gunbarrel Rd #108, Chattanooga, TN 37421, USA",
@@ -27659,13 +27017,7 @@
         "website": "https://www.peets.com/pages/store-locator?stockist-query=Chattanooga,%20TN%2037406,%20USA&selected=West%20Village",
         "rating": 4.6,
         "rating_count": 414,
-        "description": "Berkeley-born chain featuring signature coffee, tea & blended drinks alongside baked goods.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311712,
-          35.046524
-        ]
+        "description": "Berkeley-born chain featuring signature coffee, tea & blended drinks alongside baked goods."
       },
       "location": {
         "formatted_address": "819 Chestnut St, Chattanooga, TN 37402, USA",
@@ -27896,13 +27248,7 @@
         "website": "https://www.pizzabroschattanooga.com/",
         "rating": 4.6,
         "rating_count": 1037,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.315023,
-          35.067211
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "501 Cherokee Blvd., Chattanooga, TN 37405, USA",
@@ -28134,13 +27480,7 @@
         "website": "https://theplaylist.biz/",
         "rating": 4.8,
         "rating_count": 278,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309183,
-          35.055554
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "100 Market St, Chattanooga, TN 37402, USA",
@@ -28373,13 +27713,7 @@
         "website": "https://www.sleepyhead.coffee/",
         "rating": 4.6,
         "rating_count": 405,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310858,
-          35.047308
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "735 Broad St Suite 104, Chattanooga, TN 37402, USA",
@@ -28612,13 +27946,7 @@
         "website": "https://www.starbucks.com/store-locator/store/16601",
         "rating": 4.3,
         "rating_count": 556,
-        "description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310885,
-          35.04598
-        ]
+        "description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability."
       },
       "location": {
         "formatted_address": "827 Broad St, Chattanooga, TN 37402, USA",
@@ -28850,13 +28178,7 @@
         "website": "https://tupelohoneycafe.com/restaurant/chattanooga/",
         "rating": 4.4,
         "rating_count": 3063,
-        "description": "An all-day menu of Southern comfort food with a creative twist, plus craft beers & cocktails.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308785,
-          35.042826
-        ]
+        "description": "An all-day menu of Southern comfort food with a creative twist, plus craft beers & cocktails."
       },
       "location": {
         "formatted_address": "1110 Market St, Chattanooga, TN 37402, USA",
@@ -29087,13 +28409,7 @@
         "website": "http://www.alexthaifood.com/",
         "rating": 4.1,
         "rating_count": 786,
-        "description": "Thai classics, creative sushi rolls & cocktails served in a yellow, art-lined space with a full bar.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.306869,
-          35.035689
-        ]
+        "description": "Thai classics, creative sushi rolls & cocktails served in a yellow, art-lined space with a full bar."
       },
       "location": {
         "formatted_address": "26 E Main St #114, Chattanooga, TN 37408, USA",
@@ -29327,13 +28643,7 @@
         "website": "http://www.clumpies.com/locations/southside/",
         "rating": 4.6,
         "rating_count": 764,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307721,
-          35.038335
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1401 Market St, Chattanooga, TN 37402, USA",
@@ -29568,13 +28878,7 @@
         "website": "http://www.cupcakekitchenusa.com/",
         "rating": 4.7,
         "rating_count": 963,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.3103,
-          35.05083
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "500 Broad St, Chattanooga, TN 37402, USA",
@@ -29810,13 +29114,7 @@
         "website": "http://thedailyrationchattanooga.com/",
         "rating": 4.5,
         "rating_count": 1185,
-        "description": "Casual, locally-owned eatery specializing in elevated breakfast, lunch & dinner staples.",
-        "district": "Riverview",
-        "district_description": "",
-        "coordinates": [
-          -85.289654,
-          35.06983
-        ]
+        "description": "Casual, locally-owned eatery specializing in elevated breakfast, lunch & dinner staples."
       },
       "location": {
         "formatted_address": "1220 Dartmouth St, Chattanooga, TN 37405, USA",
@@ -30049,13 +29347,7 @@
         "website": "https://restaurants.fiveguys.com/401-broad-st",
         "rating": 4.4,
         "rating_count": 1171,
-        "description": "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310966,
-          35.052027
-        ]
+        "description": "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait."
       },
       "location": {
         "formatted_address": "401 Broad St, Chattanooga, TN 37402, USA",
@@ -30284,13 +29576,7 @@
         "website": "http://www.ridetheincline.com/",
         "rating": 4.4,
         "rating_count": 4258,
-        "description": "Mountainside funicular offering a mile-long ride in a trolley-style car to expansive valley vistas.",
-        "district": "Lookout Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.34331,
-          35.005961
-        ]
+        "description": "Mountainside funicular offering a mile-long ride in a trolley-style car to expansive valley vistas."
       },
       "location": {
         "formatted_address": "827 E Brow Rd, Lookout Mountain, TN 37350, USA",
@@ -30526,13 +29812,7 @@
         "website": "https://locations.jimmyjohns.com/tn/chattanooga/sandwiches-940.html?utm_source=google%20my%20business&utm_medium=organic&utm_campaign=website%20link",
         "rating": 3.8,
         "rating_count": 313,
-        "description": "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309731,
-          35.04508
-        ]
+        "description": "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips."
       },
       "location": {
         "formatted_address": "973 Market St, Chattanooga, TN 37402, USA",
@@ -30766,13 +30046,7 @@
         "website": "https://shop.moonpie.com/",
         "rating": 4.5,
         "rating_count": 1274,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.3109,
-          35.05135
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "429 Broad St, Chattanooga, TN 37402, USA",
@@ -31005,13 +30279,7 @@
         "website": "https://www.starbucks.com/store-locator/store/18117",
         "rating": 4.2,
         "rating_count": 304,
-        "description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
-        "district": "Rock City",
-        "district_description": "",
-        "coordinates": [
-          -85.34996,
-          34.975315
-        ]
+        "description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability."
       },
       "location": {
         "formatted_address": "1400 Patten Rd, Lookout Mountain, GA 30750, USA",
@@ -31477,13 +30745,7 @@
         "website": "https://www.longhornsteakhouse.com/locations/tx/chattanooga/chattanooga/5664?cmpid=br:lh_ag:ie_ch:loc_ca:LHGMB_sn:gmb_gt:chattanooga-tn-5664_pl:locurl_rd:1573",
         "rating": 4.3,
         "rating_count": 2184,
-        "description": "Casual steakhouse chain known for grilled beef & other American dishes in a ranch-style space.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.158238,
-          35.024229
-        ]
+        "description": "Casual steakhouse chain known for grilled beef & other American dishes in a ranch-style space."
       },
       "location": {
         "formatted_address": "1806 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -31723,13 +30985,7 @@
         "website": "https://www.panerabread.com/en-us/cafe/locations/tn/chattanooga/417-market-street?utm_medium=local&utm_source=google&utm_campaign=dpm-dist&utm_term=202604&utm_content=main",
         "rating": 4.1,
         "rating_count": 573,
-        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31002,
-          35.051618
-        ]
+        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi."
       },
       "location": {
         "formatted_address": "417 Market St, Chattanooga, TN 37402, USA",
@@ -31959,13 +31215,7 @@
         "website": "https://www.reagansretrobar.com/",
         "rating": 4.2,
         "rating_count": 278,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306123,
-          35.03657
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "24 Station St #102, Chattanooga, TN 37408, USA",
@@ -32201,13 +31451,7 @@
         "website": "http://www.adellescreperie.com/",
         "rating": 4.5,
         "rating_count": 618,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.302464,
-          35.034005
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "400 E Main St, Chattanooga, TN 37408, USA",
@@ -32668,13 +31912,7 @@
         "website": "http://kinleychattanooga.com/",
         "rating": 4.9,
         "rating_count": 8,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307744,
-          35.0381
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1409 Market St, Chattanooga, TN 37402, USA",
@@ -32914,13 +32152,7 @@
         "website": "https://www.panerabread.com/en-us/cafe/locations/tn/cleveland/375-paul-huff-parkway?utm_medium=local&utm_source=google&utm_campaign=dpm-dist&utm_term=202606&utm_content=main",
         "rating": 4,
         "rating_count": 867,
-        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
-        "district": "Burlington Heights",
-        "district_description": "",
-        "coordinates": [
-          -84.852051,
-          35.206997
-        ]
+        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi."
       },
       "location": {
         "formatted_address": "375 Paul Huff Pkwy NW, Cleveland, TN 37312, USA",
@@ -33400,13 +32632,7 @@
         "website": "https://www.panerabread.com/en-us/cafe/locations/tn/chattanooga/1810-gunbarrel-road?utm_medium=local&utm_source=google&utm_campaign=dpm-dist&utm_term=202609&utm_content=main",
         "rating": 4,
         "rating_count": 1053,
-        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.157547,
-          35.025509
-        ]
+        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi."
       },
       "location": {
         "formatted_address": "1810 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -33646,13 +32872,7 @@
         "website": "https://www.panerabread.com/en-us/cafe/locations/tn/chattanooga/562-northgate-mall-drive?utm_medium=local&utm_source=google&utm_campaign=dpm-dist&utm_term=202616&utm_content=main",
         "rating": 3.8,
         "rating_count": 938,
-        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
-        "district": "Northgate",
-        "district_description": "",
-        "coordinates": [
-          -85.24253,
-          35.129395
-        ]
+        "description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi."
       },
       "location": {
         "formatted_address": "562 Northgate Mall Dr Suite 102, Chattanooga, TN 37415, USA",
@@ -33881,13 +33101,7 @@
         "website": "http://www.shadyscorner.com/",
         "rating": 4.5,
         "rating_count": 378,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.295407,
-          35.032374
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1402 Cemetery Ave, Chattanooga, TN 37408, USA",
@@ -34116,13 +33330,7 @@
         "website": "https://www.wxyzbarchattanooga.com/?utm_medium=organic&utm_source=google&utm_campaign=business_listing",
         "rating": 3.9,
         "rating_count": 54,
-        "description": "",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.160399,
-          35.03268
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2090 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -34356,13 +33564,7 @@
         "website": "https://www.oldgilmangrill.com/?utm_source=GMBlisting&utm_medium=organic&utm_campaign=RM",
         "rating": 4.5,
         "rating_count": 924,
-        "description": "Cocktails are mixed tableside at this upmarket bistro & wine shop serving French & American cuisine.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31234,
-          35.04686
-        ]
+        "description": "Cocktails are mixed tableside at this upmarket bistro & wine shop serving French & American cuisine."
       },
       "location": {
         "formatted_address": "216 W 8th St, Chattanooga, TN 37402, USA",
@@ -34592,13 +33794,7 @@
         "website": "https://www.whitebirdchattanooga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing",
         "rating": 4.4,
         "rating_count": 375,
-        "description": "Stylish fine dining space serving locally sourced brunch & dinner specialties, plus cocktails.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307325,
-          35.055398
-        ]
+        "description": "Stylish fine dining space serving locally sourced brunch & dinner specialties, plus cocktails."
       },
       "location": {
         "formatted_address": "102 Walnut St, Chattanooga, TN 37403, USA",
@@ -34829,13 +34025,7 @@
         "website": "http://www.easybistro.com/",
         "rating": 4.6,
         "rating_count": 724,
-        "description": "Chill French bistro with a raw bar & long cocktail list in a renovated bottling plant.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31176,
-          35.046962
-        ]
+        "description": "Chill French bistro with a raw bar & long cocktail list in a renovated bottling plant."
       },
       "location": {
         "formatted_address": "801 Chestnut St, Chattanooga, TN 37402, USA",
@@ -35065,13 +34255,7 @@
         "website": "https://www.whiskeythiefchattanooga.com/?utm_source=google&utm_medium=organic&utm_campaign=business-listing",
         "rating": 4.5,
         "rating_count": 732,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307325,
-          35.055398
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "102 Walnut St, Chattanooga, TN 37403, USA",
@@ -35301,13 +34485,7 @@
         "website": "http://riverdrifterschatt.com/",
         "rating": 4.7,
         "rating_count": 942,
-        "description": "",
-        "district": "Mountain Creek",
-        "district_description": "",
-        "coordinates": [
-          -85.36533,
-          35.11068
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1925 Suck Creek Rd, Chattanooga, TN 37405, USA",
@@ -35537,13 +34715,7 @@
         "website": "https://www.hellomontyonmain.com/",
         "rating": 4.4,
         "rating_count": 333,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310628,
-          35.03719
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "306 W Main St, Chattanooga, TN 37408, USA",
@@ -36004,13 +35176,7 @@
         "website": "http://www.alimentarichatt.com/",
         "rating": 4.2,
         "rating_count": 348,
-        "description": "Warm, light-filled eatery serving Italian fare such as pastas, seafood & meat dishes plus wines.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.313065,
-          35.047265
-        ]
+        "description": "Warm, light-filled eatery serving Italian fare such as pastas, seafood & meat dishes plus wines."
       },
       "location": {
         "formatted_address": "801 Pine St, Chattanooga, TN 37402, USA",
@@ -36250,13 +35416,7 @@
         "website": "https://bantamandbiddy728marketstreet.hrpos.heartland.us/menu",
         "rating": 4.5,
         "rating_count": 883,
-        "description": "Roast-chicken specialist featuring creative, locally sourced Southern food in a relaxed environment.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309114,
-          35.04772
-        ]
+        "description": "Roast-chicken specialist featuring creative, locally sourced Southern food in a relaxed environment."
       },
       "location": {
         "formatted_address": "728 Market St Suite 112C, Chattanooga, TN 37402, USA",
@@ -36489,13 +35649,7 @@
         "website": "http://www.madpriestcoffee.com/",
         "rating": 4.8,
         "rating_count": 405,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31291,
-          35.033898
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1900 Broad St C, Chattanooga, TN 37408, USA",
@@ -36730,13 +35884,7 @@
         "website": "http://playwashpint.com/?UTM_source=GMB_listing&UTM_medium=organic",
         "rating": 4.6,
         "rating_count": 339,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30363,
-          35.03559
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "113 Johnson St, Chattanooga, TN 37408, USA",
@@ -36970,13 +36118,7 @@
         "website": "http://www.stonecupcafe.com/",
         "rating": 4.5,
         "rating_count": 706,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30634,
-          35.06215
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "208 Frazier Ave, Chattanooga, TN 37405, USA",
@@ -37208,13 +36350,7 @@
         "website": "http://www.thebitteralibi.com/",
         "rating": 4.6,
         "rating_count": 1228,
-        "description": "Modern pub in rustic, warm digs serving inventive brunch fare, burgers, craft beer & cocktails.",
-        "district": "University of Tennessee at Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30553,
-          35.045083
-        ]
+        "description": "Modern pub in rustic, warm digs serving inventive brunch fare, burgers, craft beer & cocktails."
       },
       "location": {
         "formatted_address": "825 Houston St, Chattanooga, TN 37403, USA",
@@ -37446,13 +36582,7 @@
         "website": "https://www.albatrossgolfbar.com/",
         "rating": 4.9,
         "rating_count": 68,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31409,
-          35.06447
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "388 Somerville Ave, Chattanooga, TN 37405, USA",
@@ -37682,13 +36812,7 @@
         "website": null,
         "rating": 4.7,
         "rating_count": 63,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311707,
-          35.046026
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "841 Chestnut St, Chattanooga, TN 37402, USA",
@@ -38154,13 +37278,7 @@
         "website": "https://www.bleufoxcheeseshop.com/",
         "rating": 4.9,
         "rating_count": 326,
-        "description": "Buzzy shop for platters of artisan cheeses, gourmet olives & spreads, plus sandwiches & local beer.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.30323,
-          35.03434
-        ]
+        "description": "Buzzy shop for platters of artisan cheeses, gourmet olives & spreads, plus sandwiches & local beer."
       },
       "location": {
         "formatted_address": "324 E Main St, Chattanooga, TN 37408, USA",
@@ -38390,13 +37508,7 @@
         "website": "https://budssportsbar.com/",
         "rating": 4.4,
         "rating_count": 1801,
-        "description": "Sizeable venue with lots of TVs offering classic pub grub, plus darts & live music.",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.21306,
-          35.012761
-        ]
+        "description": "Sizeable venue with lots of TVs offering classic pub grub, plus darts & live music."
       },
       "location": {
         "formatted_address": "5751 Brainerd Rd, Chattanooga, TN 37411, USA",
@@ -38630,13 +37742,7 @@
         "website": "http://www.burlaep.com/",
         "rating": 4.8,
         "rating_count": 85,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.29713,
-          35.03952
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "801 E 11th St, Chattanooga, TN 37403, USA",
@@ -39099,13 +38205,7 @@
         "website": "https://www.facebook.com/cherrystreettavernchattanooga",
         "rating": 4.7,
         "rating_count": 255,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308584,
-          35.047732
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "719 Cherry St, Chattanooga, TN 37402, USA",
@@ -39335,13 +38435,7 @@
         "website": "http://www.marriott.com/hotels/hotel-information/restaurant/chaow-springhill-suites-chattanooga-north-ooltewah/",
         "rating": 4.5,
         "rating_count": 30,
-        "description": "",
-        "district": "Summit",
-        "district_description": "",
-        "coordinates": [
-          -85.068844,
-          35.084232
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "8876 Old Lee Hwy, Collegedale, TN 37363, USA",
@@ -39572,13 +38666,7 @@
         "website": "https://www.facebook.com/Dixie-BBQ-116145738405750/",
         "rating": 4.4,
         "rating_count": 268,
-        "description": "",
-        "district": "Sterling Park",
-        "district_description": "",
-        "coordinates": [
-          -85.206922,
-          35.172856
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1530 Boy Scout Rd, Hixson, TN 37343, USA",
@@ -39809,13 +38897,7 @@
         "website": null,
         "rating": 4.5,
         "rating_count": 720,
-        "description": "Traditional Mexican plates & margaritas served in a colorful, laid-back joint with sidewalk seating.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31088,
-          35.0373
-        ]
+        "description": "Traditional Mexican plates & margaritas served in a colorful, laid-back joint with sidewalk seating."
       },
       "location": {
         "formatted_address": "314 W Main St, Chattanooga, TN 37408, USA",
@@ -40048,13 +39130,7 @@
         "website": "https://www.thelivingstonecafe.org/",
         "rating": 4.9,
         "rating_count": 47,
-        "description": "",
-        "district": "Ridgedale",
-        "district_description": "",
-        "coordinates": [
-          -85.27259,
-          35.033292
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "420 S Willow St, Chattanooga, TN 37404, USA",
@@ -40288,13 +39364,7 @@
         "website": "https://chattanooga.monkeytownbrewing.com/",
         "rating": 4.3,
         "rating_count": 154,
-        "description": "",
-        "district": "Manchester Park",
-        "district_description": "",
-        "coordinates": [
-          -85.276106,
-          35.116367
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "724 Ashland Terrace, Chattanooga, TN 37415, USA",
@@ -40522,13 +39592,7 @@
         "website": "http://chattanoogaoliveoilcompany.com/",
         "rating": 4.9,
         "rating_count": 32,
-        "description": "",
-        "district": "Lansdell Park",
-        "district_description": "",
-        "coordinates": [
-          -85.206905,
-          34.99112
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "6511 Slater Rd #101, Chattanooga, TN 37412, USA",
@@ -40991,13 +40055,7 @@
         "website": "https://realrootscafe.square.site/",
         "rating": 4.9,
         "rating_count": 366,
-        "description": "Casual vegan hang-out serving health-conscious smoothies, juices & bowls, plus toasted snacks.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309517,
-          35.048958
-        ]
+        "description": "Casual vegan hang-out serving health-conscious smoothies, juices & bowls, plus toasted snacks."
       },
       "location": {
         "formatted_address": "607 N Market St #103, Chattanooga, TN 37405, USA",
@@ -41229,13 +40287,7 @@
         "website": "https://www.reignbowbakingco.com/",
         "rating": 4.9,
         "rating_count": 34,
-        "description": "",
-        "district": "Brainerd",
-        "district_description": "",
-        "coordinates": [
-          -85.214401,
-          35.008158
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "5600 Brainerd Road Building B, Ste, FC-3, Chattanooga, TN 37411, USA",
@@ -41468,13 +40520,7 @@
         "website": "https://thetogethercafe.org/",
         "rating": 4.7,
         "rating_count": 257,
-        "description": "",
-        "district": "Ridgedale",
-        "district_description": "",
-        "coordinates": [
-          -85.27713,
-          35.031719
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "801 S Orchard Knob Ave, Chattanooga, TN 37404, USA",
@@ -41712,13 +40758,7 @@
         "website": "https://topgolf.com/us/chattanooga/",
         "rating": 4.4,
         "rating_count": 841,
-        "description": "Sprawling entertainment venue with a high-tech driving range & swanky lounge with drinks & games.",
-        "district": "Walnut Hills",
-        "district_description": "",
-        "coordinates": [
-          -85.20358,
-          34.995154
-        ]
+        "description": "Sprawling entertainment venue with a high-tech driving range & swanky lounge with drinks & games."
       },
       "location": {
         "formatted_address": "490 Camp Jordan Pkwy, East Ridge, TN 37412, USA",
@@ -41951,13 +40991,7 @@
         "website": "http://www.velocoffee.com/",
         "rating": 4.6,
         "rating_count": 513,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.301173,
-          35.034105
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "509 E Main St #3, Chattanooga, TN 37408, USA",
@@ -42188,13 +41222,7 @@
         "website": "http://www.woodencitychattanooga.com/",
         "rating": 4.8,
         "rating_count": 333,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.311113,
-          35.05452
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "203 Broad St, Chattanooga, TN 37402, USA",
@@ -42893,13 +41921,7 @@
         "website": "https://restaurants.fiveguys.com/2020-gunbarrel-rd",
         "rating": 4.4,
         "rating_count": 1145,
-        "description": "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait.",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.151974,
-          35.033846
-        ]
+        "description": "Fast-food chain with made-to-order burgers, fries & hot dogs, plus free peanuts while you wait."
       },
       "location": {
         "formatted_address": "2020 Gunbarrel Rd, Chattanooga, TN 37421, USA",
@@ -43365,13 +42387,7 @@
         "website": "https://puckettsrestaurant.com/",
         "rating": 4.5,
         "rating_count": 4157,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310144,
-          35.0554
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2 W Aquarium Way, Chattanooga, TN 37402, USA",
@@ -43610,13 +42626,7 @@
         "website": "http://cadencecoffeeco.com/",
         "rating": 4.7,
         "rating_count": 453,
-        "description": "Roomy, relaxed hangout offering choice coffee & espresso drinks, plus pastries & other snacks.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308931,
-          35.04849
-        ]
+        "description": "Roomy, relaxed hangout offering choice coffee & espresso drinks, plus pastries & other snacks."
       },
       "location": {
         "formatted_address": "11 E 7th St, Chattanooga, TN 37402, USA",
@@ -43846,13 +42856,7 @@
         "website": "https://www.agaveandrye.com/locations/agave-rye-chattanooga",
         "rating": 4.5,
         "rating_count": 2102,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.31215,
-          35.05517
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "185 Chestnut St, Chattanooga, TN 37402, USA",
@@ -44088,13 +43092,7 @@
         "website": null,
         "rating": 4.8,
         "rating_count": 206,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309183,
-          35.055554
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "100 Market St, Chattanooga, TN 37402, USA",
@@ -44326,13 +43324,7 @@
         "website": "https://www.goodfellaspizzeria.com/",
         "rating": 4.5,
         "rating_count": 1247,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306206,
-          35.040151
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1208 King St #105, Chattanooga, TN 37403, USA",
@@ -44568,13 +43560,7 @@
         "website": "https://www.maplestreetbiscuits.com/?olonwp=JjBtp_vMLk25gkYh_bnoiQ",
         "rating": 4.6,
         "rating_count": 2642,
-        "description": "Casual cafe serving biscuit sandwiches & Southern sides for breakfast & lunch.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.310943,
-          35.051904
-        ]
+        "description": "Casual cafe serving biscuit sandwiches & Southern sides for breakfast & lunch."
       },
       "location": {
         "formatted_address": "407 Broad St, Chattanooga, TN 37402, USA",
@@ -44808,13 +43794,7 @@
         "website": "https://www.rubybrunch.com/?olonwp=JjBtp_vMLk25gkYh_bnoiQ",
         "rating": 4.6,
         "rating_count": 1556,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309897,
-          35.051944
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "405 Market St, Chattanooga, TN 37402, USA",
@@ -45045,13 +44025,7 @@
         "website": "https://www.barque.is/",
         "rating": 4.8,
         "rating_count": 209,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.273725,
-          35.024135
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2309 E Main St, Chattanooga, TN 37404, USA",
@@ -45512,13 +44486,7 @@
         "website": "http://communitypie.com/",
         "rating": 4.3,
         "rating_count": 336,
-        "description": "",
-        "district": "Hickory Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.16451,
-          35.03328
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2006 Hamilton Pl Blvd, Chattanooga, TN 37421, USA",
@@ -45753,13 +44721,7 @@
         "website": "https://craftaxethrowing.com/us/tn/chattanooga",
         "rating": 4.9,
         "rating_count": 545,
-        "description": "",
-        "district": "Walnut Hills",
-        "district_description": "",
-        "coordinates": [
-          -85.200889,
-          34.993555
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "619 Camp Jordan Pkwy #121, East Ridge, TN 37412, USA",
@@ -45994,13 +44956,7 @@
         "website": "http://www.eggmanbagelry.com/",
         "rating": 4.5,
         "rating_count": 240,
-        "description": "Vast, industrial-style food court with a covered terrace offering brunch, Asian eats & cocktails.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30859,
-          35.036276
-        ]
+        "description": "Vast, industrial-style food court with a covered terrace offering brunch, Asian eats & cocktails."
       },
       "location": {
         "formatted_address": "1501 Long St, Chattanooga, TN 37408, USA",
@@ -46232,13 +45188,7 @@
         "website": "http://www.elsiesdaughters.com/",
         "rating": 4.4,
         "rating_count": 166,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.305164,
-          35.036765
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1404 Rossville Ave, Chattanooga, TN 37408, USA",
@@ -46470,13 +45420,7 @@
         "website": "https://www.ernestchinese.com/?utm_source=google&utm_medium=organic&utm_campaign=Google+Business+Profile",
         "rating": 4.2,
         "rating_count": 242,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.304445,
-          35.035848
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "55 Johnson St, Chattanooga, TN 37408, USA",
@@ -46928,13 +45872,7 @@
         "website": "http://oddstorybrewing.co/the-greenhouse",
         "rating": 4.8,
         "rating_count": 71,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.304268,
-          35.043981
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "336 E M L King Blvd, Chattanooga, TN 37403, USA",
@@ -47173,13 +46111,7 @@
         "website": "https://www.honeyseedchatt.com/",
         "rating": 4.7,
         "rating_count": 831,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30862,
-          35.03412
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1705 Market St Suite 105, Chattanooga, TN 37408, USA",
@@ -47410,13 +46342,7 @@
         "website": "https://www.kaibistrochatt.com/",
         "rating": 4.7,
         "rating_count": 446,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.298971,
-          35.033248
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "625 E Main St, Chattanooga, TN 37408, USA",
@@ -47649,13 +46575,7 @@
         "website": "http://antiguafruit.com/",
         "rating": 4,
         "rating_count": 99,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.306792,
-          35.062261
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "199 River St, Chattanooga, TN 37405, USA",
@@ -47885,13 +46805,7 @@
         "website": "http://masseyskitchen.com/",
         "rating": 4.8,
         "rating_count": 531,
-        "description": "",
-        "district": "Lookout Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.353871,
-          34.990527
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "826 Scenic Hwy, Lookout Mountain, TN 37350, USA",
@@ -48582,13 +47496,7 @@
         "website": "https://www.marriott.com/en-us/hotels/chaox-moxy-chattanooga-downtown/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
         "rating": 4.4,
         "rating_count": 940,
-        "description": "Downtown hotel with a bar, a gym, creative rooms & complimentary cocktails at check-in.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30699,
-          35.040085
-        ]
+        "description": "Downtown hotel with a bar, a gym, creative rooms & complimentary cocktails at check-in."
       },
       "location": {
         "formatted_address": "1220 King St, Chattanooga, TN 37403, USA",
@@ -49287,13 +48195,7 @@
         "website": "http://soconfusion.com/",
         "rating": 4.6,
         "rating_count": 4094,
-        "description": "Known for wood-fired dishes, ceviche & beer in a building with exposed brick & industrial interiors.",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.30406,
-          35.035229
-        ]
+        "description": "Known for wood-fired dishes, ceviche & beer in a building with exposed brick & industrial interiors."
       },
       "location": {
         "formatted_address": "301 E Main St, Chattanooga, TN 37408, USA",
@@ -49525,13 +48427,7 @@
         "website": "https://www.marriott.com/en-us/hotels/chadt-chattanooga-marriott-downtown/dining/?scid=feed67b0-9a2f-4de1-8df6-114544116108",
         "rating": 4,
         "rating_count": 69,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.312256,
-          35.044273
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2 Carter Plaza, Chattanooga, TN 37402, USA",
@@ -49761,13 +48657,7 @@
         "website": "https://www.hilton.com/en/hotels/chabsqq-the-chattanoogan-hotel/dining/",
         "rating": 4,
         "rating_count": 61,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309995,
-          35.040725
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1201 Broad St, Chattanooga, TN 37402, USA",
@@ -49996,13 +48886,7 @@
         "website": "https://fivewitsbrewing.com/",
         "rating": 4.7,
         "rating_count": 466,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30859,
-          35.036276
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1501 Long St, Chattanooga, TN 37408, USA",
@@ -50465,13 +49349,7 @@
         "website": "https://www.rubyfalls.com/plan-your-visit/dining/",
         "rating": 3.4,
         "rating_count": 22,
-        "description": "",
-        "district": "Lookout Valley",
-        "district_description": "",
-        "coordinates": [
-          -85.33934,
-          35.019056
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1720 Scenic Hwy, Chattanooga, TN 37409, USA",
@@ -50703,13 +49581,7 @@
         "website": "https://www.marriott.com/en-us/hotels/chacc-courtyard-cleveland-tn/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
         "rating": 4.5,
         "rating_count": 37,
-        "description": "",
-        "district": "Windwood",
-        "district_description": "",
-        "coordinates": [
-          -84.870467,
-          35.2159
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "4385 Frontage Rd NW, Cleveland, TN 37312, USA",
@@ -50934,13 +49806,7 @@
         "website": "https://www.oakscoffee.com/",
         "rating": 4.7,
         "rating_count": 510,
-        "description": "",
-        "district": "Tyner",
-        "district_description": "",
-        "coordinates": [
-          -85.137894,
-          35.061334
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2916 Silverdale Rd, Chattanooga, TN 37421, USA",
@@ -51178,13 +50044,7 @@
         "website": "http://www.blueorleansdowntown.com/",
         "rating": 4.5,
         "rating_count": 1260,
-        "description": "Creole staples such as gumbo, crawfish & po' boys plus drinks served in an exposed-brick setting.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.307657,
-          35.036519
-        ]
+        "description": "Creole staples such as gumbo, crawfish & po' boys plus drinks served in an exposed-brick setting."
       },
       "location": {
         "formatted_address": "1463 Market St, Chattanooga, TN 37402, USA",
@@ -51414,13 +50274,7 @@
         "website": "https://www.opentable.com/r/forge-chattanooga?SEO_id=GMB--R-CHABSQQ-3&y_source=1_Mjg5MTMwNzQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
         "rating": 5,
         "rating_count": 1,
-        "description": "",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.309995,
-          35.040725
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1201 Broad St, Chattanooga, TN 37402, USA",
@@ -51818,13 +50672,7 @@
         "website": "http://www.unknowncallerbar.com/",
         "rating": 4.6,
         "rating_count": 793,
-        "description": "Cool, speakeasy-style craft cocktail bar, also featuring wine, beer & snacks.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30869,
-          35.04782
-        ]
+        "description": "Cool, speakeasy-style craft cocktail bar, also featuring wine, beer & snacks."
       },
       "location": {
         "formatted_address": "715 Cherry St, Chattanooga, TN 37402, USA",
@@ -52060,13 +50908,7 @@
         "website": "http://www.thelocaljuicery.com/",
         "rating": 4.7,
         "rating_count": 364,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.306153,
-          35.035467
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "48 E Main St, Chattanooga, TN 37408, USA",
@@ -52298,13 +51140,7 @@
         "website": "http://www.madknightbrewing.com/",
         "rating": 4.9,
         "rating_count": 42,
-        "description": "",
-        "district": "South Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.327708,
-          35.007576
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "In The Basement at, 4015 Tennessee Ave, Chattanooga, TN 37409, USA",
@@ -52539,13 +51375,7 @@
         "website": "http://www.mezclacantina.com/",
         "rating": 4.5,
         "rating_count": 697,
-        "description": "",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.30868,
-          35.062543
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2 Cherokee Blvd., Chattanooga, TN 37405, USA",
@@ -52779,13 +51609,7 @@
         "website": null,
         "rating": 4.8,
         "rating_count": 235,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.300798,
-          35.03334
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "516 E Main St, Chattanooga, TN 37408, USA",
@@ -53021,13 +51845,7 @@
         "website": "https://locations.jimmyjohns.com/tn/chattanooga/sandwiches-3712.html?utm_source=google%20my%20business&utm_medium=organic&utm_campaign=website%20link",
         "rating": 3.2,
         "rating_count": 105,
-        "description": "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips.",
-        "district": "North Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.305612,
-          35.061845
-        ]
+        "description": "Counter-serve chain specializing in sub & club sandwiches, plus signature potato chips."
       },
       "location": {
         "formatted_address": "330 Frazier Ave #112, Chattanooga, TN 37405, USA",
@@ -53256,13 +52074,7 @@
         "website": "https://www.oddstorybrewing.co/",
         "rating": 4.6,
         "rating_count": 587,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.296699,
-          35.030405
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "1604 Central Ave, Chattanooga, TN 37408, USA",
@@ -53493,13 +52305,7 @@
         "website": "http://boccacciarestaurant.com/",
         "rating": 4.5,
         "rating_count": 637,
-        "description": "Cozy, brick-lined restaurant offering a menu of upmarket Italian entrees & housemade pastas.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.32025,
-          35.02181
-        ]
+        "description": "Cozy, brick-lined restaurant offering a menu of upmarket Italian entrees & housemade pastas."
       },
       "location": {
         "formatted_address": "3077 Broad St, Chattanooga, TN 37408, USA",
@@ -53729,13 +52535,7 @@
         "website": "http://www.kennyssandwiches.com/",
         "rating": 4.6,
         "rating_count": 582,
-        "description": "Unassuming restaurant specializing in breakfast staples & sandwiches, plus brunch boxes & cookies.",
-        "district": "Downtown Chattanooga",
-        "district_description": "",
-        "coordinates": [
-          -85.308251,
-          35.04043
-        ]
+        "description": "Unassuming restaurant specializing in breakfast staples & sandwiches, plus brunch boxes & cookies."
       },
       "location": {
         "formatted_address": "1251 Market St, Chattanooga, TN 37402, USA",
@@ -53968,13 +52768,7 @@
         "website": "https://www.sleepyhead.coffee/",
         "rating": 4.7,
         "rating_count": 169,
-        "description": "",
-        "district": "Bushtown",
-        "district_description": "",
-        "coordinates": [
-          -85.269307,
-          35.021935
-        ]
+        "description": ""
       },
       "location": {
         "formatted_address": "2602 E Main St, Chattanooga, TN 37404, USA",
@@ -54416,5 +53210,18 @@
       ],
       "seo_description": "Davis Wayne's in 9454 Bradmore Ln #100, Collegedale, TN 37363, USA.  Currently closed. Rated 4.6 stars. Wheelchair accessible. Offers takeout. Outdoor seating available."
     }
+  },
+  "last_updated": "2025-02-18T14:34:56.937512",
+  "data_sources": [
+    "live_data.json",
+    "extended_live.json",
+    "live_districts.json"
+  ],
+  "district_stats": {
+    "total_restaurants": 229,
+    "processed_count": 199,
+    "districts_found": 24,
+    "restaurants_without_district": 30,
+    "last_updated": "2025-02-18T03:04:02Z"
   }
 }

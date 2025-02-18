@@ -8,9 +8,10 @@ import { useCallback, useMemo, useState } from 'react';
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
-  const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
+  const [selectedCategories, setSelectedCategories] = useState<Set<string>>(new Set());
+  const [selectedDistricts, setSelectedDistricts] = useState<Set<string>>(new Set());
+  const [selectedPriceRanges, setSelectedPriceRanges] = useState<Set<string>>(new Set());
+  const [selectedFeatures, setSelectedFeatures] = useState<Set<string>>(new Set());
 
   // Transform raw data into DirectoryItems
   const items: DirectoryItem[] = useMemo(() => {
@@ -25,74 +26,89 @@ export default function Home() {
       reviewCount: restaurant.basic_info.rating_count || 0,
       website: restaurant.basic_info.website || '',
       categories: restaurant.basic_info.types || [],
-      regions: [],
-      amenities: [],
+      districts: [],
+      features: [],
+      priceLevel: restaurant.basic_info.price_level || 1,
       hours: restaurant.hours || null
     }));
   }, []);
 
-  const categories = [
-    { id: "restaurant", label: "ALL Restaurant", count: 229 },
-    { id: "cafe", label: "Cafe", count: 38 },
-    { id: "bar", label: "Bar", count: 70 }
-  ];
-
-  const regions = [
-    { id: "downtown", label: "Downtown", count: 122 },
-    { id: "airport", label: "Hamilton Place/Airport", count: 35 },
-    { id: "neardowntown", label: "Near Downtown", count: 24 }
-  ];
-
-  const amenities = [
-    { id: "outdoor", label: "Outdoor dining available", count: 67 },
-    { id: "delivery", label: "Delivery available", count: 43 },
-    { id: "takeout", label: "Offers takeout", count: 87 }
-  ];
-
-  const handleFilterChange = useCallback((type: string, value: string) => {
+  const handleFilterChange = useCallback((type: string, value: string, checked: boolean) => {
     switch (type) {
-      case 'category':
-        setSelectedCategories(prev => 
-          prev.includes(value) 
-            ? prev.filter(cat => cat !== value)
-            : [...prev, value]
-        );
+      case 'categories':
+        setSelectedCategories(prev => {
+          const next = new Set(prev);
+          if (checked) {
+            next.add(value);
+          } else {
+            next.delete(value);
+          }
+          return next;
+        });
         break;
-      case 'region':
-        setSelectedRegions(prev => 
-          prev.includes(value)
-            ? prev.filter(reg => reg !== value)
-            : [...prev, value]
-        );
+      case 'districts':
+        setSelectedDistricts(prev => {
+          const next = new Set(prev);
+          if (checked) {
+            next.add(value);
+          } else {
+            next.delete(value);
+          }
+          return next;
+        });
         break;
-      case 'amenity':
-        setSelectedAmenities(prev => 
-          prev.includes(value)
-            ? prev.filter(am => am !== value)
-            : [...prev, value]
-        );
+      case 'priceRanges':
+        setSelectedPriceRanges(prev => {
+          const next = new Set(prev);
+          if (checked) {
+            next.add(value);
+          } else {
+            next.delete(value);
+          }
+          return next;
+        });
+        break;
+      case 'features':
+        setSelectedFeatures(prev => {
+          const next = new Set(prev);
+          if (checked) {
+            next.add(value);
+          } else {
+            next.delete(value);
+          }
+          return next;
+        });
         break;
     }
   }, []);
 
   const handleReset = useCallback(() => {
-    setSelectedCategories([]);
-    setSelectedRegions([]);
-    setSelectedAmenities([]);
+    setSelectedCategories(new Set());
+    setSelectedDistricts(new Set());
+    setSelectedPriceRanges(new Set());
+    setSelectedFeatures(new Set());
     setSearchTerm('');
   }, []);
 
+  const selectedFilters = {
+    categories: selectedCategories,
+    districts: selectedDistricts,
+    priceRanges: selectedPriceRanges,
+    features: selectedFeatures
+  };
+
   return (
     <main className="min-h-screen p-8">
-      <div className="directory-container">
+      <div className="directory-container flex gap-6">
         <FilterPane
-          categories={categories}
-          regions={regions}
-          amenities={amenities}
+          selectedFilters={selectedFilters}
           onFilterChange={handleFilterChange}
           onReset={handleReset}
         />
-        <DirectoryList items={items} />
+        <DirectoryList 
+          items={items} 
+          selectedFilters={selectedFilters}
+        />
       </div>
     </main>
   );

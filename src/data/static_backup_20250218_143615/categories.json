@@ -1,0 +1,363 @@
+{
+  "metadata": {
+    "total_categories": 88,
+    "source_files": [
+      "live_data.json",
+      "extended_live.json"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Establishment",
+      "count": 458
+    },
+    {
+      "name": "Point Of Interest",
+      "count": 458
+    },
+    {
+      "name": "Food",
+      "count": 410
+    },
+    {
+      "name": "Restaurant",
+      "count": 350
+    },
+    {
+      "name": "Bar",
+      "count": 140
+    },
+    {
+      "name": "Store",
+      "count": 114
+    },
+    {
+      "name": "Food Store",
+      "count": 110
+    },
+    {
+      "name": "American Restaurant",
+      "count": 94
+    },
+    {
+      "name": "Cafe",
+      "count": 76
+    },
+    {
+      "name": "Coffee Shop",
+      "count": 68
+    },
+    {
+      "name": "Food Delivery",
+      "count": 48
+    },
+    {
+      "name": "Meal Takeaway",
+      "count": 48
+    },
+    {
+      "name": "Breakfast Restaurant",
+      "count": 44
+    },
+    {
+      "name": "Catering Service",
+      "count": 44
+    },
+    {
+      "name": "Event Venue",
+      "count": 32
+    },
+    {
+      "name": "Pizza Restaurant",
+      "count": 32
+    },
+    {
+      "name": "Bakery",
+      "count": 30
+    },
+    {
+      "name": "Brunch Restaurant",
+      "count": 30
+    },
+    {
+      "name": "Confectionery",
+      "count": 30
+    },
+    {
+      "name": "Dessert Shop",
+      "count": 30
+    },
+    {
+      "name": "Sandwich Shop",
+      "count": 26
+    },
+    {
+      "name": "Seafood Restaurant",
+      "count": 26
+    },
+    {
+      "name": "Italian Restaurant",
+      "count": 24
+    },
+    {
+      "name": "Steak House",
+      "count": 24
+    },
+    {
+      "name": "Bar And Grill",
+      "count": 20
+    },
+    {
+      "name": "Barbecue Restaurant",
+      "count": 20
+    },
+    {
+      "name": "Fast Food Restaurant",
+      "count": 18
+    },
+    {
+      "name": "Hamburger Restaurant",
+      "count": 18
+    },
+    {
+      "name": "Ice Cream Shop",
+      "count": 18
+    },
+    {
+      "name": "Mexican Restaurant",
+      "count": 18
+    },
+    {
+      "name": "Pub",
+      "count": 18
+    },
+    {
+      "name": "Mediterranean Restaurant",
+      "count": 12
+    },
+    {
+      "name": "Sports Activity Location",
+      "count": 12
+    },
+    {
+      "name": "Wine Bar",
+      "count": 12
+    },
+    {
+      "name": "Asian Restaurant",
+      "count": 10
+    },
+    {
+      "name": "Meal Delivery",
+      "count": 10
+    },
+    {
+      "name": "Vegetarian Restaurant",
+      "count": 10
+    },
+    {
+      "name": "Greek Restaurant",
+      "count": 8
+    },
+    {
+      "name": "Hotel",
+      "count": 8
+    },
+    {
+      "name": "Japanese Restaurant",
+      "count": 8
+    },
+    {
+      "name": "Lodging",
+      "count": 8
+    },
+    {
+      "name": "Night Club",
+      "count": 8
+    },
+    {
+      "name": "Sports Complex",
+      "count": 8
+    },
+    {
+      "name": "Sushi Restaurant",
+      "count": 8
+    },
+    {
+      "name": "Tourist Attraction",
+      "count": 8
+    },
+    {
+      "name": "Vegan Restaurant",
+      "count": 8
+    },
+    {
+      "name": "Wedding Venue",
+      "count": 8
+    },
+    {
+      "name": "Chinese Restaurant",
+      "count": 6
+    },
+    {
+      "name": "Deli",
+      "count": 6
+    },
+    {
+      "name": "Diner",
+      "count": 6
+    },
+    {
+      "name": "Fine Dining Restaurant",
+      "count": 6
+    },
+    {
+      "name": "Athletic Field",
+      "count": 4
+    },
+    {
+      "name": "Brazilian Restaurant",
+      "count": 4
+    },
+    {
+      "name": "Candy Store",
+      "count": 4
+    },
+    {
+      "name": "Golf Course",
+      "count": 4
+    },
+    {
+      "name": "Health",
+      "count": 4
+    },
+    {
+      "name": "Juice Shop",
+      "count": 4
+    },
+    {
+      "name": "Liquor Store",
+      "count": 4
+    },
+    {
+      "name": "Sports Club",
+      "count": 4
+    },
+    {
+      "name": "Thai Restaurant",
+      "count": 4
+    },
+    {
+      "name": "Adventure Sports Center",
+      "count": 2
+    },
+    {
+      "name": "Auditorium",
+      "count": 2
+    },
+    {
+      "name": "Bagel Shop",
+      "count": 2
+    },
+    {
+      "name": "Banquet Hall",
+      "count": 2
+    },
+    {
+      "name": "Barbecue Area",
+      "count": 2
+    },
+    {
+      "name": "Bowling Alley",
+      "count": 2
+    },
+    {
+      "name": "Butcher Shop",
+      "count": 2
+    },
+    {
+      "name": "Chocolate Shop",
+      "count": 2
+    },
+    {
+      "name": "Clothing Store",
+      "count": 2
+    },
+    {
+      "name": "Comedy Club",
+      "count": 2
+    },
+    {
+      "name": "Dog Park",
+      "count": 2
+    },
+    {
+      "name": "Donut Shop",
+      "count": 2
+    },
+    {
+      "name": "Extended Stay Hotel",
+      "count": 2
+    },
+    {
+      "name": "Farm",
+      "count": 2
+    },
+    {
+      "name": "French Restaurant",
+      "count": 2
+    },
+    {
+      "name": "Gift Shop",
+      "count": 2
+    },
+    {
+      "name": "Grocery Store",
+      "count": 2
+    },
+    {
+      "name": "Karaoke",
+      "count": 2
+    },
+    {
+      "name": "Korean Restaurant",
+      "count": 2
+    },
+    {
+      "name": "Park",
+      "count": 2
+    },
+    {
+      "name": "Performing Arts Theater",
+      "count": 2
+    },
+    {
+      "name": "Pet Store",
+      "count": 2
+    },
+    {
+      "name": "Sports Coaching",
+      "count": 2
+    },
+    {
+      "name": "Tour Agency",
+      "count": 2
+    },
+    {
+      "name": "Transit Station",
+      "count": 2
+    },
+    {
+      "name": "Travel Agency",
+      "count": 2
+    },
+    {
+      "name": "Video Arcade",
+      "count": 2
+    },
+    {
+      "name": "Wholesaler",
+      "count": 2
+    }
+  ]
+}

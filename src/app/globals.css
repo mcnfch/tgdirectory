@@ -1,21 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Font Awesome */
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  font-display: block;
-  src: url('/fonts/fa-solid-900.woff2') format('woff2'),
-       url('/fonts/fa-solid-900.ttf') format('truetype');
+  font-display: swap;
+  src: url('/fonts/fa-solid-900.woff2') format('woff2');
 }
 
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --background: #ffffff;

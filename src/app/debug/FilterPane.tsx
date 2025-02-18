@@ -1,53 +1,78 @@
 'use client';
 
 import React, { useState } from 'react';
-
-interface FilterOption {
-  id: string;
-  label: string;
-  count: number;
-}
+import { FilterOption, FilterType, SelectedFilters } from '@/types/filter';
 
 interface FilterSection {
-  title: string;
+  id: FilterType;
+  label: string;
   options: FilterOption[];
-  selectedOptions: Set<string>;
+  selected: Set<string>;
 }
 
 interface FilterPaneProps {
-  categories: FilterOption[];
-  districts: FilterOption[];
-  priceRanges: FilterOption[];
-  features: FilterOption[];
-  selectedFilters: {
-    categories: Set<string>;
-    districts: Set<string>;
-    priceRanges: Set<string>;
-    features: Set<string>;
-  };
-  onFilterChange: (type: string, value: string, checked: boolean) => void;
+  selectedFilters: SelectedFilters;
+  onFilterChange: (type: FilterType, value: string, checked: boolean) => void;
   onReset: () => void;
 }
 
+// Filter data
+const filterCategories = [
+  { id: 'american_restaurant', label: 'American Restaurant', count: 94 },
+  { id: 'bar', label: 'Bar', count: 140 },
+  { id: 'cafe', label: 'Cafe', count: 76 },
+  { id: 'coffee_shop', label: 'Coffee Shop', count: 68 },
+  { id: 'italian_restaurant', label: 'Italian Restaurant', count: 45 },
+  { id: 'mexican_restaurant', label: 'Mexican Restaurant', count: 38 },
+  { id: 'pizza_restaurant', label: 'Pizza Restaurant', count: 32 },
+  { id: 'seafood_restaurant', label: 'Seafood Restaurant', count: 28 },
+];
+
+const filterDistricts = [
+  { id: 'downtown', label: 'Downtown Chattanooga', count: 85 },
+  { id: 'north_shore', label: 'North Shore', count: 45 },
+  { id: 'southside', label: 'Southside', count: 38 },
+  { id: 'east_ridge', label: 'East Ridge', count: 25 },
+  { id: 'red_bank', label: 'Red Bank', count: 20 },
+  { id: 'lookout_mountain', label: 'Lookout Mountain', count: 15 },
+  { id: 'ooltewah', label: 'Ooltewah', count: 12 },
+];
+
+const filterPriceRanges = [
+  { id: '1', label: '$', count: 120 },
+  { id: '2', label: '$$', count: 180 },
+  { id: '3', label: '$$$', count: 45 },
+  { id: '4', label: '$$$$', count: 15 },
+];
+
+const filterFeatures = [
+  { id: 'takeout', label: 'Takeout', count: 350 },
+  { id: 'delivery', label: 'Delivery', count: 280 },
+  { id: 'outdoor_seating', label: 'Outdoor Seating', count: 175 },
+  { id: 'wheelchair_accessible', label: 'Wheelchair Accessible', count: 410 },
+  { id: 'reservations', label: 'Reservations', count: 145 },
+  { id: 'live_music', label: 'Live Music', count: 65 },
+  { id: 'happy_hour', label: 'Happy Hour', count: 85 },
+];
+
 const FilterSection: React.FC<{
   section: FilterSection;
-  type: string;
-  onFilterChange: (type: string, value: string, checked: boolean) => void;
-}> = ({ section, type, onFilterChange }) => {
+  onFilterChange: (type: FilterType, value: string, checked: boolean) => void;
+}> = ({ section, onFilterChange }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const visibleOptions = isExpanded ? section.options : section.options.slice(0, 5);
 
   return (
     <div className="py-4 border-b border-gray-200 last:border-0">
-      <h3 className="text-lg font-medium text-gray-900 mb-2">{section.title}</h3>
+      <h3 className="text-lg font-medium text-gray-900 mb-2">{section.label}</h3>
       <div className="space-y-2">
         {visibleOptions.map((option) => (
           <label key={option.id} className="flex items-center space-x-3 group cursor-pointer">
             <input
               type="checkbox"
               className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-              checked={section.selectedOptions.has(option.id)}
-              onChange={(e) => onFilterChange(type, option.id, e.target.checked)}
+              checked={section.selected.has(option.id)}
+              onChange={(e) => onFilterChange(section.id, option.id, e.target.checked)}
             />
             <span className="text-sm text-gray-600 flex-1 group-hover:text-gray-900">{option.label}</span>
             <span className="text-xs text-gray-500 group-hover:text-gray-700">({option.count})</span>
@@ -70,42 +95,38 @@ const FilterSection: React.FC<{
   );
 };
 
-export const FilterPane: React.FC<FilterPaneProps> = ({
-  categories,
-  districts,
-  priceRanges,
-  features,
+export function FilterPane({
   selectedFilters,
   onFilterChange,
-  onReset
-}) => {
+  onReset,
+}: FilterPaneProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  const sections = [
+  const sections: FilterSection[] = [
     {
-      title: "Categories",
-      options: categories,
-      selectedOptions: selectedFilters.categories,
-      type: "categories"
+      id: 'categories' as FilterType,
+      label: 'Categories',
+      options: filterCategories,
+      selected: selectedFilters.categories,
     },
     {
-      title: "Districts",
-      options: districts,
-      selectedOptions: selectedFilters.districts,
-      type: "districts"
+      id: 'districts' as FilterType,
+      label: 'Districts',
+      options: filterDistricts,
+      selected: selectedFilters.districts,
     },
     {
-      title: "Price Range",
-      options: priceRanges,
-      selectedOptions: selectedFilters.priceRanges,
-      type: "priceRanges"
+      id: 'priceRanges' as FilterType,
+      label: 'Price',
+      options: filterPriceRanges,
+      selected: selectedFilters.priceRanges,
     },
     {
-      title: "Features",
-      options: features,
-      selectedOptions: selectedFilters.features,
-      type: "features"
-    }
+      id: 'features' as FilterType,
+      label: 'Features',
+      options: filterFeatures,
+      selected: selectedFilters.features,
+    },
   ];
 
   const totalFiltersSelected = 
@@ -158,9 +179,8 @@ export const FilterPane: React.FC<FilterPaneProps> = ({
         <div className="space-y-1">
           {sections.map((section) => (
             <FilterSection
-              key={section.type}
+              key={section.id}
               section={section}
-              type={section.type}
               onFilterChange={onFilterChange}
             />
           ))}

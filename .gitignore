@@ -82,3 +82,13 @@ coverage/
 # Package managers
 .npm
 .yarn-integrity
+
+# Scripts and utilities
+/scripts
+/scrips
+*.py
+*.sh
+optimize-images*.js
+optimize-images*.ts
+ecosystem.config.js
+performance-optimization.conf

@@ -1,28 +1,16 @@
 'use client';
 
-import React, { useMemo } from 'react';
+import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Image from 'next/image';
 import { DirectoryItem } from '@/types/directory';
 import { isRestaurantOpen } from '@/utils/dateUtils';
-import dynamic from 'next/dynamic';
-
-const FilterPane = dynamic(
-  () => import('./FilterPane').then(mod => mod.FilterPane),
-  { ssr: false }
-);
 
 interface DirectoryListProps {
   items: DirectoryItem[];
-  selectedFilters: {
-    categories: Set<string>;
-    districts: Set<string>;
-    priceRanges: Set<string>;
-    features: Set<string>;
-  };
 }
 
-export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], selectedFilters }) => {
+export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [] }) => {
   const [viewMode, setViewMode] = React.useState<'list' | 'grid-view'>('grid-view');
   const [currentPage, setCurrentPage] = React.useState(1);
   const itemsPerPage = 6;
@@ -34,44 +22,7 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentItems = items.slice(startIndex, endIndex);
-
-  // Filter items based on selected filters
-  const filteredItems = useMemo(() => {
-    return currentItems.filter(item => {
-      // Apply category filters
-      if (selectedFilters.categories.size > 0) {
-        const hasMatchingCategory = item.categories.some(cat => 
-          selectedFilters.categories.has(cat)
-        );
-        if (!hasMatchingCategory) return false;
-      }
-
-      // Apply district filters
-      if (selectedFilters.districts.size > 0) {
-        const hasMatchingDistrict = item.districts.some(dist => 
-          selectedFilters.districts.has(dist)
-        );
-        if (!hasMatchingDistrict) return false;
-      }
-
-      // Apply price range filters
-      if (selectedFilters.priceRanges.size > 0 && !selectedFilters.priceRanges.has(item.priceLevel.toString())) {
-        return false;
-      }
-
-      // Apply feature filters
-      if (selectedFilters.features.size > 0) {
-        const hasMatchingFeature = item.features.some(feat =>
-          selectedFilters.features.has(feat)
-        );
-        if (!hasMatchingFeature) return false;
-      }
-
-      return true;
-    });
-  }, [currentItems, selectedFilters]);
+  const currentItems = items.slice(startIndex, startIndex + itemsPerPage);
 
   const getFirstPhotoPath = (id: string) => {
     return `/media/${id}/photo_1.jpg`;
@@ -148,7 +99,7 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   };
 
-  const generatePageNumbers = () => {
+  const getPageNumbers = () => {
     const pageNumbers = [];
     
     if (totalPages <= 7) {
@@ -187,182 +138,182 @@ export const DirectoryList: React.FC<DirectoryListProps> = ({ items = [], select
     return pageNumbers;
   };
 
-  const generateListingUrl = (name: string, id: string) => {
-    const slug = name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '');
-    const idSuffix = id.slice(-6);
-    return `https://noogabites.com/listing/${slug}-${idSuffix}`;
-  };
-
   return (
-    <div className="w-full">
-      <div className="flex justify-between items-center mb-4">
-        <div className="text-sm text-gray-500">
-          Showing {startIndex + 1}-{Math.min(startIndex + itemsPerPage, items.length)} of {items.length} restaurants
+    <div className="layout-container">
+      <div className="settings">
+        <div className="view">
+          <span className="settings-label">View:</span>
+          <ul>
+            <li className={viewMode === 'grid-view' ? 'highlight' : ''}>
+              <button className="view-button" onClick={() => setViewMode('grid-view')}>
+                <i className="fa fa-th"></i> Grid
+              </button>
+            </li>
+            <li className={viewMode === 'list' ? 'highlight' : ''}>
+              <button className="view-button" onClick={() => setViewMode('list')}>
+                <i className="fa fa-list"></i> List
+              </button>
+            </li>
+          </ul>
         </div>
-        <div className="flex gap-2">
-          <button
-            onClick={() => setViewMode('list')}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              viewMode === 'list'
-                ? 'bg-gray-200 text-gray-800'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-list" />
-          </button>
-          <button
-            onClick={() => setViewMode('grid-view')}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              viewMode === 'grid-view'
-                ? 'bg-gray-200 text-gray-800'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-th-large" />
-          </button>
+        <div className="sort">
+          <span className="settings-label">Sort:</span>
+          <ul>
+            <li className="highlight">
+              <button>Recommended</button>
+            </li>
+            <li>
+              <button>Near Me</button>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8`}>
-        {currentItems.map((item, index) => (
-          <div key={item.id} 
-               onClick={() => window.location.href = generateListingUrl(item.title, item.id)}
-               className={`
-                 bg-white rounded-lg shadow-md overflow-hidden cursor-pointer
-                 transition-transform duration-200 hover:scale-[1.02]
-                 ${viewMode === 'list' ? 'flex gap-4' : ''}
-               `}
-          >
-            <div className={`relative ${viewMode === 'list' ? 'w-48 h-32' : 'w-full h-48'}`}>
-              <Image
-                src={getFirstPhotoPath(item.id)}
-                alt={item.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority={index === 0 && currentPage === 1}
-                loading={index === 0 && currentPage === 1 ? 'eager' : 'lazy'}
-              />
-            </div>
-            <div className={`info p-4 ${viewMode === 'list' ? 'flex-1' : ''}`}>
-              <div className="top-info">
-                <h4 className="title text-gray-900 hover:text-blue-600 text-lg font-medium">
-                  {item.title}
-                </h4>
-                <div className="meta mt-2">
-                  <div className="flex items-center gap-4">
-                    {item.rating && (
-                      <div className="rating flex items-center gap-1">
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <span className="score text-gray-900 font-semibold">{item.rating}</span>
-                        <span className="reviews text-gray-500">({item.reviewCount})</span>
-                      </div>
-                    )}
-                    {item.hours?.schedule && (
-                      <div className="flex items-center gap-1">
-                        <span className={`w-2 h-2 rounded-full ${isRestaurantOpen(item.hours.schedule) ? 'bg-green-500' : 'bg-red-500'}`}></span>
-                        <span className={`text-sm ${isRestaurantOpen(item.hours.schedule) ? 'text-green-700' : 'text-red-700'}`}>
-                          {isRestaurantOpen(item.hours.schedule) ? 'Open' : 'Closed'}
+      <div className={`content ${viewMode} w-full`}>
+        {currentItems?.map((item) => {
+          const primaryType = getPrimaryType(item.categories || []);
+          const additionalCategories = getRelevantCategories(item.categories || []);
+
+          return (
+            <div key={item.id} className="item">
+              <div className="image">
+                <a href={`/listing/${item.slug}`}>
+                  <Image 
+                    src={getFirstPhotoPath(item.id)}
+                    alt={item.title}
+                    width={viewMode === 'grid-view' ? 400 : 90}
+                    height={viewMode === 'grid-view' ? 200 : 90}
+                    className="thumb"
+                  />
+                </a>
+              </div>
+              <div className="info">
+                <div className="top-info">
+                  <h4>
+                    <a href={`/listing/${item.slug}`} className="title text-gray-900 hover:text-blue-600">
+                      {item.title}
+                    </a>
+                  </h4>
+                  <div className="meta">
+                    <div className="flex items-center justify-between">
+                      {item.rating && (
+                        <div className="rating">
+                          <span className="score text-gray-900 font-semibold">{item.rating}</span>
+                          <span className="reviews text-gray-700">({item.reviewCount})</span>
+                        </div>
+                      )}
+                      {item.hours?.schedule && (
+                        <div className="flex items-center gap-1">
+                          <span className={`w-2 h-2 rounded-full ${isRestaurantOpen(item.hours.schedule) ? 'bg-green-500' : 'bg-red-500'}`}></span>
+                          <span className={`text-sm ${isRestaurantOpen(item.hours.schedule) ? 'text-green-700' : 'text-red-700'}`}>
+                            {isRestaurantOpen(item.hours.schedule) ? 'Open' : 'Closed'}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="address text-gray-700">{item.address}</div>
+                  </div>
+                  {primaryType && (
+                    <div className="restaurant-type">
+                      <span className="type">
+                        <i className={`fas ${getCategoryIcon(primaryType)}`}></i>
+                        <span>{capitalizeWords(primaryType.replace(/_/g, ' '))}</span>
+                      </span>
+                    </div>
+                  )}
+                  {additionalCategories.length > 0 && (
+                    <div className="categories">
+                      {additionalCategories.map((category, index) => (
+                        <span key={index} className="category">
+                          <i className={`fas ${getCategoryIcon(category)}`}></i>
+                          <span>{capitalizeWords(category.replace(/_/g, ' '))}</span>
                         </span>
-                      </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="bottom-actions">
+                  <div className="website-link">
+                    {item.website && (
+                      <a href={item.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm">
+                        Visit website
+                      </a>
                     )}
                   </div>
                 </div>
-                {getPrimaryType(item.categories || '') && (
-                  <div className="restaurant-type mt-2">
-                    <span className="type flex items-center gap-2 text-gray-600">
-                      <i className={`fas ${getCategoryIcon(getPrimaryType(item.categories || ''))} text-gray-500`}></i>
-                      <span>{capitalizeWords(getPrimaryType(item.categories || '').replace(/_/g, ' '))}</span>
-                    </span>
-                    {getRelevantCategories(item.categories || '').length > 0 && (
-                      <div className="additional-categories mt-1 text-sm text-gray-500">
-                        {getRelevantCategories(item.categories || '').map(category => (
-                          <span key={category} className="mr-2">
-                            • {capitalizeWords(category.replace(/_/g, ' '))}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
       
       {totalPages > 1 && (
-        <div className="flex justify-center items-center space-x-2 mt-8">
-          <button
-            onClick={() => handlePageChange(1)}
-            disabled={currentPage === 1}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              currentPage === 1
-                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-angle-double-left" />
-          </button>
-          <button
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              currentPage === 1
-                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-angle-left" />
-          </button>
-
-          {/* Page Numbers */}
-          <div className="flex space-x-2">
-            {generatePageNumbers().map((pageNum, index) => (
-              <React.Fragment key={index}>
-                {typeof pageNum === 'string' ? (
-                  <span className="px-2 py-1">...</span>
-                ) : (
-                  <button
-                    onClick={() => handlePageChange(pageNum)}
-                    className={`w-8 h-8 rounded-md transition-colors duration-150 ${
-                      pageNum === currentPage
-                        ? 'bg-gray-800 text-white'
-                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                    }`}
-                  >
-                    {pageNum}
-                  </button>
-                )}
-              </React.Fragment>
+        <div className="pagination flex flex-col sm:flex-row items-center justify-center gap-2 mt-6">
+          <div className="hidden sm:block">
+            <button
+              onClick={() => handlePageChange(1)}
+              disabled={currentPage === 1}
+              className={`px-3 py-1 rounded-md border ${
+                currentPage === 1
+                  ? 'bg-gray-100 text-gray-400 border-gray-300'
+                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
+              }`}
+            >
+              First
+            </button>
+          </div>
+          <div className="order-2 sm:order-none flex gap-2 sm:gap-0">
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className={`px-3 py-1 rounded-md border ${
+                currentPage === 1
+                  ? 'bg-gray-100 text-gray-400 border-gray-300'
+                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
+              }`}
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className={`px-3 py-1 rounded-md border ${
+                currentPage === totalPages
+                  ? 'bg-gray-100 text-gray-400 border-gray-300'
+                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
+              }`}
+            >
+              Next
+            </button>
+          </div>
+          <div className="order-1 sm:order-none flex items-center gap-1">
+            {getPageNumbers().map((pageNum) => (
+              <button
+                key={pageNum}
+                onClick={() => handlePageChange(pageNum)}
+                className={`px-3 py-1 rounded-md border ${
+                  currentPage === pageNum
+                    ? 'bg-gray-900 text-white border-gray-900'
+                    : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
+                }`}
+              >
+                {pageNum}
+              </button>
             ))}
           </div>
-
-          <button
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              currentPage === totalPages
-                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-angle-right" />
-          </button>
-          <button
-            onClick={() => handlePageChange(totalPages)}
-            disabled={currentPage === totalPages}
-            className={`p-2 rounded-md transition-colors duration-150 ${
-              currentPage === totalPages
-                ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            <i className="fas fa-angle-double-right" />
-          </button>
+          <div className="hidden sm:block">
+            <button
+              onClick={() => handlePageChange(totalPages)}
+              disabled={currentPage === totalPages}
+              className={`px-3 py-1 rounded-md border ${
+                currentPage === totalPages
+                  ? 'bg-gray-100 text-gray-400 border-gray-300'
+                  : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'
+              }`}
+            >
+              Last
+            </button>
+          </div>
         </div>
       )}
     </div>

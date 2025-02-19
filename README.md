@@ -1,4 +1,4 @@
-# Nooga Bites
+# Touch Grass Directory Template
 
 A modern, responsive directory of Chattanooga's restaurants built with Next.js and TypeScript.
 

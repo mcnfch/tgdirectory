@@ -45,3 +45,40 @@ src/data/static/backup/
 *.bak
 *.bak.*
 *copy.json
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# System Files
+Thumbs.db
+desktop.ini
+
+# Build and optimization
+/lighthouse_reports
+*.log
+/public/sitemap*.xml
+/public/robots.txt
+*.pyc
+__pycache__/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Test coverage
+.nyc_output
+coverage/
+*.lcov
+
+# Package managers
+.npm
+.yarn-integrity
